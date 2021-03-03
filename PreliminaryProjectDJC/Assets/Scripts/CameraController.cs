@@ -15,7 +15,7 @@ public class CameraController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        transform.position = new Vector3((transform.position.x + velocity), transform.position.y, transform.position.z);
+        transform.position = new Vector3((transform.position.x), transform.position.y+velocity, transform.position.z);
         //background.transform.position = new Vector3((background.transform.position.x + velocity),
         //    background.transform.position.y,
         //    background.transform.position.z);

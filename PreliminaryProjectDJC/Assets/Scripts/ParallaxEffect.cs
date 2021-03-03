@@ -5,7 +5,7 @@ using UnityEngine;
 public class ParallaxEffect : MonoBehaviour
 {
 
-    private float lenghtSprite, heightSprite, startPosX, startPosY, biggestSpriteLenght;
+    private float lenghtSprite, heightSprite, startPosX, startPosY, bSpriteLenght, bSpriteHeight;
 
     public GameObject MainCamera;
     public GameObject background;
@@ -17,32 +17,38 @@ public class ParallaxEffect : MonoBehaviour
     {
         startPosX = transform.position.x;
         startPosY = transform.position.y;
+
         lenghtSprite = GetComponent<SpriteRenderer>().bounds.size.x;
         heightSprite = GetComponent<SpriteRenderer>().bounds.size.y;
 
-        biggestSpriteLenght = 2.72f;
-        //biggestSpriteLenght = GetBiggestSprite();
+        bSpriteLenght = background.GetComponent<SpriteBackgroundManager>().BiggestSpriteLenght;
+        bSpriteHeight = background.GetComponent<SpriteBackgroundManager>().BiggestSpriteHeight;
     }
 
     // Update is called once per frame
     void Update()
     {
-        float temp = MainCamera.transform.position.x * (1 - effectStrenght);
-        float dist = MainCamera.transform.position.x * effectStrenght;
+        float temp = MainCamera.transform.position.y * (1 - effectStrenght);
+        float dist = MainCamera.transform.position.y * effectStrenght;
 
-        transform.position = new Vector3(startPosX + dist, startPosY, transform.position.z);
+        transform.position = new Vector3(startPosX, startPosY + dist, transform.position.z);
 
-        if (Vector2.Distance(transform.position, MainCamera.transform.position) 
-            > ((biggestSpriteLenght / 2) + (lenghtSprite / 2))
-            && temp > startPosX + lenghtSprite)
+        if (!IsInsideScreen(heightSprite))
         {
-            startPosX += 2 * biggestSpriteLenght;
-            startPosY = Random.Range(-(heightSprite / 2), (heightSprite / 2));
+            if (temp > startPosY + heightSprite)
+            {
+                startPosY += 2 * bSpriteHeight;
+                startPosX = Random.Range(-(bSpriteLenght), (bSpriteLenght));
+            }
         }
     }
-    private float GetBiggestSprite()
-    {
-        return background.GetComponent<SpriteBackgroundManager>().BiggestSpriteLenght;
-    }
 
+    private bool IsInsideScreen(float spriteHeight)
+    {
+
+        Plane[] planes = GeometryUtility.CalculateFrustumPlanes(MainCamera.GetComponent<Camera>());
+
+        return  GeometryUtility.TestPlanesAABB(planes, GetComponent<SpriteRenderer>().bounds);
+        //return GetComponent<SpriteRenderer>().isVisible;   
+    }
 }
