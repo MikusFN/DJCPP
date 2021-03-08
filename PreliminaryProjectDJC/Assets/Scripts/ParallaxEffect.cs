@@ -33,7 +33,7 @@ public class ParallaxEffect : MonoBehaviour
 
         transform.position = new Vector3(startPosX, startPosY + dist, transform.position.z);
 
-        if (!IsInsideScreen(heightSprite))
+        if (!IsInsideScreen())
         {
             if (temp > startPosY + heightSprite)
             {
@@ -43,12 +43,10 @@ public class ParallaxEffect : MonoBehaviour
         }
     }
 
-    private bool IsInsideScreen(float spriteHeight)
+    private bool IsInsideScreen()
     {
-
         Plane[] planes = GeometryUtility.CalculateFrustumPlanes(MainCamera.GetComponent<Camera>());
-
         return  GeometryUtility.TestPlanesAABB(planes, GetComponent<SpriteRenderer>().bounds);
-        //return GetComponent<SpriteRenderer>().isVisible;   
     }
+
 }

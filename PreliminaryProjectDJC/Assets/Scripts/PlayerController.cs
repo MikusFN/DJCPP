@@ -12,7 +12,6 @@ public class PlayerController : MonoBehaviour
 
     [Header("Events")]
     [Space]
-
     public UnityEvent OnLandEvent;
 
 
@@ -32,23 +31,33 @@ public class PlayerController : MonoBehaviour
     {
 
     }
-    public void Move(float move, bool axis)
+
+    public void Move(float move, bool axis, Vector2 mousePos)
     {
-        Vector3 targetVelocity = Vector3.zero;
+        Vector3 targetVelocity = m_Velocity;        
 
         if (axis)
         {
             targetVelocity = transform.right.normalized;
-            targetVelocity.x = move * 10f;
+            targetVelocity *= move * 10f;
         }
         else
         {
             targetVelocity = transform.up.normalized;
-            targetVelocity.y = move * 5f;
+            targetVelocity *= move * 5f;
         }
 
         // Move the character by finding the target velocity
         // And then smoothing it out and applying it to the character
         m_Rigidbody2D.velocity = Vector3.SmoothDamp(m_Rigidbody2D.velocity, targetVelocity, ref m_Velocity, m_MovementSmoothing);
+
+        Vector2 lookDir = (mousePos - m_Rigidbody2D.position)*2.0f;
+        float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg - 90f;
+        m_Rigidbody2D.rotation = angle;
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log("collided " + collision.name);
+
     }
 }
