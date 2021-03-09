@@ -8,6 +8,8 @@ public class PlayerController : MonoBehaviour
     [Range(0, .3f)] [SerializeField] private float m_MovementSmoothing = .05f;
     private Rigidbody2D m_Rigidbody2D;
     private Vector3 m_Velocity = Vector3.zero;
+    private int life = 50;
+    private bool isAlive = true;
 
 
     [Header("Events")]
@@ -29,7 +31,12 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (isAlive == true && GetComponent<SpriteRenderer>().color.a < 1.0f)
+        {
+            GetComponent<SpriteRenderer>().color
+                = new Color(GetComponent<SpriteRenderer>().color.r, GetComponent<SpriteRenderer>().color.g,
+                GetComponent<SpriteRenderer>().color.b, (GetComponent<SpriteRenderer>().color.a + Time.deltaTime));
+        }
     }
 
     public void Move(float move, bool axis, float torqueValue)
@@ -61,13 +68,30 @@ public class PlayerController : MonoBehaviour
         // And then smoothing it out and applying it to the character
         m_Rigidbody2D.velocity = Vector3.SmoothDamp(m_Rigidbody2D.velocity, targetVelocity, ref m_Velocity, m_MovementSmoothing);
 
+        //THIS COOULD BE USED FIR THE TELEPORT PICK UP
         //Vector2 lookDir = (mousePos - m_Rigidbody2D.position);
         //float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg - 90f;
         //m_Rigidbody2D.rotation = angle;
     }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        Debug.Log("collided " + collision.name);
 
+    public void TakeDamage(int damage)
+    {
+        if (life > damage)
+        {
+            life -= damage;
+            GetComponent<SpriteRenderer>().color
+                = new Color(GetComponent<SpriteRenderer>().color.r, GetComponent<SpriteRenderer>().color.g,
+                GetComponent<SpriteRenderer>().color.b, GetComponent<SpriteRenderer>().color.a * 0.1f);
+            Debug.Log("Taken Damage");
+        }
+        else
+        {
+            life -= damage;
+            isAlive = false;
+            GetComponent<SpriteRenderer>().color
+                = new Color(GetComponent<SpriteRenderer>().color.r, GetComponent<SpriteRenderer>().color.g,
+                GetComponent<SpriteRenderer>().color.b, GetComponent<SpriteRenderer>().color.a * 0.1f);
+            Debug.Log("You Died");
+        }
     }
 }

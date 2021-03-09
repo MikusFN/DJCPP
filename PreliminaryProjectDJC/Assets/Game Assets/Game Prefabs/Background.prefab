@@ -529,6 +529,7 @@ Transform:
   - {fileID: 1969252847329013242}
   - {fileID: 1969252846444148092}
   - {fileID: 1969252846309234032}
+  - {fileID: 5765175829583882573}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
@@ -1528,3 +1529,53 @@ MonoBehaviour:
   MainCamera: {fileID: 0}
   background: {fileID: 1969252846283504061}
   effectStrenght: 1
+--- !u!1 &7341091297628414802
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5765175829583882573}
+  - component: {fileID: 5610784735727761639}
+  m_Layer: 0
+  m_Name: Obstacles
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5765175829583882573
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7341091297628414802}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.950002, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1969252846283504059}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5610784735727761639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7341091297628414802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dee3411b95312441b176d2e9e3e1f48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteObstaclesPrefab:
+  - {fileID: 799662225128994011, guid: 47e11c0047a294e4abca55af059344ba, type: 3}
+  - {fileID: 9150905981225826695, guid: 6181df89637a5434db88bfeae04b320f, type: 3}
+  - {fileID: 4339949864500878925, guid: 5e9f21c7f56c0574387322483da0dac9, type: 3}
+  - {fileID: 5823220672998773605, guid: 46055e24e6c7f3940b0ec403f1c846fe, type: 3}
+  numObstacles: 4
+  mainCamera: {fileID: 0}

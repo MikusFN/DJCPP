@@ -23,21 +23,28 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        horizontalMove = 0f;
+        verticalMove = 0f;
+
         horizontalMove = Input.GetAxisRaw("Horizontal") * multSpeed;
         verticalMove = Input.GetAxisRaw("Vertical") * multSpeed;
-        if(Input.GetKey(KeyCode.LeftShift))
+        if (Input.GetKey(KeyCode.LeftShift))
         {
-            torqueValue = horizontalMove/multSpeed;
+            torqueValue = horizontalMove / multSpeed;
             horizontalMove = 0.0f;
         }
+
         //mousePos = mainCam.ScreenToWorldPoint(Input.mousePosition);
     }
 
     private void FixedUpdate()
     {
-        //controller.Move(horizontalMove * Time.fixedDeltaTime, true, mousePos);
-        //controller.Move(verticalMove * Time.fixedDeltaTime, false, mousePos);
-        controller.Move(horizontalMove * Time.fixedDeltaTime, true, torqueValue);
-        controller.Move(verticalMove * Time.fixedDeltaTime, false, torqueValue);
+        if (mainCam.GetComponent<CameraController>().IsInsideScreen(GetComponent<SpriteRenderer>().bounds))
+        {
+            //controller.Move(horizontalMove * Time.fixedDeltaTime, true, mousePos);
+            //controller.Move(verticalMove * Time.fixedDeltaTime, false, mousePos);
+            controller.Move(horizontalMove * Time.fixedDeltaTime, true, torqueValue);
+            controller.Move(verticalMove * Time.fixedDeltaTime, false, torqueValue);
+        }
     }
 }

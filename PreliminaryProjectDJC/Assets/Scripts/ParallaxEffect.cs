@@ -12,14 +12,24 @@ public class ParallaxEffect : MonoBehaviour
     public float effectStrenght;
 
 
+    CameraController camCont;
+    private void Awake()
+    {
+        if (tag == "Obstacle")
+        {
+            MainCamera = GetComponentInParent<ObstaclesManager>().mainCamera.gameObject;
+            background = GetComponentInParent<ObstaclesManager>().gameObject.GetComponentInParent<SpriteBackgroundManager>().gameObject;
+        }
+    }
+
     // Start is called before the first frame update
     void Start()
     {
         startPosX = transform.position.x;
         startPosY = transform.position.y;
 
-        lenghtSprite = GetComponent<SpriteRenderer>().bounds.size.x;
-        heightSprite = GetComponent<SpriteRenderer>().bounds.size.y;
+        lenghtSprite = this.GetComponent<SpriteRenderer>().bounds.size.x;
+        heightSprite = this.GetComponent<SpriteRenderer>().bounds.size.y;
 
         bSpriteLenght = background.GetComponent<SpriteBackgroundManager>().BiggestSpriteLenght;
         bSpriteHeight = background.GetComponent<SpriteBackgroundManager>().BiggestSpriteHeight;
@@ -33,20 +43,28 @@ public class ParallaxEffect : MonoBehaviour
 
         transform.position = new Vector3(startPosX, startPosY + dist, transform.position.z);
 
-        if (!IsInsideScreen())
+        if (MainCamera.TryGetComponent<CameraController>(out camCont))
         {
-            if (temp > startPosY + heightSprite)
+            if (!camCont.IsInsideScreen(GetComponent<SpriteRenderer>().bounds))
             {
-                startPosY += 2 * bSpriteHeight;
-                startPosX = Random.Range(-(bSpriteLenght), (bSpriteLenght));
+                if (temp > startPosY + heightSprite)
+                {
+                    startPosY += 2 * bSpriteHeight;
+                    startPosX = Random.Range(-(bSpriteLenght), (bSpriteLenght));
+                    if (tag == "Obstacle")
+                    {
+                        CapsuleCollider2D col;
+                        if (TryGetComponent<CapsuleCollider2D>(out col))
+                        {
+                            col.isTrigger = true;
+                            GetComponent<GameObstacle>().Life = GetComponent<GameObstacle>().InitialLife;
+                            GetComponent<SpriteRenderer>().enabled = true;
+                        }
+                    }
+                }
             }
         }
-    }
 
-    private bool IsInsideScreen()
-    {
-        Plane[] planes = GeometryUtility.CalculateFrustumPlanes(MainCamera.GetComponent<Camera>());
-        return  GeometryUtility.TestPlanesAABB(planes, GetComponent<SpriteRenderer>().bounds);
     }
 
 }

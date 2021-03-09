@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Sprite
+  - Obstacle
   layers:
   - Default
   - TransparentFX
