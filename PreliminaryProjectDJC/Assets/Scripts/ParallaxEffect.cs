@@ -20,6 +20,11 @@ public class ParallaxEffect : MonoBehaviour
             MainCamera = GetComponentInParent<ObstaclesManager>().mainCamera.gameObject;
             background = GetComponentInParent<ObstaclesManager>().gameObject.GetComponentInParent<SpriteBackgroundManager>().gameObject;
         }
+        if (tag == "PPUP")
+        {
+            MainCamera = GetComponentInParent<PickablesManager>().mainCamera.gameObject;
+            background = GetComponentInParent<PickablesManager>().gameObject.GetComponentInParent<SpriteBackgroundManager>().gameObject;
+        }
     }
 
     // Start is called before the first frame update
@@ -51,13 +56,15 @@ public class ParallaxEffect : MonoBehaviour
                 {
                     startPosY += 2 * bSpriteHeight;
                     startPosX = Random.Range(-(bSpriteLenght), (bSpriteLenght));
-                    if (tag == "Obstacle")
+                    if (tag == "Obstacle" || tag == "PPUP")
                     {
                         CapsuleCollider2D col;
                         if (TryGetComponent<CapsuleCollider2D>(out col))
                         {
                             col.isTrigger = true;
-                            GetComponent<GameObstacle>().Life = GetComponent<GameObstacle>().InitialLife;
+                            GameObstacle go;
+                            if (TryGetComponent<GameObstacle>(out go))
+                                GetComponent<GameObstacle>().Life = GetComponent<GameObstacle>().InitialLife;
                             GetComponent<SpriteRenderer>().enabled = true;
                         }
                     }

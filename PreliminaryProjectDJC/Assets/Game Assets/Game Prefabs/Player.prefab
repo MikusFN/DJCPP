@@ -46,7 +46,7 @@ GameObject:
   - component: {fileID: 7027169582667649504}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Player
+  m_TagString: PPUP
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -146,6 +146,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 7027169582667649506}
+  mainCam: {fileID: 0}
   multSpeed: 40
 --- !u!50 &7027169582667649507
 Rigidbody2D:
@@ -183,3 +184,4 @@ MonoBehaviour:
   firePoint: {fileID: 7027169581027808654}
   bulletPrefab: {fileID: 1539632861300792, guid: d98f56223e17a314fbc3a8c67b114bde,
     type: 3}
+  rateOfFire: 1

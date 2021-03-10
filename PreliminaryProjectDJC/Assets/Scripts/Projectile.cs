@@ -39,7 +39,7 @@ public class Projectile : MonoBehaviour
         {
             obstacle.takeDamage(currentDamage);
         }
-
+        
         if (hitInfo.name != "Player")
             Destroy(gameObject);
     }

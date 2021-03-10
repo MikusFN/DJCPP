@@ -6,15 +6,18 @@ public class WeaponBehaviour : MonoBehaviour
 {
     public Transform firePoint;
     public GameObject bulletPrefab;
-    public float rateOfFire = 1.0f;
+    public float rateOfFire = 3.0f;
 
     private float timeOfLife = 0.0f;
-
+    private List<Pickable> currentStatePickable;
+    private float maxRateofFire = 0.3f;
+    private int shotsFire = 1;
+    private int maxShotsFire = 5;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        currentStatePickable = new List<Pickable>();
     }
 
     // Update is called once per frame
@@ -23,6 +26,14 @@ public class WeaponBehaviour : MonoBehaviour
         if (Input.GetKey(KeyCode.Mouse0))
         {
             Shoot();
+            if (currentStatePickable.Count > 0 )
+            {
+                foreach (var item in currentStatePickable)
+                {
+                    UsePPUP(item.PpType);
+                }
+                currentStatePickable.Clear();
+            }
         }
     }
 
@@ -30,9 +41,13 @@ public class WeaponBehaviour : MonoBehaviour
     {
         if (RateFire())
         {
+             
             Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
-            Instantiate(bulletPrefab, firePoint.position - new Vector3(.1f, 0, 0), firePoint.rotation);
-            Instantiate(bulletPrefab, firePoint.position + new Vector3(.1f, 0, 0), firePoint.rotation);
+            if (shotsFire > 1)
+            {
+                Instantiate(bulletPrefab, firePoint.position - new Vector3(.1f, 0, 0), firePoint.rotation);
+                Instantiate(bulletPrefab, firePoint.position + new Vector3(.1f, 0, 0), firePoint.rotation);
+            }
         }
     }
 
@@ -46,5 +61,41 @@ public class WeaponBehaviour : MonoBehaviour
         }
         timeOfLife += Time.fixedDeltaTime;
         return false;
+    }
+
+    public void AddPickable(Pickable pickable)
+    {
+        currentStatePickable.Add(pickable);
+    }
+
+    public void UsePPUP(PPUpType pPUpType)
+    {
+        switch (pPUpType)
+        {
+            case PPUpType.RateOfFire:
+                if (rateOfFire >= maxRateofFire)
+                {
+                    rateOfFire -= 0.3f;
+                }
+                break;
+            case PPUpType.ShieldTime:
+                //Up shield time or recover time
+                break;
+            case PPUpType.ShotsNum:
+                if (shotsFire <= maxShotsFire)
+                {
+                    shotsFire += 2;
+                }
+                    break;
+            case PPUpType.Weapon:
+                //Change weapon (create weopen class)
+                break;
+            case PPUpType.Teleport:
+                break;
+            case PPUpType.destroyer:
+                break;
+            default:
+                break;
+        }
     }
 }

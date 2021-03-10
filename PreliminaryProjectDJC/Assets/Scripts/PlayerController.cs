@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         m_Rigidbody2D = GetComponent<Rigidbody2D>();
+        
     }
 
     // Start is called before the first frame update
@@ -94,4 +95,7 @@ public class PlayerController : MonoBehaviour
             Debug.Log("You Died");
         }
     }
+
+    
 }
+
