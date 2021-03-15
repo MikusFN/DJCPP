@@ -44,6 +44,7 @@ public class GameObstacle : MonoBehaviour
         PlayerController player;
         if(collision.TryGetComponent<PlayerController>(out player))
         {
+            Debug.Log("aqui si");
             player.TakeDamage(damage);
         }
     }
