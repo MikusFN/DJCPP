@@ -1,0 +1,2324 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 61
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 995438498, guid: 68c7e4565cde54155bb78d8e935f1ddb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cacheType: 6
+  lastUpdatedAtString: 2021-03-16T22:10:05.987+00:00
+  initializedAtString: 2021-03-16T22:08:28.670+00:00
+  entries:
+  - path: PreliminaryProjectDJC\Assets\EnemyBullets.prefab
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\EnemyBullets.prefab
+    projectPath: Assets\EnemyBullets.prefab
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\EnemyBullets.prefab.meta
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\EnemyBullets.prefab.meta
+    projectPath: Assets\EnemyBullets.prefab.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\EnemyGun.cs
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\EnemyGun.cs
+    projectPath: Assets\EnemyGun.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\EnemyGun.cs.meta
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\EnemyGun.cs.meta
+    projectPath: Assets\EnemyGun.cs.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Game Assets\Alien.meta
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Game
+      Assets\Alien.meta
+    projectPath: Assets\Game Assets\Alien.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Game Assets\Alien\Alien_death.png
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Game
+      Assets\Alien\Alien_death.png
+    projectPath: Assets\Game Assets\Alien\Alien_death.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Game Assets\Alien\Alien_death.png.meta
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Game
+      Assets\Alien\Alien_death.png.meta
+    projectPath: Assets\Game Assets\Alien\Alien_death.png.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Game Assets\Alien\Alien_idle.png
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Game
+      Assets\Alien\Alien_idle.png
+    projectPath: Assets\Game Assets\Alien\Alien_idle.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Game Assets\Alien\Alien_idle.png.meta
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Game
+      Assets\Alien\Alien_idle.png.meta
+    projectPath: Assets\Game Assets\Alien\Alien_idle.png.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Game Assets\Alien\Alien_jump.png
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Game
+      Assets\Alien\Alien_jump.png
+    projectPath: Assets\Game Assets\Alien\Alien_jump.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Game Assets\Alien\Alien_jump.png.meta
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Game
+      Assets\Alien\Alien_jump.png.meta
+    projectPath: Assets\Game Assets\Alien\Alien_jump.png.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Game Assets\Alien\Alien_run.png
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Game
+      Assets\Alien\Alien_run.png
+    projectPath: Assets\Game Assets\Alien\Alien_run.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Game Assets\Alien\Alien_run.png.meta
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Game
+      Assets\Alien\Alien_run.png.meta
+    projectPath: Assets\Game Assets\Alien\Alien_run.png.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Game Assets\Alien\Enemy.controller
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Game
+      Assets\Alien\Enemy.controller
+    projectPath: Assets\Game Assets\Alien\Enemy.controller
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Game Assets\Alien\Enemy.controller.meta
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Game
+      Assets\Alien\Enemy.controller.meta
+    projectPath: Assets\Game Assets\Alien\Enemy.controller.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Game Assets\Alien\New Animation.anim
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Game
+      Assets\Alien\New Animation.anim
+    projectPath: Assets\Game Assets\Alien\New Animation.anim
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Game Assets\Alien\New Animation.anim.meta
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Game
+      Assets\Alien\New Animation.anim.meta
+    projectPath: Assets\Game Assets\Alien\New Animation.anim.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Game Assets\Alien\parado.png
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Game
+      Assets\Alien\parado.png
+    projectPath: Assets\Game Assets\Alien\parado.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Game Assets\Alien\parado.png.meta
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Game
+      Assets\Alien\parado.png.meta
+    projectPath: Assets\Game Assets\Alien\parado.png.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Game Assets\Alien\runner-asset-sheet-with-transparency.png
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Game
+      Assets\Alien\runner-asset-sheet-with-transparency.png
+    projectPath: Assets\Game Assets\Alien\runner-asset-sheet-with-transparency.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Game Assets\Alien\runner-asset-sheet-with-transparency.png.meta
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Game
+      Assets\Alien\runner-asset-sheet-with-transparency.png.meta
+    projectPath: Assets\Game Assets\Alien\runner-asset-sheet-with-transparency.png.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Game Assets\Alien\running.png
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Game
+      Assets\Alien\running.png
+    projectPath: Assets\Game Assets\Alien\running.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Game Assets\Alien\running.png.meta
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Game
+      Assets\Alien\running.png.meta
+    projectPath: Assets\Game Assets\Alien\running.png.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Game Assets\Alien\running2.png
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Game
+      Assets\Alien\running2.png
+    projectPath: Assets\Game Assets\Alien\running2.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Game Assets\Alien\running2.png.meta
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Game
+      Assets\Alien\running2.png.meta
+    projectPath: Assets\Game Assets\Alien\running2.png.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Game Assets\Main Camera.controller
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Game
+      Assets\Main Camera.controller
+    projectPath: Assets\Game Assets\Main Camera.controller
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Game Assets\Main Camera.controller.meta
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Game
+      Assets\Main Camera.controller.meta
+    projectPath: Assets\Game Assets\Main Camera.controller.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Game Assets\New Animation.anim
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Game
+      Assets\New Animation.anim
+    projectPath: Assets\Game Assets\New Animation.anim
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Game Assets\New Animation.anim.meta
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Game
+      Assets\New Animation.anim.meta
+    projectPath: Assets\Game Assets\New Animation.anim.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Plugins.meta
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Plugins.meta
+    projectPath: Assets\Plugins.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Plugins\GitHub.meta
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Plugins\GitHub.meta
+    projectPath: Assets\Plugins\GitHub.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor.meta
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor.meta
+    projectPath: Assets\Plugins\GitHub\Editor.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll
+    projectPath: Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll.meta
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll.meta
+    projectPath: Assets\Plugins\GitHub\Editor\AsyncBridge.Net35.dll.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\big-logo@2x.png
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\big-logo@2x.png
+    projectPath: Assets\Plugins\GitHub\Editor\big-logo@2x.png
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\big-logo@2x.png.meta
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\big-logo@2x.png.meta
+    projectPath: Assets\Plugins\GitHub\Editor\big-logo@2x.png.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\credits.txt
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\credits.txt
+    projectPath: Assets\Plugins\GitHub\Editor\credits.txt
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\credits.txt.meta
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\credits.txt.meta
+    projectPath: Assets\Plugins\GitHub\Editor\credits.txt.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\eula.txt
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\eula.txt
+    projectPath: Assets\Plugins\GitHub\Editor\eula.txt
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\eula.txt.meta
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\eula.txt.meta
+    projectPath: Assets\Plugins\GitHub\Editor\eula.txt.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\ExtensionLoader.cs
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\ExtensionLoader.cs
+    projectPath: Assets\Plugins\GitHub\Editor\ExtensionLoader.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\ExtensionLoader.cs.meta
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\ExtensionLoader.cs.meta
+    projectPath: Assets\Plugins\GitHub\Editor\ExtensionLoader.cs.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll
+    projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.meta
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.meta
+    projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.45.dll.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\GitHub.Api.dll
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\GitHub.Api.dll
+    projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.dll
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\GitHub.Api.dll.meta
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\GitHub.Api.dll.meta
+    projectPath: Assets\Plugins\GitHub\Editor\GitHub.Api.dll.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\GitHub.Logging.dll
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\GitHub.Logging.dll
+    projectPath: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.meta
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.meta
+    projectPath: Assets\Plugins\GitHub\Editor\GitHub.Logging.dll.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll
+    projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll.meta
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll.meta
+    projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.45.dll.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\GitHub.Unity.dll
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\GitHub.Unity.dll
+    projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.meta
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.meta
+    projectPath: Assets\Plugins\GitHub\Editor\GitHub.Unity.dll.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll
+    projectPath: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll.meta
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll.meta
+    projectPath: Assets\Plugins\GitHub\Editor\GitHub.UnityShim.dll.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\libsfw.bundle
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\libsfw.bundle
+    projectPath: Assets\Plugins\GitHub\Editor\libsfw.bundle
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\libsfw.bundle.meta
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\libsfw.bundle.meta
+    projectPath: Assets\Plugins\GitHub\Editor\libsfw.bundle.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\libsfw.so
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\libsfw.so
+    projectPath: Assets\Plugins\GitHub\Editor\libsfw.so
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\libsfw.so.meta
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\libsfw.so.meta
+    projectPath: Assets\Plugins\GitHub\Editor\libsfw.so.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\Mono.Posix.dll
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\Mono.Posix.dll
+    projectPath: Assets\Plugins\GitHub\Editor\Mono.Posix.dll
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\Mono.Posix.dll.meta
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\Mono.Posix.dll.meta
+    projectPath: Assets\Plugins\GitHub\Editor\Mono.Posix.dll.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\QuickGuide.pdf
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\QuickGuide.pdf
+    projectPath: Assets\Plugins\GitHub\Editor\QuickGuide.pdf
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\QuickGuide.pdf.meta
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\QuickGuide.pdf.meta
+    projectPath: Assets\Plugins\GitHub\Editor\QuickGuide.pdf.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll
+    projectPath: Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll.meta
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll.meta
+    projectPath: Assets\Plugins\GitHub\Editor\ReadOnlyCollectionsInterfaces.dll.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\sfw.net.dll
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\sfw.net.dll
+    projectPath: Assets\Plugins\GitHub\Editor\sfw.net.dll
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\sfw.net.dll.meta
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\sfw.net.dll.meta
+    projectPath: Assets\Plugins\GitHub\Editor\sfw.net.dll.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\System.Threading.dll
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\System.Threading.dll
+    projectPath: Assets\Plugins\GitHub\Editor\System.Threading.dll
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\System.Threading.dll.meta
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\System.Threading.dll.meta
+    projectPath: Assets\Plugins\GitHub\Editor\System.Threading.dll.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs
+    projectPath: Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs.meta
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs.meta
+    projectPath: Assets\Plugins\GitHub\Editor\UnityAPIWrapper.cs.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\x64.meta
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\x64.meta
+    projectPath: Assets\Plugins\GitHub\Editor\x64.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll
+    projectPath: Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll.meta
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll.meta
+    projectPath: Assets\Plugins\GitHub\Editor\x64\pthreadVC2.dll.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll
+    projectPath: Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll.meta
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll.meta
+    projectPath: Assets\Plugins\GitHub\Editor\x64\sfw_x64.dll.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\x86.meta
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\x86.meta
+    projectPath: Assets\Plugins\GitHub\Editor\x86.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll
+    projectPath: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll.meta
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll.meta
+    projectPath: Assets\Plugins\GitHub\Editor\x86\pthreadVC2.dll.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll
+    projectPath: Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll.meta
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll.meta
+    projectPath: Assets\Plugins\GitHub\Editor\x86\sfw_x86.dll.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Scenes\Protype Scene.unity
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Scenes\Protype
+      Scene.unity
+    projectPath: Assets\Scenes\Protype Scene.unity
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: PreliminaryProjectDJC\Assets\Scripts\BulletEnemy.cs
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Scripts\BulletEnemy.cs
+    projectPath: Assets\Scripts\BulletEnemy.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Scripts\BulletEnemy.cs.meta
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Scripts\BulletEnemy.cs.meta
+    projectPath: Assets\Scripts\BulletEnemy.cs.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Scripts\EnemyScript.cs
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Scripts\EnemyScript.cs
+    projectPath: Assets\Scripts\EnemyScript.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Scripts\EnemyScript.cs.meta
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Scripts\EnemyScript.cs.meta
+    projectPath: Assets\Scripts\EnemyScript.cs.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Scripts\EnemySpawner.cs
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Scripts\EnemySpawner.cs
+    projectPath: Assets\Scripts\EnemySpawner.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Scripts\EnemySpawner.cs.meta
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Scripts\EnemySpawner.cs.meta
+    projectPath: Assets\Scripts\EnemySpawner.cs.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Scripts\SpaceEnemyScript.cs
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Scripts\SpaceEnemyScript.cs
+    projectPath: Assets\Scripts\SpaceEnemyScript.cs
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Assets\Scripts\SpaceEnemyScript.cs.meta
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Assets\Scripts\SpaceEnemyScript.cs.meta
+    projectPath: Assets\Scripts\SpaceEnemyScript.cs.meta
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\ArtifactDB
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\ArtifactDB
+    projectPath: Library\ArtifactDB
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: PreliminaryProjectDJC\Library\Artifacts\00\004d424047323292e2029f08c0fe5b81
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\00\004d424047323292e2029f08c0fe5b81
+    projectPath: Library\Artifacts\00\004d424047323292e2029f08c0fe5b81
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\01\01420ca8143addf6df938b01d808c483
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\01\01420ca8143addf6df938b01d808c483
+    projectPath: Library\Artifacts\01\01420ca8143addf6df938b01d808c483
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\01\019a673c172bbb4862dce81d95e9afb6
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\01\019a673c172bbb4862dce81d95e9afb6
+    projectPath: Library\Artifacts\01\019a673c172bbb4862dce81d95e9afb6
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\02\027181e41964406f4b301af76f7a77c2
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\02\027181e41964406f4b301af76f7a77c2
+    projectPath: Library\Artifacts\02\027181e41964406f4b301af76f7a77c2
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\02\02f04434b6d89556231bf634a8d18dd1
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\02\02f04434b6d89556231bf634a8d18dd1
+    projectPath: Library\Artifacts\02\02f04434b6d89556231bf634a8d18dd1
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\04\048fa5da6ce67951a50241077fc8d5a4
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\04\048fa5da6ce67951a50241077fc8d5a4
+    projectPath: Library\Artifacts\04\048fa5da6ce67951a50241077fc8d5a4
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\07\074247e11032c5ae240e1d6c4c117e24
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\07\074247e11032c5ae240e1d6c4c117e24
+    projectPath: Library\Artifacts\07\074247e11032c5ae240e1d6c4c117e24
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\07\078c5ed71547a85384740b7485c55d43
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\07\078c5ed71547a85384740b7485c55d43
+    projectPath: Library\Artifacts\07\078c5ed71547a85384740b7485c55d43
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\08\08c5ec0c5b93ace65084da5f23547164
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\08\08c5ec0c5b93ace65084da5f23547164
+    projectPath: Library\Artifacts\08\08c5ec0c5b93ace65084da5f23547164
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\09\095c08cba92551cfe001142917506cac
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\09\095c08cba92551cfe001142917506cac
+    projectPath: Library\Artifacts\09\095c08cba92551cfe001142917506cac
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\09\09d3d54bf3b5afe29ac091f5ea7040b9
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\09\09d3d54bf3b5afe29ac091f5ea7040b9
+    projectPath: Library\Artifacts\09\09d3d54bf3b5afe29ac091f5ea7040b9
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\0c\0c99d054471e508bb0e67bef9f5139b2
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\0c\0c99d054471e508bb0e67bef9f5139b2
+    projectPath: Library\Artifacts\0c\0c99d054471e508bb0e67bef9f5139b2
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\0d\0d87e09c96d2343d174c360ab0fe702a
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\0d\0d87e09c96d2343d174c360ab0fe702a
+    projectPath: Library\Artifacts\0d\0d87e09c96d2343d174c360ab0fe702a
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\0e\0e5e531cb322ac383056663bdeca3151
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\0e\0e5e531cb322ac383056663bdeca3151
+    projectPath: Library\Artifacts\0e\0e5e531cb322ac383056663bdeca3151
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\10\10ce8a4447d27718e2e92cb512cc38c6
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\10\10ce8a4447d27718e2e92cb512cc38c6
+    projectPath: Library\Artifacts\10\10ce8a4447d27718e2e92cb512cc38c6
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\11\11f020fd11c254aa9497b18626cdfdeb
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\11\11f020fd11c254aa9497b18626cdfdeb
+    projectPath: Library\Artifacts\11\11f020fd11c254aa9497b18626cdfdeb
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\12\12c61ef25ac60a080c52df7b1093ae34
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\12\12c61ef25ac60a080c52df7b1093ae34
+    projectPath: Library\Artifacts\12\12c61ef25ac60a080c52df7b1093ae34
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\12\12e6bcfea169a8bb30f69af731926ada
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\12\12e6bcfea169a8bb30f69af731926ada
+    projectPath: Library\Artifacts\12\12e6bcfea169a8bb30f69af731926ada
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\13\1363c707f4ad2c76cd06eacddfaae540
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\13\1363c707f4ad2c76cd06eacddfaae540
+    projectPath: Library\Artifacts\13\1363c707f4ad2c76cd06eacddfaae540
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\14\1446b5172d03db6eae58942c698fead1
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\14\1446b5172d03db6eae58942c698fead1
+    projectPath: Library\Artifacts\14\1446b5172d03db6eae58942c698fead1
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\14\149d3a06a9216b8f556be6a789fb6e8c
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\14\149d3a06a9216b8f556be6a789fb6e8c
+    projectPath: Library\Artifacts\14\149d3a06a9216b8f556be6a789fb6e8c
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\16\162f0930017e9121bdc972f370b6dbaa
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\16\162f0930017e9121bdc972f370b6dbaa
+    projectPath: Library\Artifacts\16\162f0930017e9121bdc972f370b6dbaa
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\18\18bf004c6d1d8a23a24b1b94e725aa00
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\18\18bf004c6d1d8a23a24b1b94e725aa00
+    projectPath: Library\Artifacts\18\18bf004c6d1d8a23a24b1b94e725aa00
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\1a\1a11f46cc2b16b95433496a846981b9e
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\1a\1a11f46cc2b16b95433496a846981b9e
+    projectPath: Library\Artifacts\1a\1a11f46cc2b16b95433496a846981b9e
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\1b\1b079b05445664ca284ff41ed5146e82
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\1b\1b079b05445664ca284ff41ed5146e82
+    projectPath: Library\Artifacts\1b\1b079b05445664ca284ff41ed5146e82
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\1b\1beeaca91ca62cf08ba202fac7c37d57
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\1b\1beeaca91ca62cf08ba202fac7c37d57
+    projectPath: Library\Artifacts\1b\1beeaca91ca62cf08ba202fac7c37d57
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\1c\1c3155946a279cdfcaf35326556a7f60
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\1c\1c3155946a279cdfcaf35326556a7f60
+    projectPath: Library\Artifacts\1c\1c3155946a279cdfcaf35326556a7f60
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\1c\1ca1aad3c68d01e927f6f266006d0228
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\1c\1ca1aad3c68d01e927f6f266006d0228
+    projectPath: Library\Artifacts\1c\1ca1aad3c68d01e927f6f266006d0228
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\1e\1ef5625098521914a7decde20a524125
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\1e\1ef5625098521914a7decde20a524125
+    projectPath: Library\Artifacts\1e\1ef5625098521914a7decde20a524125
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\20\20e2d67d99f5f89cfb3a5c42e24f17b4
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\20\20e2d67d99f5f89cfb3a5c42e24f17b4
+    projectPath: Library\Artifacts\20\20e2d67d99f5f89cfb3a5c42e24f17b4
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\22\2294e17815a8e9bab9ad25ed211067b2
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\22\2294e17815a8e9bab9ad25ed211067b2
+    projectPath: Library\Artifacts\22\2294e17815a8e9bab9ad25ed211067b2
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\22\22b0560448707555bbc20492656adb84
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\22\22b0560448707555bbc20492656adb84
+    projectPath: Library\Artifacts\22\22b0560448707555bbc20492656adb84
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\25\25977d9da8fcb2668309273c4b95d5c9
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\25\25977d9da8fcb2668309273c4b95d5c9
+    projectPath: Library\Artifacts\25\25977d9da8fcb2668309273c4b95d5c9
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\25\25a1c170242d13efe16b0120f6616ef9
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\25\25a1c170242d13efe16b0120f6616ef9
+    projectPath: Library\Artifacts\25\25a1c170242d13efe16b0120f6616ef9
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\26\26205ff753652e8e14f6f25d243762a6
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\26\26205ff753652e8e14f6f25d243762a6
+    projectPath: Library\Artifacts\26\26205ff753652e8e14f6f25d243762a6
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\27\274fd51628f6dfe674b932ce5a1b25f2
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\27\274fd51628f6dfe674b932ce5a1b25f2
+    projectPath: Library\Artifacts\27\274fd51628f6dfe674b932ce5a1b25f2
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\2d\2d4e4553fb779862fd0671f10235d3c4
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\2d\2d4e4553fb779862fd0671f10235d3c4
+    projectPath: Library\Artifacts\2d\2d4e4553fb779862fd0671f10235d3c4
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\2d\2d7a290ceeba5a37920367f8bafb2d64
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\2d\2d7a290ceeba5a37920367f8bafb2d64
+    projectPath: Library\Artifacts\2d\2d7a290ceeba5a37920367f8bafb2d64
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\2d\2de9d21f9d1e2fe33ec7fccf62bac14c
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\2d\2de9d21f9d1e2fe33ec7fccf62bac14c
+    projectPath: Library\Artifacts\2d\2de9d21f9d1e2fe33ec7fccf62bac14c
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\2e\2e2a352a1695df1df7afac2eb1af4db3
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\2e\2e2a352a1695df1df7afac2eb1af4db3
+    projectPath: Library\Artifacts\2e\2e2a352a1695df1df7afac2eb1af4db3
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\2f\2f9b85f10ae40fb2d43590b9f9f13e84
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\2f\2f9b85f10ae40fb2d43590b9f9f13e84
+    projectPath: Library\Artifacts\2f\2f9b85f10ae40fb2d43590b9f9f13e84
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\2f\2fa56e63d918245fa799b2568ecbd03b
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\2f\2fa56e63d918245fa799b2568ecbd03b
+    projectPath: Library\Artifacts\2f\2fa56e63d918245fa799b2568ecbd03b
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\2f\2feb208b92aa2398b372436a1d28ddb6
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\2f\2feb208b92aa2398b372436a1d28ddb6
+    projectPath: Library\Artifacts\2f\2feb208b92aa2398b372436a1d28ddb6
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\31\31087bf46cfdff871efd1ca576c6be9e
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\31\31087bf46cfdff871efd1ca576c6be9e
+    projectPath: Library\Artifacts\31\31087bf46cfdff871efd1ca576c6be9e
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\31\315bddc3e9ad6c19b36e437ce98309ac
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\31\315bddc3e9ad6c19b36e437ce98309ac
+    projectPath: Library\Artifacts\31\315bddc3e9ad6c19b36e437ce98309ac
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\31\31e7139b04e1e110d2c8638af736e585
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\31\31e7139b04e1e110d2c8638af736e585
+    projectPath: Library\Artifacts\31\31e7139b04e1e110d2c8638af736e585
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\35\35af939524bbadc58a5822e918b35f8f
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\35\35af939524bbadc58a5822e918b35f8f
+    projectPath: Library\Artifacts\35\35af939524bbadc58a5822e918b35f8f
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\36\361a6a03ecaca45ff6bacee4dbdd208c
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\36\361a6a03ecaca45ff6bacee4dbdd208c
+    projectPath: Library\Artifacts\36\361a6a03ecaca45ff6bacee4dbdd208c
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\37\37ced20bad0e27d0a7cb16389777e1fc
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\37\37ced20bad0e27d0a7cb16389777e1fc
+    projectPath: Library\Artifacts\37\37ced20bad0e27d0a7cb16389777e1fc
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\39\397eedc99fc0c7392640d6eaa0411020
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\39\397eedc99fc0c7392640d6eaa0411020
+    projectPath: Library\Artifacts\39\397eedc99fc0c7392640d6eaa0411020
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\3a\3a8f4b1da3d626826bba343790e5fd12
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\3a\3a8f4b1da3d626826bba343790e5fd12
+    projectPath: Library\Artifacts\3a\3a8f4b1da3d626826bba343790e5fd12
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\3d\3d0499dcc5605cba80659192c0c9a839
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\3d\3d0499dcc5605cba80659192c0c9a839
+    projectPath: Library\Artifacts\3d\3d0499dcc5605cba80659192c0c9a839
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\3d\3d31f6d77c476609a94ca3159bb6f6b2
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\3d\3d31f6d77c476609a94ca3159bb6f6b2
+    projectPath: Library\Artifacts\3d\3d31f6d77c476609a94ca3159bb6f6b2
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\3d\3d8499af18b52d3c85acf8243b1b8ace
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\3d\3d8499af18b52d3c85acf8243b1b8ace
+    projectPath: Library\Artifacts\3d\3d8499af18b52d3c85acf8243b1b8ace
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\3d\3d9e7ff1d8dedcb769dcfb773c5a48a9
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\3d\3d9e7ff1d8dedcb769dcfb773c5a48a9
+    projectPath: Library\Artifacts\3d\3d9e7ff1d8dedcb769dcfb773c5a48a9
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\3f\3f711156b95d26ce06d5633ac57d7f20
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\3f\3f711156b95d26ce06d5633ac57d7f20
+    projectPath: Library\Artifacts\3f\3f711156b95d26ce06d5633ac57d7f20
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\41\4100b46d011d9bc040587e210fd3d4c6
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\41\4100b46d011d9bc040587e210fd3d4c6
+    projectPath: Library\Artifacts\41\4100b46d011d9bc040587e210fd3d4c6
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\41\41591e432f6f43e97e52e7a198e65d6f
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\41\41591e432f6f43e97e52e7a198e65d6f
+    projectPath: Library\Artifacts\41\41591e432f6f43e97e52e7a198e65d6f
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\42\423f7cfcbd8ea892e39dda4dd09b6048
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\42\423f7cfcbd8ea892e39dda4dd09b6048
+    projectPath: Library\Artifacts\42\423f7cfcbd8ea892e39dda4dd09b6048
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\44\4403b13f36eb968eca282df2b91da9f9
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\44\4403b13f36eb968eca282df2b91da9f9
+    projectPath: Library\Artifacts\44\4403b13f36eb968eca282df2b91da9f9
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\44\44cf49dcaac9d368465a8316a27c227e
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\44\44cf49dcaac9d368465a8316a27c227e
+    projectPath: Library\Artifacts\44\44cf49dcaac9d368465a8316a27c227e
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\44\44ed34957cbc4ad8e341e408e374d3d3
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\44\44ed34957cbc4ad8e341e408e374d3d3
+    projectPath: Library\Artifacts\44\44ed34957cbc4ad8e341e408e374d3d3
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\46\4621bcaefe8dffbe29c3c2773066324b
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\46\4621bcaefe8dffbe29c3c2773066324b
+    projectPath: Library\Artifacts\46\4621bcaefe8dffbe29c3c2773066324b
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\46\46375b6efa587cbd38a36f20268b4246
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\46\46375b6efa587cbd38a36f20268b4246
+    projectPath: Library\Artifacts\46\46375b6efa587cbd38a36f20268b4246
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\46\469c896fb857317b12698d6ee0cf808c
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\46\469c896fb857317b12698d6ee0cf808c
+    projectPath: Library\Artifacts\46\469c896fb857317b12698d6ee0cf808c
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\49\4984be25ea2345980488c9aa362d8749
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\49\4984be25ea2345980488c9aa362d8749
+    projectPath: Library\Artifacts\49\4984be25ea2345980488c9aa362d8749
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\4d\4d48f9e160751622f1ecf868d316fc0a
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\4d\4d48f9e160751622f1ecf868d316fc0a
+    projectPath: Library\Artifacts\4d\4d48f9e160751622f1ecf868d316fc0a
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\51\517617cb03cde24aac328e394eaee18f
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\51\517617cb03cde24aac328e394eaee18f
+    projectPath: Library\Artifacts\51\517617cb03cde24aac328e394eaee18f
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\52\5202e93be8499a6dda8fc396fab69453
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\52\5202e93be8499a6dda8fc396fab69453
+    projectPath: Library\Artifacts\52\5202e93be8499a6dda8fc396fab69453
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\52\523c333d42fb7e673306249bd09c6ea7
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\52\523c333d42fb7e673306249bd09c6ea7
+    projectPath: Library\Artifacts\52\523c333d42fb7e673306249bd09c6ea7
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\52\52b230e2104e6a4890a9567a976b69b9
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\52\52b230e2104e6a4890a9567a976b69b9
+    projectPath: Library\Artifacts\52\52b230e2104e6a4890a9567a976b69b9
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\55\5512db1d0fbb6aabfe49127c46350d46
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\55\5512db1d0fbb6aabfe49127c46350d46
+    projectPath: Library\Artifacts\55\5512db1d0fbb6aabfe49127c46350d46
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\56\562accba7866cdbcbaa584cbdc9edaa7
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\56\562accba7866cdbcbaa584cbdc9edaa7
+    projectPath: Library\Artifacts\56\562accba7866cdbcbaa584cbdc9edaa7
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\58\58137e7ada92260b3b8d1a8e069e6423
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\58\58137e7ada92260b3b8d1a8e069e6423
+    projectPath: Library\Artifacts\58\58137e7ada92260b3b8d1a8e069e6423
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\58\58baab476e644de58170578053309476
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\58\58baab476e644de58170578053309476
+    projectPath: Library\Artifacts\58\58baab476e644de58170578053309476
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\59\596b6e40e3ea243db9656bd21eca276e
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\59\596b6e40e3ea243db9656bd21eca276e
+    projectPath: Library\Artifacts\59\596b6e40e3ea243db9656bd21eca276e
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\59\599ba66c1ee026328a1a804bd7d2a7c1
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\59\599ba66c1ee026328a1a804bd7d2a7c1
+    projectPath: Library\Artifacts\59\599ba66c1ee026328a1a804bd7d2a7c1
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\5e\5efcf6292a01ee5adf7592a46285b3e1
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\5e\5efcf6292a01ee5adf7592a46285b3e1
+    projectPath: Library\Artifacts\5e\5efcf6292a01ee5adf7592a46285b3e1
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\5f\5f51c72cb910d7a4ad05e78374937fc8
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\5f\5f51c72cb910d7a4ad05e78374937fc8
+    projectPath: Library\Artifacts\5f\5f51c72cb910d7a4ad05e78374937fc8
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\5f\5fe83ba6b3257209a0c1d3ab95706108
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\5f\5fe83ba6b3257209a0c1d3ab95706108
+    projectPath: Library\Artifacts\5f\5fe83ba6b3257209a0c1d3ab95706108
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\60\605f1e4f7eea5919e7a90d1906589be0
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\60\605f1e4f7eea5919e7a90d1906589be0
+    projectPath: Library\Artifacts\60\605f1e4f7eea5919e7a90d1906589be0
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\64\642826b18f2e3725630f1383cc8b5b80
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\64\642826b18f2e3725630f1383cc8b5b80
+    projectPath: Library\Artifacts\64\642826b18f2e3725630f1383cc8b5b80
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\66\66ed1de1767422aaa49d7689def583e2
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\66\66ed1de1767422aaa49d7689def583e2
+    projectPath: Library\Artifacts\66\66ed1de1767422aaa49d7689def583e2
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\68\68556beb2fe6c551e93b7f6033546fce
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\68\68556beb2fe6c551e93b7f6033546fce
+    projectPath: Library\Artifacts\68\68556beb2fe6c551e93b7f6033546fce
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\68\68897e95313e072af953aaeb07dd5bcd
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\68\68897e95313e072af953aaeb07dd5bcd
+    projectPath: Library\Artifacts\68\68897e95313e072af953aaeb07dd5bcd
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\68\68d4985c175d4fa20a31f094de78b2d3
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\68\68d4985c175d4fa20a31f094de78b2d3
+    projectPath: Library\Artifacts\68\68d4985c175d4fa20a31f094de78b2d3
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\69\69504004a2e4fd3ab1503813d76f7e06
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\69\69504004a2e4fd3ab1503813d76f7e06
+    projectPath: Library\Artifacts\69\69504004a2e4fd3ab1503813d76f7e06
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\6a\6a318296fc4d46289b7e42575822e892
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\6a\6a318296fc4d46289b7e42575822e892
+    projectPath: Library\Artifacts\6a\6a318296fc4d46289b7e42575822e892
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\6a\6a38571fdaaa201c2d8004b9b926da42
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\6a\6a38571fdaaa201c2d8004b9b926da42
+    projectPath: Library\Artifacts\6a\6a38571fdaaa201c2d8004b9b926da42
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\6b\6b74bb34c860efcbdb9338a1e5b23da4
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\6b\6b74bb34c860efcbdb9338a1e5b23da4
+    projectPath: Library\Artifacts\6b\6b74bb34c860efcbdb9338a1e5b23da4
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\6b\6bf87404640655956dfc4a261baf72c0
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\6b\6bf87404640655956dfc4a261baf72c0
+    projectPath: Library\Artifacts\6b\6bf87404640655956dfc4a261baf72c0
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\6c\6cbeda6332a6ab27d97dcfa3f038085e
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\6c\6cbeda6332a6ab27d97dcfa3f038085e
+    projectPath: Library\Artifacts\6c\6cbeda6332a6ab27d97dcfa3f038085e
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\6d\6d491da2d76447f83ecd57b2db15ca32
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\6d\6d491da2d76447f83ecd57b2db15ca32
+    projectPath: Library\Artifacts\6d\6d491da2d76447f83ecd57b2db15ca32
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\6e\6e05f8030c990526bb6e0b100acff319
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\6e\6e05f8030c990526bb6e0b100acff319
+    projectPath: Library\Artifacts\6e\6e05f8030c990526bb6e0b100acff319
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\70\7006adba7d103bacc2fd9202ff3a5d70
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\70\7006adba7d103bacc2fd9202ff3a5d70
+    projectPath: Library\Artifacts\70\7006adba7d103bacc2fd9202ff3a5d70
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\71\713668b81eeffb924ec09e1365f910fa
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\71\713668b81eeffb924ec09e1365f910fa
+    projectPath: Library\Artifacts\71\713668b81eeffb924ec09e1365f910fa
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\75\756e32cab499afdbed5e97e2a442261a
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\75\756e32cab499afdbed5e97e2a442261a
+    projectPath: Library\Artifacts\75\756e32cab499afdbed5e97e2a442261a
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\76\765943cd357f19b3c11424587cef4fb5
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\76\765943cd357f19b3c11424587cef4fb5
+    projectPath: Library\Artifacts\76\765943cd357f19b3c11424587cef4fb5
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\76\769b0d46495a0d468f1f61727e858e27
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\76\769b0d46495a0d468f1f61727e858e27
+    projectPath: Library\Artifacts\76\769b0d46495a0d468f1f61727e858e27
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\77\77d2e573362ad919188a12d0320a0914
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\77\77d2e573362ad919188a12d0320a0914
+    projectPath: Library\Artifacts\77\77d2e573362ad919188a12d0320a0914
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\77\77fc90a50f1947fd007378d0a504a19a
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\77\77fc90a50f1947fd007378d0a504a19a
+    projectPath: Library\Artifacts\77\77fc90a50f1947fd007378d0a504a19a
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\78\78fadf246bec4114e2de00ac71b670ac
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\78\78fadf246bec4114e2de00ac71b670ac
+    projectPath: Library\Artifacts\78\78fadf246bec4114e2de00ac71b670ac
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\7a\7aa1697359afd2c818ba0ccece0880b9
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\7a\7aa1697359afd2c818ba0ccece0880b9
+    projectPath: Library\Artifacts\7a\7aa1697359afd2c818ba0ccece0880b9
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\7b\7b201959e3df177174c3f683809308fd
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\7b\7b201959e3df177174c3f683809308fd
+    projectPath: Library\Artifacts\7b\7b201959e3df177174c3f683809308fd
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\7c\7cd85929b25a9c435e7bedf3198f4da4
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\7c\7cd85929b25a9c435e7bedf3198f4da4
+    projectPath: Library\Artifacts\7c\7cd85929b25a9c435e7bedf3198f4da4
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\7e\7eb0edb47d2c1e838fb0475c223dd79f
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\7e\7eb0edb47d2c1e838fb0475c223dd79f
+    projectPath: Library\Artifacts\7e\7eb0edb47d2c1e838fb0475c223dd79f
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\80\805bce19ce5327161096de13ba27335c
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\80\805bce19ce5327161096de13ba27335c
+    projectPath: Library\Artifacts\80\805bce19ce5327161096de13ba27335c
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\83\83b88e2be1f1920b397ac1870c087ce0
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\83\83b88e2be1f1920b397ac1870c087ce0
+    projectPath: Library\Artifacts\83\83b88e2be1f1920b397ac1870c087ce0
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\86\86ca35bb3a447d4201c056c5dfaedf86
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\86\86ca35bb3a447d4201c056c5dfaedf86
+    projectPath: Library\Artifacts\86\86ca35bb3a447d4201c056c5dfaedf86
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\87\879ad6b75a8608f73b217f96209cbc99
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\87\879ad6b75a8608f73b217f96209cbc99
+    projectPath: Library\Artifacts\87\879ad6b75a8608f73b217f96209cbc99
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\88\883d9f570d6fb05021babdc10832d466
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\88\883d9f570d6fb05021babdc10832d466
+    projectPath: Library\Artifacts\88\883d9f570d6fb05021babdc10832d466
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\88\88e701ba7845c73f5434c92da7f21067
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\88\88e701ba7845c73f5434c92da7f21067
+    projectPath: Library\Artifacts\88\88e701ba7845c73f5434c92da7f21067
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\8a\8a787a2fe98660854b9f563bde677395
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\8a\8a787a2fe98660854b9f563bde677395
+    projectPath: Library\Artifacts\8a\8a787a2fe98660854b9f563bde677395
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\8a\8adc6a6e87542239e9ff596b5114c467
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\8a\8adc6a6e87542239e9ff596b5114c467
+    projectPath: Library\Artifacts\8a\8adc6a6e87542239e9ff596b5114c467
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\8b\8b6f14fcf41430e166f84dae5ef4ad2b
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\8b\8b6f14fcf41430e166f84dae5ef4ad2b
+    projectPath: Library\Artifacts\8b\8b6f14fcf41430e166f84dae5ef4ad2b
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\8b\8bb5705d39cd43f65750a448ba55f272
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\8b\8bb5705d39cd43f65750a448ba55f272
+    projectPath: Library\Artifacts\8b\8bb5705d39cd43f65750a448ba55f272
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\8b\8be9b7478a5551065fbb08ad6acf5370
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\8b\8be9b7478a5551065fbb08ad6acf5370
+    projectPath: Library\Artifacts\8b\8be9b7478a5551065fbb08ad6acf5370
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\90\9009dbaab1dba5d72b79b9d08518ff9d
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\90\9009dbaab1dba5d72b79b9d08518ff9d
+    projectPath: Library\Artifacts\90\9009dbaab1dba5d72b79b9d08518ff9d
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\91\9116fe4277b989c931b6d14d950c85ea
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\91\9116fe4277b989c931b6d14d950c85ea
+    projectPath: Library\Artifacts\91\9116fe4277b989c931b6d14d950c85ea
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\91\91f71d223ac8d34ce889daa59414b6f0
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\91\91f71d223ac8d34ce889daa59414b6f0
+    projectPath: Library\Artifacts\91\91f71d223ac8d34ce889daa59414b6f0
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\91\91fb944109eafba79baf44c082654667
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\91\91fb944109eafba79baf44c082654667
+    projectPath: Library\Artifacts\91\91fb944109eafba79baf44c082654667
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\95\950917a24dfd07a4a89d54c84e6e156f
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\95\950917a24dfd07a4a89d54c84e6e156f
+    projectPath: Library\Artifacts\95\950917a24dfd07a4a89d54c84e6e156f
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\97\9724fd5ad05cf65ee1d59f7ef470875a
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\97\9724fd5ad05cf65ee1d59f7ef470875a
+    projectPath: Library\Artifacts\97\9724fd5ad05cf65ee1d59f7ef470875a
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\99\99ce6c1b2eb86f3529ff7ba6ca64f27d
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\99\99ce6c1b2eb86f3529ff7ba6ca64f27d
+    projectPath: Library\Artifacts\99\99ce6c1b2eb86f3529ff7ba6ca64f27d
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\9a\9a4ce54b42f918ea807298df07fd818e
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\9a\9a4ce54b42f918ea807298df07fd818e
+    projectPath: Library\Artifacts\9a\9a4ce54b42f918ea807298df07fd818e
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\9a\9aa2263e9bc03c27658e4f504024acb9
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\9a\9aa2263e9bc03c27658e4f504024acb9
+    projectPath: Library\Artifacts\9a\9aa2263e9bc03c27658e4f504024acb9
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\9b\9b96f5c3e9dfdec39bf868282b62a7c6
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\9b\9b96f5c3e9dfdec39bf868282b62a7c6
+    projectPath: Library\Artifacts\9b\9b96f5c3e9dfdec39bf868282b62a7c6
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\9c\9c026888eb2d1097233dfe28ea6ede6f
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\9c\9c026888eb2d1097233dfe28ea6ede6f
+    projectPath: Library\Artifacts\9c\9c026888eb2d1097233dfe28ea6ede6f
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\9d\9d8bf60432326f8446bab91920772ffb
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\9d\9d8bf60432326f8446bab91920772ffb
+    projectPath: Library\Artifacts\9d\9d8bf60432326f8446bab91920772ffb
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\9d\9dd3c24a4930ade9b7798b08e4fef0a9
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\9d\9dd3c24a4930ade9b7798b08e4fef0a9
+    projectPath: Library\Artifacts\9d\9dd3c24a4930ade9b7798b08e4fef0a9
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\9d\9df8002b7b7e93266d9fbb38887229d9
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\9d\9df8002b7b7e93266d9fbb38887229d9
+    projectPath: Library\Artifacts\9d\9df8002b7b7e93266d9fbb38887229d9
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\9d\9dfee462c2f4026dafd5c43e6c518692
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\9d\9dfee462c2f4026dafd5c43e6c518692
+    projectPath: Library\Artifacts\9d\9dfee462c2f4026dafd5c43e6c518692
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\9e\9edec9132c43162c8d244e9ff52fb73a
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\9e\9edec9132c43162c8d244e9ff52fb73a
+    projectPath: Library\Artifacts\9e\9edec9132c43162c8d244e9ff52fb73a
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\9f\9f22c9bef4f37a76055d4c69caf40b6e
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\9f\9f22c9bef4f37a76055d4c69caf40b6e
+    projectPath: Library\Artifacts\9f\9f22c9bef4f37a76055d4c69caf40b6e
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\a0\a0c5ef0986267e4e25f06a63c85b5db8
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\a0\a0c5ef0986267e4e25f06a63c85b5db8
+    projectPath: Library\Artifacts\a0\a0c5ef0986267e4e25f06a63c85b5db8
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\a0\a0d456110614322e99096d6f0cd25e59
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\a0\a0d456110614322e99096d6f0cd25e59
+    projectPath: Library\Artifacts\a0\a0d456110614322e99096d6f0cd25e59
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\a2\a26d97756f38d916d25e5d6ccf8f1ed0
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\a2\a26d97756f38d916d25e5d6ccf8f1ed0
+    projectPath: Library\Artifacts\a2\a26d97756f38d916d25e5d6ccf8f1ed0
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\a2\a2ece873c709d2ade27498c43d652aaf
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\a2\a2ece873c709d2ade27498c43d652aaf
+    projectPath: Library\Artifacts\a2\a2ece873c709d2ade27498c43d652aaf
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\a4\a4f009b114521bf507379e3a20996547
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\a4\a4f009b114521bf507379e3a20996547
+    projectPath: Library\Artifacts\a4\a4f009b114521bf507379e3a20996547
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\a5\a577699b9dd6ed3a2903aa1629e2bfb9
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\a5\a577699b9dd6ed3a2903aa1629e2bfb9
+    projectPath: Library\Artifacts\a5\a577699b9dd6ed3a2903aa1629e2bfb9
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\a6\a6946a1065783bc4c58dacbb617bc0a0
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\a6\a6946a1065783bc4c58dacbb617bc0a0
+    projectPath: Library\Artifacts\a6\a6946a1065783bc4c58dacbb617bc0a0
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\a7\a705e45c02fe5016887e5040c2f09b35
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\a7\a705e45c02fe5016887e5040c2f09b35
+    projectPath: Library\Artifacts\a7\a705e45c02fe5016887e5040c2f09b35
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\af\af38b098dbc9dd65b550b5ca39b29936
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\af\af38b098dbc9dd65b550b5ca39b29936
+    projectPath: Library\Artifacts\af\af38b098dbc9dd65b550b5ca39b29936
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\b0\b081cd0543e15b160785003b7c38f2ef
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\b0\b081cd0543e15b160785003b7c38f2ef
+    projectPath: Library\Artifacts\b0\b081cd0543e15b160785003b7c38f2ef
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\b4\b42e159d9a23dd8aedba643c2c2581c2
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\b4\b42e159d9a23dd8aedba643c2c2581c2
+    projectPath: Library\Artifacts\b4\b42e159d9a23dd8aedba643c2c2581c2
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\b6\b62c30e79b6f1a44ce65ac0d29686f55
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\b6\b62c30e79b6f1a44ce65ac0d29686f55
+    projectPath: Library\Artifacts\b6\b62c30e79b6f1a44ce65ac0d29686f55
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\b9\b98471c45589b278e00df4e9c503ede8
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\b9\b98471c45589b278e00df4e9c503ede8
+    projectPath: Library\Artifacts\b9\b98471c45589b278e00df4e9c503ede8
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\ba\ba4512ed99a9a10e05539f4bcfbe199b
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\ba\ba4512ed99a9a10e05539f4bcfbe199b
+    projectPath: Library\Artifacts\ba\ba4512ed99a9a10e05539f4bcfbe199b
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\ba\bafb399a9c0af75a0ae83aaf97ff6f3a
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\ba\bafb399a9c0af75a0ae83aaf97ff6f3a
+    projectPath: Library\Artifacts\ba\bafb399a9c0af75a0ae83aaf97ff6f3a
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\bb\bb7465ba290f342bce97638336e43cd4
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\bb\bb7465ba290f342bce97638336e43cd4
+    projectPath: Library\Artifacts\bb\bb7465ba290f342bce97638336e43cd4
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\bb\bbddf5a7c161d13b1626ddee73e572ba
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\bb\bbddf5a7c161d13b1626ddee73e572ba
+    projectPath: Library\Artifacts\bb\bbddf5a7c161d13b1626ddee73e572ba
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\bf\bfb8d83d62e78649e3f8188791220403
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\bf\bfb8d83d62e78649e3f8188791220403
+    projectPath: Library\Artifacts\bf\bfb8d83d62e78649e3f8188791220403
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\c0\c0cdd1402f783ea05435f69887097239
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\c0\c0cdd1402f783ea05435f69887097239
+    projectPath: Library\Artifacts\c0\c0cdd1402f783ea05435f69887097239
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\c3\c3528b0be048305d4e32f42b609e8d5e
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\c3\c3528b0be048305d4e32f42b609e8d5e
+    projectPath: Library\Artifacts\c3\c3528b0be048305d4e32f42b609e8d5e
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\c5\c580296b102b71e0b524fda614161248
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\c5\c580296b102b71e0b524fda614161248
+    projectPath: Library\Artifacts\c5\c580296b102b71e0b524fda614161248
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\c7\c7621b1daff1294021a694465c185bab
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\c7\c7621b1daff1294021a694465c185bab
+    projectPath: Library\Artifacts\c7\c7621b1daff1294021a694465c185bab
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\c8\c805c6a1efe4b26d283b4d8a161c3024
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\c8\c805c6a1efe4b26d283b4d8a161c3024
+    projectPath: Library\Artifacts\c8\c805c6a1efe4b26d283b4d8a161c3024
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\c8\c8fa7c5a7ca4acf00424ef423d6b97a4
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\c8\c8fa7c5a7ca4acf00424ef423d6b97a4
+    projectPath: Library\Artifacts\c8\c8fa7c5a7ca4acf00424ef423d6b97a4
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\c9\c9a2fe02295bba44ff86476e3de75975
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\c9\c9a2fe02295bba44ff86476e3de75975
+    projectPath: Library\Artifacts\c9\c9a2fe02295bba44ff86476e3de75975
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\cb\cb902987e178c20843863c01e0c99b15
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\cb\cb902987e178c20843863c01e0c99b15
+    projectPath: Library\Artifacts\cb\cb902987e178c20843863c01e0c99b15
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\cb\cbf1b57b9740ebc3158caa84eb541d20
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\cb\cbf1b57b9740ebc3158caa84eb541d20
+    projectPath: Library\Artifacts\cb\cbf1b57b9740ebc3158caa84eb541d20
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\ce\ce468aaa3bcf4835be48601ca8442908
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\ce\ce468aaa3bcf4835be48601ca8442908
+    projectPath: Library\Artifacts\ce\ce468aaa3bcf4835be48601ca8442908
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\d3\d3835dac852162c3eee735c79876a5cf
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\d3\d3835dac852162c3eee735c79876a5cf
+    projectPath: Library\Artifacts\d3\d3835dac852162c3eee735c79876a5cf
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\d3\d3bf84d00238e07974cb2e299a6aadbe
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\d3\d3bf84d00238e07974cb2e299a6aadbe
+    projectPath: Library\Artifacts\d3\d3bf84d00238e07974cb2e299a6aadbe
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\d4\d44e0a56d24bcca77e76d7ebdfcd67ea
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\d4\d44e0a56d24bcca77e76d7ebdfcd67ea
+    projectPath: Library\Artifacts\d4\d44e0a56d24bcca77e76d7ebdfcd67ea
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\d4\d4bb5e0818af78ddd317b7b36c4bfa4c
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\d4\d4bb5e0818af78ddd317b7b36c4bfa4c
+    projectPath: Library\Artifacts\d4\d4bb5e0818af78ddd317b7b36c4bfa4c
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\d8\d8324b58a25f19d287c7ddf84eecaca6
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\d8\d8324b58a25f19d287c7ddf84eecaca6
+    projectPath: Library\Artifacts\d8\d8324b58a25f19d287c7ddf84eecaca6
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\d8\d8b6aece4e512147a67620f92e65c15b
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\d8\d8b6aece4e512147a67620f92e65c15b
+    projectPath: Library\Artifacts\d8\d8b6aece4e512147a67620f92e65c15b
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\dc\dc9e42ff66e68d944c2bce474396af0e
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\dc\dc9e42ff66e68d944c2bce474396af0e
+    projectPath: Library\Artifacts\dc\dc9e42ff66e68d944c2bce474396af0e
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\dd\dd408b376c00a46a59185de36a109fbb
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\dd\dd408b376c00a46a59185de36a109fbb
+    projectPath: Library\Artifacts\dd\dd408b376c00a46a59185de36a109fbb
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\de\dea1f933d287787d0d4da8191502f3f5
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\de\dea1f933d287787d0d4da8191502f3f5
+    projectPath: Library\Artifacts\de\dea1f933d287787d0d4da8191502f3f5
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\df\df449bb861000d33100cf2bd5a60e0e5
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\df\df449bb861000d33100cf2bd5a60e0e5
+    projectPath: Library\Artifacts\df\df449bb861000d33100cf2bd5a60e0e5
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\df\df53822b08553a13ae754200aac196e0
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\df\df53822b08553a13ae754200aac196e0
+    projectPath: Library\Artifacts\df\df53822b08553a13ae754200aac196e0
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\df\df93f7d81b792f940a982ff0248ffc30
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\df\df93f7d81b792f940a982ff0248ffc30
+    projectPath: Library\Artifacts\df\df93f7d81b792f940a982ff0248ffc30
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\e0\e05fca192c882456e368f4ac3c6052fe
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\e0\e05fca192c882456e368f4ac3c6052fe
+    projectPath: Library\Artifacts\e0\e05fca192c882456e368f4ac3c6052fe
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\e3\e31ad3d2c85737b967fa4cba50d6ef80
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\e3\e31ad3d2c85737b967fa4cba50d6ef80
+    projectPath: Library\Artifacts\e3\e31ad3d2c85737b967fa4cba50d6ef80
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\e4\e47018f107b8b8b891e040016db2fe8f
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\e4\e47018f107b8b8b891e040016db2fe8f
+    projectPath: Library\Artifacts\e4\e47018f107b8b8b891e040016db2fe8f
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\e4\e4e70233fe9fb3dd7abb14f201df9643
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\e4\e4e70233fe9fb3dd7abb14f201df9643
+    projectPath: Library\Artifacts\e4\e4e70233fe9fb3dd7abb14f201df9643
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\e9\e9e08a126d145c8329ecf7ec50b493e8
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\e9\e9e08a126d145c8329ecf7ec50b493e8
+    projectPath: Library\Artifacts\e9\e9e08a126d145c8329ecf7ec50b493e8
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\ea\ea590da2fc5577fad91f5c0f99a9f578
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\ea\ea590da2fc5577fad91f5c0f99a9f578
+    projectPath: Library\Artifacts\ea\ea590da2fc5577fad91f5c0f99a9f578
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\ec\ec207232320ef1257bb6bfc4ec173bc8
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\ec\ec207232320ef1257bb6bfc4ec173bc8
+    projectPath: Library\Artifacts\ec\ec207232320ef1257bb6bfc4ec173bc8
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\ec\ec94cd4ccdae83837d93ccc1add823dc
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\ec\ec94cd4ccdae83837d93ccc1add823dc
+    projectPath: Library\Artifacts\ec\ec94cd4ccdae83837d93ccc1add823dc
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\ed\ed61f2865cbd921d15c07b3dada2f06f
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\ed\ed61f2865cbd921d15c07b3dada2f06f
+    projectPath: Library\Artifacts\ed\ed61f2865cbd921d15c07b3dada2f06f
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\ed\ed9f133a4a1fbd0ada2473e5223aa221
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\ed\ed9f133a4a1fbd0ada2473e5223aa221
+    projectPath: Library\Artifacts\ed\ed9f133a4a1fbd0ada2473e5223aa221
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\ef\ef852e8e048b3340285cb7d224c6fb03
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\ef\ef852e8e048b3340285cb7d224c6fb03
+    projectPath: Library\Artifacts\ef\ef852e8e048b3340285cb7d224c6fb03
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\f0\f02b3c81cb051ae253ea0085a3d95460
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\f0\f02b3c81cb051ae253ea0085a3d95460
+    projectPath: Library\Artifacts\f0\f02b3c81cb051ae253ea0085a3d95460
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\f1\f1d23d2f7caa378d5c6d79a0c0a9f3d8
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\f1\f1d23d2f7caa378d5c6d79a0c0a9f3d8
+    projectPath: Library\Artifacts\f1\f1d23d2f7caa378d5c6d79a0c0a9f3d8
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\f5\f5ac9e19e72128f95f23d0c5d67d4ce4
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\f5\f5ac9e19e72128f95f23d0c5d67d4ce4
+    projectPath: Library\Artifacts\f5\f5ac9e19e72128f95f23d0c5d67d4ce4
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\f6\f6e0b5e859508d47cbd864341c2f5023
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\f6\f6e0b5e859508d47cbd864341c2f5023
+    projectPath: Library\Artifacts\f6\f6e0b5e859508d47cbd864341c2f5023
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\fa\fa0f743853c0c059245623915ec6d153
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\fa\fa0f743853c0c059245623915ec6d153
+    projectPath: Library\Artifacts\fa\fa0f743853c0c059245623915ec6d153
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\fa\fa3e9bb92f6046363bf0e3665105c112
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\fa\fa3e9bb92f6046363bf0e3665105c112
+    projectPath: Library\Artifacts\fa\fa3e9bb92f6046363bf0e3665105c112
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\fd\fdd01a1c50b688c50d0e841e37766feb
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\fd\fdd01a1c50b688c50d0e841e37766feb
+    projectPath: Library\Artifacts\fd\fdd01a1c50b688c50d0e841e37766feb
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\fd\fdf248b15796e1ff677400a98f808d17
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\fd\fdf248b15796e1ff677400a98f808d17
+    projectPath: Library\Artifacts\fd\fdf248b15796e1ff677400a98f808d17
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\fe\fe2fb124056342e1888adedc8d0fea3a
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\fe\fe2fb124056342e1888adedc8d0fea3a
+    projectPath: Library\Artifacts\fe\fe2fb124056342e1888adedc8d0fea3a
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\fe\fe50d6106377f62373637cf524ea284e
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\fe\fe50d6106377f62373637cf524ea284e
+    projectPath: Library\Artifacts\fe\fe50d6106377f62373637cf524ea284e
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Artifacts\fe\fe8ace85d90ced9c3e4fce23e4ff00f0
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Artifacts\fe\fe8ace85d90ced9c3e4fce23e4ff00f0
+    projectPath: Library\Artifacts\fe\fe8ace85d90ced9c3e4fce23e4ff00f0
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\Collab\Cache\Window.yml
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\Collab\Cache\Window.yml
+    projectPath: Library\Collab\Cache\Window.yml
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\CurrentLayout-default.dwlt
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\CurrentLayout-default.dwlt
+    projectPath: Library\CurrentLayout-default.dwlt
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: PreliminaryProjectDJC\Library\EditorInstance.json
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\EditorInstance.json
+    projectPath: Library\EditorInstance.json
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\expandedItems
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\expandedItems
+    projectPath: Library\expandedItems
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: PreliminaryProjectDJC\Library\gfu\cache\branches.yaml
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\gfu\cache\branches.yaml
+    projectPath: Library\gfu\cache\branches.yaml
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\gfu\cache\gitlocks.yaml
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\gfu\cache\gitlocks.yaml
+    projectPath: Library\gfu\cache\gitlocks.yaml
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\gfu\cache\gitlog.yaml
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\gfu\cache\gitlog.yaml
+    projectPath: Library\gfu\cache\gitlog.yaml
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\gfu\cache\gitstatusentries.yaml
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\gfu\cache\gitstatusentries.yaml
+    projectPath: Library\gfu\cache\gitstatusentries.yaml
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\gfu\cache\gittrackingstatus.yaml
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\gfu\cache\gittrackingstatus.yaml
+    projectPath: Library\gfu\cache\gittrackingstatus.yaml
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\gfu\cache\gituser.yaml
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\gfu\cache\gituser.yaml
+    projectPath: Library\gfu\cache\gituser.yaml
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\gfu\cache\repoinfo.yaml
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\gfu\cache\repoinfo.yaml
+    projectPath: Library\gfu\cache\repoinfo.yaml
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\SceneVisibilityState.asset
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\SceneVisibilityState.asset
+    projectPath: Library\SceneVisibilityState.asset
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: PreliminaryProjectDJC\Library\ScriptAssemblies\Assembly-CSharp.dll
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\ScriptAssemblies\Assembly-CSharp.dll
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: PreliminaryProjectDJC\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
+    projectPath: Library\ScriptAssemblies\Assembly-CSharp-Editor-firstpass.dll
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\SourceAssetDB
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\SourceAssetDB
+    projectPath: Library\SourceAssetDB
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: PreliminaryProjectDJC\Library\StateCache\PrefabStageHierarchy\42\421fc8216b98ec2503672478c19ad582.json
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\StateCache\PrefabStageHierarchy\42\421fc8216b98ec2503672478c19ad582.json
+    projectPath: Library\StateCache\PrefabStageHierarchy\42\421fc8216b98ec2503672478c19ad582.json
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\StateCache\PrefabStageHierarchy\9b\9be57e3c467cf6e99fceeee5f1945f44.json
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\StateCache\PrefabStageHierarchy\9b\9be57e3c467cf6e99fceeee5f1945f44.json
+    projectPath: Library\StateCache\PrefabStageHierarchy\9b\9be57e3c467cf6e99fceeee5f1945f44.json
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\StateCache\PrefabStageHierarchy\d2\d2cfe451fdc18af2f0089f8960bdfbb2.json
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\StateCache\PrefabStageHierarchy\d2\d2cfe451fdc18af2f0089f8960bdfbb2.json
+    projectPath: Library\StateCache\PrefabStageHierarchy\d2\d2cfe451fdc18af2f0089f8960bdfbb2.json
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\StateCache\SceneView\2f\2ff185a3719b02a4fc0486eac2a8d167.json
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\StateCache\SceneView\2f\2ff185a3719b02a4fc0486eac2a8d167.json
+    projectPath: Library\StateCache\SceneView\2f\2ff185a3719b02a4fc0486eac2a8d167.json
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Library\StateCache\SceneView\c5\c51c5175e67ea88fd46af831454f691f.json
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\StateCache\SceneView\c5\c51c5175e67ea88fd46af831454f691f.json
+    projectPath: Library\StateCache\SceneView\c5\c51c5175e67ea88fd46af831454f691f.json
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: PreliminaryProjectDJC\Library\StateCache\SceneView\f0\f01dc1b0d5bcfc09542ff8127a91b065.json
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Library\StateCache\SceneView\f0\f01dc1b0d5bcfc09542ff8127a91b065.json
+    projectPath: Library\StateCache\SceneView\f0\f01dc1b0d5bcfc09542ff8127a91b065.json
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Logs\ApiUpdaterCheck.txt
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Logs\ApiUpdaterCheck.txt
+    projectPath: Logs\ApiUpdaterCheck.txt
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: PreliminaryProjectDJC\Logs\AssetImportWorker0-prev.log
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Logs\AssetImportWorker0-prev.log
+    projectPath: Logs\AssetImportWorker0-prev.log
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\Assembly-CSharp.dll.hash
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\Assembly-CSharp.dll.hash
+    projectPath: Temp\Assembly-CSharp.dll.hash
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\Assembly-CSharp-Editor-firstpass.dll.hash
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\Assembly-CSharp-Editor-firstpass.dll.hash
+    projectPath: Temp\Assembly-CSharp-Editor-firstpass.dll.hash
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\CompilationLog.txt
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\CompilationLog.txt
+    projectPath: Temp\CompilationLog.txt
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\PsdPlugin.dll.hash
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\PsdPlugin.dll.hash
+    projectPath: Temp\PsdPlugin.dll.hash
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\Unity.2D.Animation.Editor.dll.hash
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\Unity.2D.Animation.Editor.dll.hash
+    projectPath: Temp\Unity.2D.Animation.Editor.dll.hash
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\Unity.2D.Animation.Runtime.dll.hash
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\Unity.2D.Animation.Runtime.dll.hash
+    projectPath: Temp\Unity.2D.Animation.Runtime.dll.hash
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\Unity.2D.Animation.Triangle.Runtime.dll.hash
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\Unity.2D.Animation.Triangle.Runtime.dll.hash
+    projectPath: Temp\Unity.2D.Animation.Triangle.Runtime.dll.hash
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\Unity.2D.Common.Editor.dll.hash
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\Unity.2D.Common.Editor.dll.hash
+    projectPath: Temp\Unity.2D.Common.Editor.dll.hash
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\Unity.2D.Common.Runtime.dll.hash
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\Unity.2D.Common.Runtime.dll.hash
+    projectPath: Temp\Unity.2D.Common.Runtime.dll.hash
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\Unity.2D.IK.Editor.dll.hash
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\Unity.2D.IK.Editor.dll.hash
+    projectPath: Temp\Unity.2D.IK.Editor.dll.hash
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\Unity.2D.IK.Runtime.dll.hash
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\Unity.2D.IK.Runtime.dll.hash
+    projectPath: Temp\Unity.2D.IK.Runtime.dll.hash
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\Unity.2D.Path.Editor.dll.hash
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\Unity.2D.Path.Editor.dll.hash
+    projectPath: Temp\Unity.2D.Path.Editor.dll.hash
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\Unity.2D.PixelPerfect.dll.hash
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\Unity.2D.PixelPerfect.dll.hash
+    projectPath: Temp\Unity.2D.PixelPerfect.dll.hash
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\Unity.2D.PixelPerfect.Editor.dll.hash
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\Unity.2D.PixelPerfect.Editor.dll.hash
+    projectPath: Temp\Unity.2D.PixelPerfect.Editor.dll.hash
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\Unity.2D.Psdimporter.Editor.dll.hash
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\Unity.2D.Psdimporter.Editor.dll.hash
+    projectPath: Temp\Unity.2D.Psdimporter.Editor.dll.hash
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\Unity.2D.Sprite.Editor.dll.hash
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\Unity.2D.Sprite.Editor.dll.hash
+    projectPath: Temp\Unity.2D.Sprite.Editor.dll.hash
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\Unity.2D.SpriteShape.Editor.dll.hash
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\Unity.2D.SpriteShape.Editor.dll.hash
+    projectPath: Temp\Unity.2D.SpriteShape.Editor.dll.hash
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\Unity.2D.SpriteShape.Runtime.dll.hash
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\Unity.2D.SpriteShape.Runtime.dll.hash
+    projectPath: Temp\Unity.2D.SpriteShape.Runtime.dll.hash
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\Unity.2D.Tilemap.Editor.dll.hash
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\Unity.2D.Tilemap.Editor.dll.hash
+    projectPath: Temp\Unity.2D.Tilemap.Editor.dll.hash
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\Unity.CollabProxy.Editor.dll.hash
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\Unity.CollabProxy.Editor.dll.hash
+    projectPath: Temp\Unity.CollabProxy.Editor.dll.hash
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\Unity.InternalAPIEditorBridge.001.dll.hash
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\Unity.InternalAPIEditorBridge.001.dll.hash
+    projectPath: Temp\Unity.InternalAPIEditorBridge.001.dll.hash
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\Unity.InternalAPIEngineBridge.001.dll.hash
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\Unity.InternalAPIEngineBridge.001.dll.hash
+    projectPath: Temp\Unity.InternalAPIEngineBridge.001.dll.hash
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\Unity.Mathematics.dll.hash
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\Unity.Mathematics.dll.hash
+    projectPath: Temp\Unity.Mathematics.dll.hash
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\Unity.Mathematics.Editor.dll.hash
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\Unity.Mathematics.Editor.dll.hash
+    projectPath: Temp\Unity.Mathematics.Editor.dll.hash
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\Unity.Rider.Editor.dll.hash
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\Unity.Rider.Editor.dll.hash
+    projectPath: Temp\Unity.Rider.Editor.dll.hash
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\Unity.TextMeshPro.dll.hash
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\Unity.TextMeshPro.dll.hash
+    projectPath: Temp\Unity.TextMeshPro.dll.hash
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\Unity.TextMeshPro.Editor.dll.hash
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\Unity.TextMeshPro.Editor.dll.hash
+    projectPath: Temp\Unity.TextMeshPro.Editor.dll.hash
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\Unity.Timeline.dll.hash
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\Unity.Timeline.dll.hash
+    projectPath: Temp\Unity.Timeline.dll.hash
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\Unity.Timeline.Editor.dll.hash
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\Unity.Timeline.Editor.dll.hash
+    projectPath: Temp\Unity.Timeline.Editor.dll.hash
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\Unity.VisualStudio.Editor.dll.hash
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\Unity.VisualStudio.Editor.dll.hash
+    projectPath: Temp\Unity.VisualStudio.Editor.dll.hash
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\Unity.VSCode.Editor.dll.hash
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\Unity.VSCode.Editor.dll.hash
+    projectPath: Temp\Unity.VSCode.Editor.dll.hash
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\UnityEditor.TestRunner.dll.hash
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\UnityEditor.TestRunner.dll.hash
+    projectPath: Temp\UnityEditor.TestRunner.dll.hash
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\UnityEditor.UI.dll.hash
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\UnityEditor.UI.dll.hash
+    projectPath: Temp\UnityEditor.UI.dll.hash
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\UnityEngine.TestRunner.dll.hash
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\UnityEngine.TestRunner.dll.hash
+    projectPath: Temp\UnityEngine.TestRunner.dll.hash
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\UnityEngine.UI.dll.hash
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\UnityEngine.UI.dll.hash
+    projectPath: Temp\UnityEngine.UI.dll.hash
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\UnityLockfile
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\UnityLockfile
+    projectPath: Temp\UnityLockfile
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\UnityTempFile-0115c07790e1ec64bb4c5ea03ffdf5e8
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\UnityTempFile-0115c07790e1ec64bb4c5ea03ffdf5e8
+    projectPath: Temp\UnityTempFile-0115c07790e1ec64bb4c5ea03ffdf5e8
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\UnityTempFile-05a332be36549bc429f6c3e6bf4c6e39
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\UnityTempFile-05a332be36549bc429f6c3e6bf4c6e39
+    projectPath: Temp\UnityTempFile-05a332be36549bc429f6c3e6bf4c6e39
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\UnityTempFile-0c347756e320d6b40b06c0946d25d859
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\UnityTempFile-0c347756e320d6b40b06c0946d25d859
+    projectPath: Temp\UnityTempFile-0c347756e320d6b40b06c0946d25d859
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\UnityTempFile-1162cbbc948b6ea4fa396563e8ff245c
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\UnityTempFile-1162cbbc948b6ea4fa396563e8ff245c
+    projectPath: Temp\UnityTempFile-1162cbbc948b6ea4fa396563e8ff245c
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\UnityTempFile-12b22437e5926a94fb8d23b6d05b5c73
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\UnityTempFile-12b22437e5926a94fb8d23b6d05b5c73
+    projectPath: Temp\UnityTempFile-12b22437e5926a94fb8d23b6d05b5c73
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\UnityTempFile-19611d17f257fa147982f646b7f2e1d4
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\UnityTempFile-19611d17f257fa147982f646b7f2e1d4
+    projectPath: Temp\UnityTempFile-19611d17f257fa147982f646b7f2e1d4
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\UnityTempFile-225d8b37ef2feb743a2c0adca9dff927
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\UnityTempFile-225d8b37ef2feb743a2c0adca9dff927
+    projectPath: Temp\UnityTempFile-225d8b37ef2feb743a2c0adca9dff927
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\UnityTempFile-23affd4455594ef498bb6b0cd5d1a80a
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\UnityTempFile-23affd4455594ef498bb6b0cd5d1a80a
+    projectPath: Temp\UnityTempFile-23affd4455594ef498bb6b0cd5d1a80a
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\UnityTempFile-2b7410a704b5cc04c946bfb1b27f1a8d
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\UnityTempFile-2b7410a704b5cc04c946bfb1b27f1a8d
+    projectPath: Temp\UnityTempFile-2b7410a704b5cc04c946bfb1b27f1a8d
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\UnityTempFile-3b033ec6870f44446966fb2775dd285c
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\UnityTempFile-3b033ec6870f44446966fb2775dd285c
+    projectPath: Temp\UnityTempFile-3b033ec6870f44446966fb2775dd285c
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\UnityTempFile-3bd17da6df2a43c48b33cb663b8bafd6
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\UnityTempFile-3bd17da6df2a43c48b33cb663b8bafd6
+    projectPath: Temp\UnityTempFile-3bd17da6df2a43c48b33cb663b8bafd6
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\UnityTempFile-3f1603f8cea3b594eba6f4ad89b172e6
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\UnityTempFile-3f1603f8cea3b594eba6f4ad89b172e6
+    projectPath: Temp\UnityTempFile-3f1603f8cea3b594eba6f4ad89b172e6
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\UnityTempFile-43c23de1877a37043a273dca26f0af7d
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\UnityTempFile-43c23de1877a37043a273dca26f0af7d
+    projectPath: Temp\UnityTempFile-43c23de1877a37043a273dca26f0af7d
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\UnityTempFile-5375a3a8d0752014a8a5087019430b92
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\UnityTempFile-5375a3a8d0752014a8a5087019430b92
+    projectPath: Temp\UnityTempFile-5375a3a8d0752014a8a5087019430b92
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\UnityTempFile-5590eb795d370454ebfe31513343b7d2
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\UnityTempFile-5590eb795d370454ebfe31513343b7d2
+    projectPath: Temp\UnityTempFile-5590eb795d370454ebfe31513343b7d2
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\UnityTempFile-564d9284c12e13c45b775d6ed54e7b68
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\UnityTempFile-564d9284c12e13c45b775d6ed54e7b68
+    projectPath: Temp\UnityTempFile-564d9284c12e13c45b775d6ed54e7b68
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\UnityTempFile-6712ecfbc2691a6498d6f5d0bceb2b45
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\UnityTempFile-6712ecfbc2691a6498d6f5d0bceb2b45
+    projectPath: Temp\UnityTempFile-6712ecfbc2691a6498d6f5d0bceb2b45
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\UnityTempFile-68d6f3afccff2a2478391d3d698f0f9b
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\UnityTempFile-68d6f3afccff2a2478391d3d698f0f9b
+    projectPath: Temp\UnityTempFile-68d6f3afccff2a2478391d3d698f0f9b
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\UnityTempFile-6ce40351aa485c4419ea4debfd90b13f
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\UnityTempFile-6ce40351aa485c4419ea4debfd90b13f
+    projectPath: Temp\UnityTempFile-6ce40351aa485c4419ea4debfd90b13f
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\UnityTempFile-7576ea6a69175474689e4c2f34bd397c
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\UnityTempFile-7576ea6a69175474689e4c2f34bd397c
+    projectPath: Temp\UnityTempFile-7576ea6a69175474689e4c2f34bd397c
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\UnityTempFile-75f4932ec492c5641bd43b0df41ac3d9
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\UnityTempFile-75f4932ec492c5641bd43b0df41ac3d9
+    projectPath: Temp\UnityTempFile-75f4932ec492c5641bd43b0df41ac3d9
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\UnityTempFile-7c42fa9a7c92045459134f618a96e53b
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\UnityTempFile-7c42fa9a7c92045459134f618a96e53b
+    projectPath: Temp\UnityTempFile-7c42fa9a7c92045459134f618a96e53b
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\UnityTempFile-8020cbe1d5191a1459c8da1dd6ac949f
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\UnityTempFile-8020cbe1d5191a1459c8da1dd6ac949f
+    projectPath: Temp\UnityTempFile-8020cbe1d5191a1459c8da1dd6ac949f
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\UnityTempFile-9a8ea7f374652f0469b97ceba860fd18
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\UnityTempFile-9a8ea7f374652f0469b97ceba860fd18
+    projectPath: Temp\UnityTempFile-9a8ea7f374652f0469b97ceba860fd18
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\UnityTempFile-9f82846f751cf0840af61fbaa12d3386
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\UnityTempFile-9f82846f751cf0840af61fbaa12d3386
+    projectPath: Temp\UnityTempFile-9f82846f751cf0840af61fbaa12d3386
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\UnityTempFile-a01a2fdf6f27651409b1826e8914d66e
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\UnityTempFile-a01a2fdf6f27651409b1826e8914d66e
+    projectPath: Temp\UnityTempFile-a01a2fdf6f27651409b1826e8914d66e
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\UnityTempFile-c7394cdb6828dcd438dcaa0744f9df25
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\UnityTempFile-c7394cdb6828dcd438dcaa0744f9df25
+    projectPath: Temp\UnityTempFile-c7394cdb6828dcd438dcaa0744f9df25
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\UnityTempFile-c77c617d21fae204b8d8ab0b0792ba31
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\UnityTempFile-c77c617d21fae204b8d8ab0b0792ba31
+    projectPath: Temp\UnityTempFile-c77c617d21fae204b8d8ab0b0792ba31
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\UnityTempFile-cbe7120613a3a49408a86a2ad4db5747
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\UnityTempFile-cbe7120613a3a49408a86a2ad4db5747
+    projectPath: Temp\UnityTempFile-cbe7120613a3a49408a86a2ad4db5747
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\UnityTempFile-ce1556b3bf850e94da9357877cf3994d
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\UnityTempFile-ce1556b3bf850e94da9357877cf3994d
+    projectPath: Temp\UnityTempFile-ce1556b3bf850e94da9357877cf3994d
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\UnityTempFile-d694215c1e3c01f409ca67604da7ebdd
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\UnityTempFile-d694215c1e3c01f409ca67604da7ebdd
+    projectPath: Temp\UnityTempFile-d694215c1e3c01f409ca67604da7ebdd
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\UnityTempFile-d7bcf07496601f64f9207250d5760786
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\UnityTempFile-d7bcf07496601f64f9207250d5760786
+    projectPath: Temp\UnityTempFile-d7bcf07496601f64f9207250d5760786
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\UnityTempFile-d8395f4b5faf5404bbe8b0b44caa634d
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\UnityTempFile-d8395f4b5faf5404bbe8b0b44caa634d
+    projectPath: Temp\UnityTempFile-d8395f4b5faf5404bbe8b0b44caa634d
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\UnityTempFile-f3481c7d934ff8242b9906d530ed2e5c
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\UnityTempFile-f3481c7d934ff8242b9906d530ed2e5c
+    projectPath: Temp\UnityTempFile-f3481c7d934ff8242b9906d530ed2e5c
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
+  - path: PreliminaryProjectDJC\Temp\workerlic
+    fullPath: C:\Users\danic\Desktop\DJCO 1\DJCPP\PreliminaryProjectDJC\Temp\workerlic
+    projectPath: Temp\workerlic
+    originalPath: 
+    indexStatus: 1
+    workTreeStatus: 1
