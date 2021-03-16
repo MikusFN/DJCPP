@@ -217,6 +217,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1227272424001357694, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
+        type: 3}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 519420028}
     - target: {fileID: 1969252845611881422, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
         type: 3}
       propertyPath: m_Color.b
@@ -604,28 +609,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3, type: 3}
---- !u!1 &1969252846215296288 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7863373990289539054, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
-    type: 3}
-  m_PrefabInstance: {fileID: 1969252846215296287}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1969252846215296289
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1969252846215296288}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 273eae959863dec44ae96cf1e1c00ffd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spritePicksPrefab:
-  - {fileID: 2363797982525288867, guid: b2f1ea1850e6e4a4da19e12ed34848fc, type: 3}
-  - {fileID: 1618093637480710077, guid: 81beae4bf3e12544eaedc98dcf047962, type: 3}
-  mainCamera: {fileID: 519420028}
 --- !u!1001 &7345205602467729178
 PrefabInstance:
   m_ObjectHideFlags: 0
