@@ -691,6 +691,11 @@ PrefabInstance:
       propertyPath: m_Color.a
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6077099494420836991, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
+        type: 3}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 519420028}
     - target: {fileID: 7863373990289539054, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
         type: 3}
       propertyPath: m_Name
