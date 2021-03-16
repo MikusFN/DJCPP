@@ -18,10 +18,10 @@ public class PickablesManager : MonoBehaviour
 
         for (int i = 0; i < numPick; i++)
         {
-            int rn = Random.Range(0, 2);
+            int rn = 4;// Random.Range(0, 6);
             if (spritePicksPrefab.Length > 0)
             {
-                GameObject go = Instantiate(spritePicksPrefab[rn], this.transform);
+                GameObject go = Instantiate(spritePicksPrefab[1], this.transform);
                 go.transform.position = FindNewPosition();
                 go.GetComponent<Pickable>().PpType = (PPUpType)rn;
                 //go.GetComponent<GameObstacle>().Damage *= (int)(go.GetComponent<SpriteRenderer>().bounds.size.x * go.GetComponent<SpriteRenderer>().bounds.size.y);

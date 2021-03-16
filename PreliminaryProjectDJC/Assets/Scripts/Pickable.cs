@@ -9,7 +9,8 @@ public enum PPUpType
     ShieldTime,
     Weapon,
     Teleport,
-    destroyer
+    destroyer,
+    none
 }
 
 public class Pickable : MonoBehaviour
@@ -17,18 +18,19 @@ public class Pickable : MonoBehaviour
     PPUpType ppType;
     public PPUpType PpType { get => ppType; set => ppType = value; }
 
-    public Pickable(bool powerUP)
-    {
-        if (powerUP)
-        {
-            PpType = (PPUpType)Random.Range(0, 2);
-            //PpType = (PPUpType)Random.Range(0, 4);
-        }
-        else
-        {
-            PpType = (PPUpType)Random.Range(4, 6);
-        }
-    }
+    //public Pickable(bool powerUP)
+    //{
+    //    if (powerUP)
+    //    {
+    //        PpType = (PPUpType)Random.Range(0, 2);
+    //        //PpType = (PPUpType)Random.Range(0, 4);
+    //    }
+    //    else
+    //    {
+    //        //PpType = (PPUpType)Random.Range(4, 6);
+    //        PpType = (PPUpType)4;
+    //    }
+    //}
 
 
     private void OnTriggerEnter2D(Collider2D collision)

@@ -13,6 +13,7 @@ public class WeaponBehaviour : MonoBehaviour
     private float maxRateofFire = 0.3f;
     private int shotsFire = 1;
     private int maxShotsFire = 5;
+    private PPUpType sidePP = PPUpType.none;
 
     // Start is called before the first frame update
     void Start()
@@ -25,8 +26,7 @@ public class WeaponBehaviour : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Mouse0))
         {
-            Shoot();
-            if (currentStatePickable.Count > 0 )
+            if (currentStatePickable.Count > 0)
             {
                 foreach (var item in currentStatePickable)
                 {
@@ -34,6 +34,19 @@ public class WeaponBehaviour : MonoBehaviour
                 }
                 currentStatePickable.Clear();
             }
+            Shoot();
+        }
+        if (Input.GetKey(KeyCode.Mouse1))
+        {
+            if (currentStatePickable.Count > 0)
+            {
+                foreach (var item in currentStatePickable)
+                {
+                    UsePPUP(item.PpType);
+                }
+                currentStatePickable.Clear();
+            }
+            ShootPowerWeapon();
         }
     }
 
@@ -41,13 +54,40 @@ public class WeaponBehaviour : MonoBehaviour
     {
         if (RateFire())
         {
-             
+
             Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
             if (shotsFire > 1)
             {
                 Instantiate(bulletPrefab, firePoint.position - new Vector3(.1f, 0, 0), firePoint.rotation);
                 Instantiate(bulletPrefab, firePoint.position + new Vector3(.1f, 0, 0), firePoint.rotation);
             }
+        }
+    }
+
+    void ShootPowerWeapon()
+    {
+        switch (sidePP)
+        {
+            case PPUpType.Teleport:
+                //set new player position             
+                PlayerMovement pm;
+                TryGetComponent<PlayerMovement>(out pm);
+                Transform player = GetComponentInParent<Transform>();
+                if (player)
+                {
+                    player.position = pm.mainCam.ScreenToWorldPoint(Input.mousePosition) + new Vector3(0, 0, 10);
+                }
+                //instantiate the explosion and check for reached obstacles and enemies
+                sidePP = PPUpType.none; //or a cold down timer 
+                break;
+            case PPUpType.destroyer:
+                sidePP = PPUpType.none; //or a cold down timer 
+                break;
+            case PPUpType.none:
+                //Put a sound or something
+                break;
+            default:
+                break;
         }
     }
 
@@ -86,13 +126,15 @@ public class WeaponBehaviour : MonoBehaviour
                 {
                     shotsFire += 2;
                 }
-                    break;
+                break;
             case PPUpType.Weapon:
                 //Change weapon (create weopen class)
                 break;
             case PPUpType.Teleport:
+                sidePP = PPUpType.Teleport;
                 break;
             case PPUpType.destroyer:
+                sidePP = PPUpType.destroyer;
                 break;
             default:
                 break;
