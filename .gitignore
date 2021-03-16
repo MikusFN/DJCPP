@@ -74,3 +74,4 @@ PreliminaryProjectDJC/Library/ArtifactDB
 PreliminaryProjectDJC/Library/SourceAssetDB
 *.json
 *.asset
+*.json
