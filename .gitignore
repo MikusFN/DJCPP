@@ -72,3 +72,5 @@ crashlytics-build.properties
 *.log
 PreliminaryProjectDJC/Library/ArtifactDB
 PreliminaryProjectDJC/Library/SourceAssetDB
+*.json
+*.asset
