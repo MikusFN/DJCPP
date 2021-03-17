@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    public float speed = 20f;
+    public float speed = 10f;
     public int damage = 40;
     public Rigidbody2D rb;
+
 
     private int currentDamage = 10;
     //public GameObject impactEffect;
@@ -17,7 +18,8 @@ public class Projectile : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        rb.velocity = transform.up * speed;
+
+        //rb.velocity = (GetComponentInParent<WeaponBehaviour>().GetComponentInParent<Transform>().position-transform.position).normalized *speed;
     }
 
     private void Update()
@@ -39,8 +41,8 @@ public class Projectile : MonoBehaviour
         {
             obstacle.takeDamage(currentDamage);
         }
-        
-        if (hitInfo.name != "Player")
+
+        if (hitInfo.name != "Player" && hitInfo.tag != this.tag)
             Destroy(gameObject);
     }
 

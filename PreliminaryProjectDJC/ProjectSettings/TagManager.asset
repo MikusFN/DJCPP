@@ -7,6 +7,7 @@ TagManager:
   - Sprite
   - Obstacle
   - PPUP
+  - Projectile
   layers:
   - Default
   - TransparentFX

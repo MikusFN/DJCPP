@@ -336,6 +336,11 @@ PrefabInstance:
       propertyPath: MainCamera
       value: 
       objectReference: {fileID: 519420028}
+    - target: {fileID: 1969252845611881423, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
+        type: 3}
+      propertyPath: effectStrenght
+      value: 0.88
+      objectReference: {fileID: 0}
     - target: {fileID: 1969252845611881424, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -356,6 +361,11 @@ PrefabInstance:
       propertyPath: MainCamera
       value: 
       objectReference: {fileID: 519420028}
+    - target: {fileID: 1969252845663296327, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
+        type: 3}
+      propertyPath: effectStrenght
+      value: 0.95
+      objectReference: {fileID: 0}
     - target: {fileID: 1969252845719430992, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
         type: 3}
       propertyPath: m_Enabled
@@ -376,6 +386,11 @@ PrefabInstance:
       propertyPath: MainCamera
       value: 
       objectReference: {fileID: 519420028}
+    - target: {fileID: 1969252845986774112, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
+        type: 3}
+      propertyPath: effectStrenght
+      value: 0.9
+      objectReference: {fileID: 0}
     - target: {fileID: 1969252845986774113, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -399,17 +414,17 @@ PrefabInstance:
     - target: {fileID: 1969252846273295055, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
         type: 3}
       propertyPath: m_Color.b
-      value: 0.26286048
+      value: 0.13850573
       objectReference: {fileID: 0}
     - target: {fileID: 1969252846273295055, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
         type: 3}
       propertyPath: m_Color.g
-      value: 0.26286048
+      value: 0.08788716
       objectReference: {fileID: 0}
     - target: {fileID: 1969252846273295055, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
         type: 3}
       propertyPath: m_Color.r
-      value: 0.31132078
+      value: 0.23584908
       objectReference: {fileID: 0}
     - target: {fileID: 1969252846273295056, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
         type: 3}
@@ -421,6 +436,11 @@ PrefabInstance:
       propertyPath: MainCamera
       value: 
       objectReference: {fileID: 519420028}
+    - target: {fileID: 1969252846273295056, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
+        type: 3}
+      propertyPath: effectStrenght
+      value: 0.85
+      objectReference: {fileID: 0}
     - target: {fileID: 1969252846273295057, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -506,6 +526,11 @@ PrefabInstance:
       propertyPath: MainCamera
       value: 
       objectReference: {fileID: 519420028}
+    - target: {fileID: 1969252846309234031, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
+        type: 3}
+      propertyPath: effectStrenght
+      value: 0.95
+      objectReference: {fileID: 0}
     - target: {fileID: 1969252846309234032, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -514,17 +539,17 @@ PrefabInstance:
     - target: {fileID: 1969252846419204998, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
         type: 3}
       propertyPath: m_Color.b
-      value: 0.26286048
+      value: 0.13850573
       objectReference: {fileID: 0}
     - target: {fileID: 1969252846419204998, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
         type: 3}
       propertyPath: m_Color.g
-      value: 0.26286048
+      value: 0.08788716
       objectReference: {fileID: 0}
     - target: {fileID: 1969252846419204998, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
         type: 3}
       propertyPath: m_Color.r
-      value: 0.31132078
+      value: 0.23584908
       objectReference: {fileID: 0}
     - target: {fileID: 1969252846419204999, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
         type: 3}
@@ -536,6 +561,11 @@ PrefabInstance:
       propertyPath: MainCamera
       value: 
       objectReference: {fileID: 519420028}
+    - target: {fileID: 1969252846419204999, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
+        type: 3}
+      propertyPath: effectStrenght
+      value: 0.85
+      objectReference: {fileID: 0}
     - target: {fileID: 1969252846419205000, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -566,6 +596,11 @@ PrefabInstance:
       propertyPath: MainCamera
       value: 
       objectReference: {fileID: 519420028}
+    - target: {fileID: 1969252846444148091, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
+        type: 3}
+      propertyPath: effectStrenght
+      value: 0.95
+      objectReference: {fileID: 0}
     - target: {fileID: 1969252846444148092, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -591,6 +626,11 @@ PrefabInstance:
       propertyPath: MainCamera
       value: 
       objectReference: {fileID: 519420028}
+    - target: {fileID: 1969252846992785160, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
+        type: 3}
+      propertyPath: effectStrenght
+      value: 0.95
+      objectReference: {fileID: 0}
     - target: {fileID: 1969252847125849290, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
         type: 3}
       propertyPath: m_Color.b
@@ -616,6 +656,11 @@ PrefabInstance:
       propertyPath: MainCamera
       value: 
       objectReference: {fileID: 519420028}
+    - target: {fileID: 1969252847125849291, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
+        type: 3}
+      propertyPath: effectStrenght
+      value: 0.88
+      objectReference: {fileID: 0}
     - target: {fileID: 1969252847125849292, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -646,6 +691,11 @@ PrefabInstance:
       propertyPath: MainCamera
       value: 
       objectReference: {fileID: 519420028}
+    - target: {fileID: 1969252847225184173, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
+        type: 3}
+      propertyPath: effectStrenght
+      value: 0.9
+      objectReference: {fileID: 0}
     - target: {fileID: 1969252847225184174, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -676,11 +726,26 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 3371311055171120652, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5384785882944478906, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5610784735727761639, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
         type: 3}
       propertyPath: mainCamera
       value: 
       objectReference: {fileID: 519420028}
+    - target: {fileID: 5610784735727761639, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
+        type: 3}
+      propertyPath: numObstacles
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 5619576485807061783, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
         type: 3}
       propertyPath: MainCamera
@@ -721,6 +786,11 @@ PrefabInstance:
       propertyPath: EnemiesPrefab.Array.data[1]
       value: 
       objectReference: {fileID: 1584905200}
+    - target: {fileID: 8696881774442358362, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3, type: 3}
 --- !u!1001 &7345205602467729178
@@ -730,11 +800,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7345205602099839690, guid: c41882268c4f60a41bb5c2c6ac427ee2,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 7345205602099839692, guid: c41882268c4f60a41bb5c2c6ac427ee2,
         type: 3}
       propertyPath: rateOfFire
-      value: 3
+      value: 0.7
       objectReference: {fileID: 0}
+    - target: {fileID: 7345205602099839692, guid: c41882268c4f60a41bb5c2c6ac427ee2,
+        type: 3}
+      propertyPath: destroyerPrefab
+      value: 
+      objectReference: {fileID: 1978248147597285847, guid: dd1becf2238eff84782f8ff879ffbee8,
+        type: 3}
     - target: {fileID: 7345205602441361252, guid: c41882268c4f60a41bb5c2c6ac427ee2,
         type: 3}
       propertyPath: background

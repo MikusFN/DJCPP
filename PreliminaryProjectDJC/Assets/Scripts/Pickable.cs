@@ -7,7 +7,6 @@ public enum PPUpType
     RateOfFire,
     ShotsNum,
     ShieldTime,
-    Weapon,
     Teleport,
     destroyer,
     none

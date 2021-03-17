@@ -54,7 +54,7 @@ public class ParallaxEffect : MonoBehaviour
             {
                 if (temp > startPosY + heightSprite)
                 {
-                    startPosY += 2 * bSpriteHeight;
+                    startPosY += Random.Range(2.0f, 8.0f) * bSpriteHeight;
                     startPosX = Random.Range(-(bSpriteLenght), (bSpriteLenght));
                     if (tag == "Obstacle" || tag == "PPUP")
                     {
@@ -66,6 +66,7 @@ public class ParallaxEffect : MonoBehaviour
                             if (TryGetComponent<GameObstacle>(out go))
                                 GetComponent<GameObstacle>().Life = GetComponent<GameObstacle>().InitialLife;
                             GetComponent<SpriteRenderer>().enabled = true;
+                            GetComponent<Collider2D>().enabled = true;
                         }
                     }
                 }

@@ -18,12 +18,12 @@ public class PickablesManager : MonoBehaviour
 
         for (int i = 0; i < numPick; i++)
         {
-            int rn = 4;// Random.Range(0, 6);
+            int rn = Random.Range(4, 5);
             if (spritePicksPrefab.Length > 0)
             {
-                GameObject go = Instantiate(spritePicksPrefab[1], this.transform);
+                GameObject go = Instantiate(spritePicksPrefab[Random.Range(0,2)], this.transform);
                 go.transform.position = FindNewPosition();
-                go.GetComponent<Pickable>().PpType = (PPUpType)rn;
+                go.GetComponent<Pickable>().PpType = (PPUpType)0;
                 //go.GetComponent<GameObstacle>().Damage *= (int)(go.GetComponent<SpriteRenderer>().bounds.size.x * go.GetComponent<SpriteRenderer>().bounds.size.y);
                 pickables.Add(go);
             }
@@ -47,7 +47,7 @@ public class PickablesManager : MonoBehaviour
         Plane[] planes = GeometryUtility.CalculateFrustumPlanes(mainCamera.GetComponent<Camera>());
         //startPosY += planes[3].distance;
         Vector3 newPos = new Vector3((Random.Range(-planes[0].distance, planes[0].distance)),
-                transform.position.y + (Random.Range(planes[3].distance, planes[3].distance * 2)));
+                transform.position.y + (Random.Range(planes[3].distance, planes[3].distance * 4.0f)));
         return newPos;
     }
 
