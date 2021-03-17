@@ -13,19 +13,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
-  lastUpdatedAtString: 2021-03-16T22:19:13.508+00:00
-  initializedAtString: 2021-03-16T22:08:28.801+00:00
+  lastUpdatedAtString: 2021-03-17T19:02:07.997+00:00
+  initializedAtString: 2021-03-17T17:03:48.697+00:00
   localBranches:
-  - name: feature_aliens
-    tracking: 
   - name: main
     tracking: origin/main
   remoteBranches:
+  - name: origin/explosionPowerUP
+    tracking: '[None]'
   - name: origin/HEAD
     tracking: '[None]'
   - name: origin/main
-    tracking: '[None]'
-  - name: origin/teleportAddOn
     tracking: '[None]'
   remotes:
   - name: origin
@@ -37,14 +35,8 @@ MonoBehaviour:
     token: 
   localConfigBranches:
     keys:
-    - feature_aliens
     - main
     values:
-    - name: feature_aliens
-      remote:
-        name: 
-        url: 
-      trackingBranch: 
     - name: main
       remote:
         name: origin
@@ -55,22 +47,22 @@ MonoBehaviour:
     - origin
     subKeys:
     - Values:
+      - explosionPowerUP
       - HEAD
       - main
-      - teleportAddOn
     subKeyValues:
     - Values:
+      - name: explosionPowerUP
+        remote:
+          name: origin
+          url: https://github.com/MikusFN/DJCPP.git
+        trackingBranch: 
       - name: HEAD
         remote:
           name: origin
           url: https://github.com/MikusFN/DJCPP.git
         trackingBranch: 
       - name: main
-        remote:
-          name: origin
-          url: https://github.com/MikusFN/DJCPP.git
-        trackingBranch: 
-      - name: teleportAddOn
         remote:
           name: origin
           url: https://github.com/MikusFN/DJCPP.git

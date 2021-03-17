@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 7536724106932670203}
   m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
   m_LocalPosition: {x: -0.10913943, y: 3.01817, z: 0}
-  m_LocalScale: {x: 3.7078238, y: 4.547521, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -44,9 +44,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5dcd3d154f8c8304f9cfd1ad8fe87cc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  deactivate_Timer: 3
-  is_enemyBullet: 0
 --- !u!212 &5108934896637636109
 SpriteRenderer:
   m_ObjectHideFlags: 0

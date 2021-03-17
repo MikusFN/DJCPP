@@ -8,36 +8,24 @@ public class SpaceEnemyScript : MonoBehaviour
     private int life = 10;
     private bool isAlive = true;
 
-    public bool canShoot;
-    public bool canMove = true;
-
-    public Transform attack;
-    public GameObject enemyBullet;
-
-    [HideInInspector]
-    public bool is_enemyBullet = false;
-
-    void Awake() {
-        rigidBody = GetComponent<Rigidbody2D>();
-    }
 
     // Start is called before the first frame update
     void Start()
     {
-        StartShooting();
     }
 
     // Update is called once per frame
     void Update()
     {
+        Vector3 position = transform.position;
+
+        Vector3 min = Camera.main.ViewportToWorldPoint(new Vector3 (0,0,0));
+
+        if (transform.position.y < min.y) {
+            Destroy(gameObject);
+        }
     }
 
-
-    void StartShooting() {
-        GameObject bullet = Instantiate(enemyBullet, attack.position, Quaternion.identity);
-
-        Invoke("StartShooting", Random.Range(1f, 3f));
-    }
 
     private void OnTriggerEnter2D(Collider2D hitInfo)
     {

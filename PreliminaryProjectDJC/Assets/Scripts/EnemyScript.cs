@@ -9,11 +9,7 @@ public class EnemyScript : MonoBehaviour {
     private int life = 10;
     private bool isAlive = true;
 
-    public bool canShoot;
     public bool canMove = true;
-
-    public Transform attack;
-    public GameObject enemyBullet;
 
     private bool moveLeft = false;
     private bool moveRight = false;
@@ -28,9 +24,6 @@ public class EnemyScript : MonoBehaviour {
     // Start is called before the first frame update
     void Start()
     {
-        if( is_enemyBullet) {
-            speed *= -1f;
-        }
         
     }
 
@@ -68,20 +61,12 @@ public class EnemyScript : MonoBehaviour {
             }
     }
 
-    void StartShooting() {
-        GameObject bullet = Instantiate(enemyBullet, attack.position, Quaternion.identity);
-        bullet.GetComponent<BulletEnemy>().Move();
-
-        Invoke("StartShooting", Random.Range(1f, 3f));
-    }
-
     private void OnTriggerEnter2D(Collider2D hitInfo)
     {
     
         PlayerController player;
         if(hitInfo.TryGetComponent<PlayerController>(out player))
         {
-            Debug.Log("OSTION");
             player.TakeDamage(55);
         }
     }
