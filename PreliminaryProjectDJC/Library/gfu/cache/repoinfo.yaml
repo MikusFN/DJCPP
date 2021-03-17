@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 1
-  lastUpdatedAtString: 2021-03-17T19:02:07.949+00:00
-  initializedAtString: 2021-03-17T17:03:48.434+00:00
+  lastUpdatedAtString: 2021-03-17T23:16:42.807+00:00
+  initializedAtString: 2021-03-17T20:12:42.613+00:00
   currentGitRemote:
     name: origin
     url: https://github.com/MikusFN/DJCPP.git
@@ -24,14 +24,14 @@ MonoBehaviour:
     function: 0
     token: 
   currentGitBranch:
-    name: main
-    tracking: origin/main
+    name: feature/spaceships
+    tracking: 
   currentConfigBranch:
-    name: main
+    name: feature/spaceships
     remote:
-      name: origin
-      url: https://github.com/MikusFN/DJCPP.git
-    trackingBranch: main
+      name: 
+      url: 
+    trackingBranch: 
   currentConfigRemote:
     name: origin
     url: https://github.com/MikusFN/DJCPP.git

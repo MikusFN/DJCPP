@@ -13,9 +13,93 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 6
-  lastUpdatedAtString: 2021-03-17T20:03:08.119+00:00
-  initializedAtString: 2021-03-17T17:03:48.718+00:00
+  lastUpdatedAtString: 2021-03-17T23:44:42.160+00:00
+  initializedAtString: 2021-03-17T20:12:43.065+00:00
   entries:
+  - path: PreliminaryProjectDJC\Assets\EnemyBullets.prefab
+    fullPath: C:\Users\danic\Desktop\Game\DJCPP\PreliminaryProjectDJC\Assets\EnemyBullets.prefab
+    projectPath: Assets\EnemyBullets.prefab
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: PreliminaryProjectDJC\Assets\Scripts\BulletEnemy.cs
+    fullPath: C:\Users\danic\Desktop\Game\DJCPP\PreliminaryProjectDJC\Assets\Scripts\BulletEnemy.cs
+    projectPath: Assets\Scripts\BulletEnemy.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: PreliminaryProjectDJC\Assets\Scripts\EnemyGun.cs
+    fullPath: C:\Users\danic\Desktop\Game\DJCPP\PreliminaryProjectDJC\Assets\Scripts\EnemyGun.cs
+    projectPath: Assets\Scripts\EnemyGun.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: PreliminaryProjectDJC\Assets\Scripts\GameObstacle.cs
+    fullPath: C:\Users\danic\Desktop\Game\DJCPP\PreliminaryProjectDJC\Assets\Scripts\GameObstacle.cs
+    projectPath: Assets\Scripts\GameObstacle.cs
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: PreliminaryProjectDJC\Library\ArtifactDB
+    fullPath: C:\Users\danic\Desktop\Game\DJCPP\PreliminaryProjectDJC\Library\ArtifactDB
+    projectPath: Library\ArtifactDB
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: PreliminaryProjectDJC\Library\Artifacts\3d\3d31f6d77c476609a94ca3159bb6f6b2
+    fullPath: C:\Users\danic\Desktop\Game\DJCPP\PreliminaryProjectDJC\Library\Artifacts\3d\3d31f6d77c476609a94ca3159bb6f6b2
+    projectPath: Library\Artifacts\3d\3d31f6d77c476609a94ca3159bb6f6b2
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 5
+  - path: PreliminaryProjectDJC\Library\gfu\cache\branches.yaml
+    fullPath: C:\Users\danic\Desktop\Game\DJCPP\PreliminaryProjectDJC\Library\gfu\cache\branches.yaml
+    projectPath: Library\gfu\cache\branches.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: PreliminaryProjectDJC\Library\gfu\cache\gitlocks.yaml
+    fullPath: C:\Users\danic\Desktop\Game\DJCPP\PreliminaryProjectDJC\Library\gfu\cache\gitlocks.yaml
+    projectPath: Library\gfu\cache\gitlocks.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: PreliminaryProjectDJC\Library\gfu\cache\gitlog.yaml
+    fullPath: C:\Users\danic\Desktop\Game\DJCPP\PreliminaryProjectDJC\Library\gfu\cache\gitlog.yaml
+    projectPath: Library\gfu\cache\gitlog.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: PreliminaryProjectDJC\Library\gfu\cache\gitstatusentries.yaml
+    fullPath: C:\Users\danic\Desktop\Game\DJCPP\PreliminaryProjectDJC\Library\gfu\cache\gitstatusentries.yaml
+    projectPath: Library\gfu\cache\gitstatusentries.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: PreliminaryProjectDJC\Library\gfu\cache\gittrackingstatus.yaml
+    fullPath: C:\Users\danic\Desktop\Game\DJCPP\PreliminaryProjectDJC\Library\gfu\cache\gittrackingstatus.yaml
+    projectPath: Library\gfu\cache\gittrackingstatus.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: PreliminaryProjectDJC\Library\gfu\cache\repoinfo.yaml
+    fullPath: C:\Users\danic\Desktop\Game\DJCPP\PreliminaryProjectDJC\Library\gfu\cache\repoinfo.yaml
+    projectPath: Library\gfu\cache\repoinfo.yaml
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: PreliminaryProjectDJC\Library\PackageManager\ProjectCache
+    fullPath: C:\Users\danic\Desktop\Game\DJCPP\PreliminaryProjectDJC\Library\PackageManager\ProjectCache
+    projectPath: Library\PackageManager\ProjectCache
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: PreliminaryProjectDJC\Library\PackageManager\ProjectCache.md5
+    fullPath: C:\Users\danic\Desktop\Game\DJCPP\PreliminaryProjectDJC\Library\PackageManager\ProjectCache.md5
+    projectPath: Library\PackageManager\ProjectCache.md5
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
   - path: PreliminaryProjectDJC\Library\SceneVisibilityState.asset
     fullPath: C:\Users\danic\Desktop\Game\DJCPP\PreliminaryProjectDJC\Library\SceneVisibilityState.asset
     projectPath: Library\SceneVisibilityState.asset
@@ -25,6 +109,48 @@ MonoBehaviour:
   - path: PreliminaryProjectDJC\Library\ScriptAssemblies\Assembly-CSharp.dll
     fullPath: C:\Users\danic\Desktop\Game\DJCPP\PreliminaryProjectDJC\Library\ScriptAssemblies\Assembly-CSharp.dll
     projectPath: Library\ScriptAssemblies\Assembly-CSharp.dll
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: PreliminaryProjectDJC\Library\ShaderCache\EditorEncounteredVariants
+    fullPath: C:\Users\danic\Desktop\Game\DJCPP\PreliminaryProjectDJC\Library\ShaderCache\EditorEncounteredVariants
+    projectPath: Library\ShaderCache\EditorEncounteredVariants
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: PreliminaryProjectDJC\Library\SourceAssetDB
+    fullPath: C:\Users\danic\Desktop\Game\DJCPP\PreliminaryProjectDJC\Library\SourceAssetDB
+    projectPath: Library\SourceAssetDB
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: PreliminaryProjectDJC\Library\StateCache\MainStageHierarchy\ae\aeb96274aa4339ceb398e2dae76b8383.json
+    fullPath: C:\Users\danic\Desktop\Game\DJCPP\PreliminaryProjectDJC\Library\StateCache\MainStageHierarchy\ae\aeb96274aa4339ceb398e2dae76b8383.json
+    projectPath: Library\StateCache\MainStageHierarchy\ae\aeb96274aa4339ceb398e2dae76b8383.json
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: PreliminaryProjectDJC\Library\StateCache\SceneView\c5\c51c5175e67ea88fd46af831454f691f.json
+    fullPath: C:\Users\danic\Desktop\Game\DJCPP\PreliminaryProjectDJC\Library\StateCache\SceneView\c5\c51c5175e67ea88fd46af831454f691f.json
+    projectPath: Library\StateCache\SceneView\c5\c51c5175e67ea88fd46af831454f691f.json
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: PreliminaryProjectDJC\Library\StateCache\SceneView\f0\f01dc1b0d5bcfc09542ff8127a91b065.json
+    fullPath: C:\Users\danic\Desktop\Game\DJCPP\PreliminaryProjectDJC\Library\StateCache\SceneView\f0\f01dc1b0d5bcfc09542ff8127a91b065.json
+    projectPath: Library\StateCache\SceneView\f0\f01dc1b0d5bcfc09542ff8127a91b065.json
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: PreliminaryProjectDJC\Logs\ApiUpdaterCheck.txt
+    fullPath: C:\Users\danic\Desktop\Game\DJCPP\PreliminaryProjectDJC\Logs\ApiUpdaterCheck.txt
+    projectPath: Logs\ApiUpdaterCheck.txt
+    originalPath: 
+    indexStatus: 0
+    workTreeStatus: 3
+  - path: PreliminaryProjectDJC\Logs\shadercompiler-UnityShaderCompiler.exe0.log
+    fullPath: C:\Users\danic\Desktop\Game\DJCPP\PreliminaryProjectDJC\Logs\shadercompiler-UnityShaderCompiler.exe0.log
+    projectPath: Logs\shadercompiler-UnityShaderCompiler.exe0.log
     originalPath: 
     indexStatus: 0
     workTreeStatus: 3

@@ -9,7 +9,8 @@ public class EnemyGun : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Invoke ("FireEnemyBullet", 1f);
+        Invoke ("FireEnemyBullet", 0.3f);
+        Invoke ("FireEnemyBullet", 2.5f);
     }
 
     // Update is called once per frame
@@ -21,15 +22,19 @@ public class EnemyGun : MonoBehaviour
 
         GameObject player = GameObject.Find ("Player");
 
-        if (player != null) {
-            
-            GameObject bulletObject = (GameObject)Instantiate(bullet);
+        if (player != null && isInside()) {
 
-            bulletObject.transform.position = transform.position;
+            Vector3 direction = player.transform.position - transform.position;
 
-            Vector3 direction = player.transform.position - bulletObject.transform.position;
+            GameObject go = Instantiate(bullet, transform.position, transform.rotation);
+            go.GetComponent<Rigidbody2D>().velocity = (direction - go.transform.position).normalized * 2f;
 
-            bullet.GetComponent<BulletEnemy>().setDirection(direction);
         }
+    }
+
+    bool isInside() {
+        //verify if the enemy is inside the screen
+
+        return true;
     }
 }
