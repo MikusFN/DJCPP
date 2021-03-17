@@ -7,7 +7,7 @@ public class PickablesManager : MonoBehaviour
     public GameObject[] spritePicksPrefab;
     public GameObject mainCamera;
 
-    private int numPick = 2;
+    private int numPick = 6;
     private List<GameObject> pickables;
     private float startPosX, startPosY;
     CameraController camCont;
@@ -18,12 +18,11 @@ public class PickablesManager : MonoBehaviour
 
         for (int i = 0; i < numPick; i++)
         {
-            int rn = Random.Range(4, 5);
             if (spritePicksPrefab.Length > 0)
             {
-                GameObject go = Instantiate(spritePicksPrefab[Random.Range(0,2)], this.transform);
+                GameObject go = Instantiate(spritePicksPrefab[i%spritePicksPrefab.Length], this.transform);
                 go.transform.position = FindNewPosition();
-                go.GetComponent<Pickable>().PpType = (PPUpType)0;
+                go.GetComponent<Pickable>().PpType = (PPUpType)(i%5);
                 //go.GetComponent<GameObstacle>().Damage *= (int)(go.GetComponent<SpriteRenderer>().bounds.size.x * go.GetComponent<SpriteRenderer>().bounds.size.y);
                 pickables.Add(go);
             }

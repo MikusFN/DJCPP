@@ -7,6 +7,7 @@ public class WeaponBehaviour : MonoBehaviour
     public Transform firePoint;
     public GameObject bulletPrefab;
     public GameObject destroyerPrefab;
+    public GameObject explosionAfPrefab;
     public float rateOfFire = 10;
 
     private float timeOfLife = 0.0f;
@@ -21,17 +22,23 @@ public class WeaponBehaviour : MonoBehaviour
     void Start()
     {
         currentStatePickable = new List<Pickable>();
+        timeOfLife = rateOfFire;
         canFire = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
     private void FixedUpdate()
     {
-        if (Input.GetKey(KeyCode.Mouse0)|| Input.GetKeyDown(KeyCode.Mouse0))
+        //if (Input.GetKeyDown(KeyCode.Mouse0))
+        //{
+        //    timeOfLife = rateOfFire;
+
+        //}
+        if (Input.GetKey(KeyCode.Mouse0))
         {
             RateFire();
             if (currentStatePickable.Count > 0)
@@ -94,9 +101,10 @@ public class WeaponBehaviour : MonoBehaviour
                 Transform player = GetComponentInParent<Transform>();
                 if (player)
                 {
+                    //instantiate the explosion and check for reached obstacles and enemies
+                    Instantiate(explosionAfPrefab, firePoint.position, firePoint.rotation);
                     player.position = pm.mainCam.ScreenToWorldPoint(Input.mousePosition) + new Vector3(0, 0, 10);
                 }
-                //instantiate the explosion and check for reached obstacles and enemies
                 sidePP = PPUpType.none; //or a cold down timer 
                 break;
             case PPUpType.destroyer:
@@ -114,7 +122,7 @@ public class WeaponBehaviour : MonoBehaviour
     private void RateFire()
     {
         //contador de vida do projectil para o destroir 
-        if (timeOfLife > rateOfFire)
+        if (timeOfLife >= rateOfFire)
         {
             timeOfLife = 0.0f;
             canFire = true;

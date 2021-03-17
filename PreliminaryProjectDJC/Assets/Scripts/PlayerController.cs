@@ -16,11 +16,12 @@ public class PlayerController : MonoBehaviour
     [Space]
     public UnityEvent OnLandEvent;
 
+    public float velocityRB;
 
     private void Awake()
     {
         m_Rigidbody2D = GetComponent<Rigidbody2D>();
-        
+        velocityRB = m_Rigidbody2D.velocity.y;
     }
 
     // Start is called before the first frame update

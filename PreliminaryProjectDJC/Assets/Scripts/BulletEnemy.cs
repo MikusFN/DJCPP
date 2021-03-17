@@ -33,7 +33,7 @@ public class BulletEnemy : MonoBehaviour
     public void setDirection(Vector3 direction) {
         _direction = direction;
 
-        Debug.Log("bieen niño");
+        //Debug.Log("bieen niño");
 
 
         Instantiate(enemyBullet, gunPosition.position, gunPosition.rotation);

@@ -129,28 +129,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1969252846215296287}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &372823117 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7863373990289539054, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
-    type: 3}
-  m_PrefabInstance: {fileID: 1969252846215296287}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &372823119
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 372823117}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 273eae959863dec44ae96cf1e1c00ffd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spritePicksPrefab:
-  - {fileID: 1618093637480710077, guid: 81beae4bf3e12544eaedc98dcf047962, type: 3}
-  - {fileID: 2363797982525288867, guid: b2f1ea1850e6e4a4da19e12ed34848fc, type: 3}
-  mainCamera: {fileID: 519420028}
 --- !u!1 &519420028 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7345205602441361254, guid: c41882268c4f60a41bb5c2c6ac427ee2,
@@ -731,6 +709,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3946835637938269943, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
+        type: 3}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 519420028}
     - target: {fileID: 5384785882944478906, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
         type: 3}
       propertyPath: m_IsActive
@@ -816,6 +799,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1978248147597285847, guid: dd1becf2238eff84782f8ff879ffbee8,
         type: 3}
+    - target: {fileID: 7345205602099839692, guid: c41882268c4f60a41bb5c2c6ac427ee2,
+        type: 3}
+      propertyPath: explosionAfPrefab
+      value: 
+      objectReference: {fileID: 1978248147597285847, guid: b719f9f8b1feadc47998bb42e953d3e3,
+        type: 3}
     - target: {fileID: 7345205602441361252, guid: c41882268c4f60a41bb5c2c6ac427ee2,
         type: 3}
       propertyPath: background
@@ -884,6 +873,11 @@ PrefabInstance:
     - target: {fileID: 7345205603089296938, guid: c41882268c4f60a41bb5c2c6ac427ee2,
         type: 3}
       propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7345205603680962210, guid: c41882268c4f60a41bb5c2c6ac427ee2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

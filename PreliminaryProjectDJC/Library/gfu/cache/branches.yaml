@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
-  lastUpdatedAtString: 2021-03-17T21:04:25.729+00:00
-  initializedAtString: 2021-03-17T13:09:11.933+00:00
+  lastUpdatedAtString: 2021-03-17T23:47:11.607+00:00
+  initializedAtString: 2021-03-17T22:11:55.791+00:00
   localBranches:
   - name: explosionPowerUP
     tracking: origin/explosionPowerUP
@@ -22,6 +22,8 @@ MonoBehaviour:
     tracking: origin/feature_aliens
   - name: main
     tracking: origin/main
+  - name: feature/spaceships
+    tracking: origin/feature/spaceships
   remoteBranches:
   - name: origin/explosionPowerUP
     tracking: '[None]'
@@ -30,6 +32,8 @@ MonoBehaviour:
   - name: origin/HEAD
     tracking: '[None]'
   - name: origin/main
+    tracking: '[None]'
+  - name: origin/feature/spaceships
     tracking: '[None]'
   remotes:
   - name: origin
@@ -44,6 +48,7 @@ MonoBehaviour:
     - explosionPowerUP
     - feature_aliens
     - main
+    - feature/spaceships
     values:
     - name: explosionPowerUP
       remote:
@@ -60,6 +65,11 @@ MonoBehaviour:
         name: origin
         url: https://github.com/MikusFN/DJCPP.git
       trackingBranch: main
+    - name: feature/spaceships
+      remote:
+        name: origin
+        url: https://github.com/MikusFN/DJCPP.git
+      trackingBranch: feature/spaceships
   remoteConfigBranches:
     keys:
     - origin
@@ -69,6 +79,7 @@ MonoBehaviour:
       - feature_aliens
       - HEAD
       - main
+      - feature/spaceships
     subKeyValues:
     - Values:
       - name: explosionPowerUP
@@ -87,6 +98,11 @@ MonoBehaviour:
           url: https://github.com/MikusFN/DJCPP.git
         trackingBranch: 
       - name: main
+        remote:
+          name: origin
+          url: https://github.com/MikusFN/DJCPP.git
+        trackingBranch: 
+      - name: feature/spaceships
         remote:
           name: origin
           url: https://github.com/MikusFN/DJCPP.git
