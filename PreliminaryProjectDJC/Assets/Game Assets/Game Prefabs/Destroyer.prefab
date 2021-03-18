@@ -73,9 +73,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 1158281529177622174, guid: 50cebf6623d8fcb479842d094fbb9f74,
-    type: 3}
+  m_SortingOrder: 10
+  m_Sprite: {fileID: 1158281529177622174, guid: 50cebf6623d8fcb479842d094fbb9f74, type: 3}
   m_Color: {r: 1, g: 0.759434, b: 0.99244034, a: 0.6509804}
   m_FlipX: 0
   m_FlipY: 0
@@ -100,8 +99,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 20
   damage: 40
-  explodingPrefab: {fileID: 5823220672998773605, guid: 36c7f225af13ba8469eda8821b9844c1,
-    type: 3}
+  explodingPrefab: {fileID: 5823220672998773605, guid: 36c7f225af13ba8469eda8821b9844c1, type: 3}
 --- !u!50 &2253005795936956521
 Rigidbody2D:
   serializedVersion: 4

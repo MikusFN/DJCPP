@@ -74,9 +74,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 5424052872766482582, guid: 50cebf6623d8fcb479842d094fbb9f74,
-    type: 3}
+  m_SortingOrder: 10
+  m_Sprite: {fileID: 5424052872766482582, guid: 50cebf6623d8fcb479842d094fbb9f74, type: 3}
   m_Color: {r: 0.16237983, g: 0.8396226, b: 0.76637685, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -136,10 +135,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22833da09b90c28479627f65339d3574, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainCamera: {fileID: 7345205602441361254, guid: c41882268c4f60a41bb5c2c6ac427ee2,
-    type: 3}
-  background: {fileID: 1969252846283504061, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
-    type: 3}
+  MainCamera: {fileID: 7345205602441361254, guid: c41882268c4f60a41bb5c2c6ac427ee2, type: 3}
+  background: {fileID: 1969252846283504061, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3, type: 3}
   effectStrenght: 0.1
 --- !u!114 &416526885499937245
 MonoBehaviour:
