@@ -2,14 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
     [Range(0, .3f)] [SerializeField] private float m_MovementSmoothing = .05f;
     private Rigidbody2D m_Rigidbody2D;
     private Vector3 m_Velocity = Vector3.zero;
-    private int life = 50;
+    private int life = 100;
     private bool isAlive = true;
+
+    public GameObject gameManager;
+    public Text lifeUI;
 
 
     [Header("Events")]
@@ -27,6 +31,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        lifeUI.text = life.ToString();
 
     }
 
@@ -85,6 +90,8 @@ public class PlayerController : MonoBehaviour
                 = new Color(GetComponent<SpriteRenderer>().color.r, GetComponent<SpriteRenderer>().color.g,
                 GetComponent<SpriteRenderer>().color.b, GetComponent<SpriteRenderer>().color.a * 0.1f);
             Debug.Log("Taken Damage");
+            lifeUI.text = life.ToString();
+
         }
         else
         {
@@ -94,7 +101,14 @@ public class PlayerController : MonoBehaviour
                 = new Color(GetComponent<SpriteRenderer>().color.r, GetComponent<SpriteRenderer>().color.g,
                 GetComponent<SpriteRenderer>().color.b, GetComponent<SpriteRenderer>().color.a * 0.1f);
             Debug.Log("You Died");
+
+            gameManager.GetComponent<GameManager>().SetGameManagerState(GameManager.GameManagerState.GameOver);
+
         }
+    }
+
+    public void ResetPlayer() {
+        life = 50;
     }
 
     
