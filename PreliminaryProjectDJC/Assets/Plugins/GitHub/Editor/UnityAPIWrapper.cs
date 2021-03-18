@@ -2,7 +2,20 @@ using UnityEditor;
 using UnityEngine;
 using System.IO;
 using System;
+using Unity.VersionControl.Git;
 
+namespace Unity.VersionControl.Git
+{
+    public static class UnityShim
+    {
+        public static event Action<UnityEditor.Editor> Editor_finishedDefaultHeaderGUI;
+        public static void Raise_Editor_finishedDefaultHeaderGUI(UnityEditor.Editor editor)
+        {
+            if (Editor_finishedDefaultHeaderGUI != null)
+                Editor_finishedDefaultHeaderGUI(editor);
+        }
+    }
+}
 namespace GitHub.Unity
 {
     [InitializeOnLoad]

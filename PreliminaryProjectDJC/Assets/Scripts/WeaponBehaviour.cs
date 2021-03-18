@@ -6,11 +6,14 @@ public class WeaponBehaviour : MonoBehaviour
 {
     public Transform firePoint;
     public GameObject bulletPrefab;
-    public float rateOfFire = 3.0f;
+    public GameObject destroyerPrefab;
+    public GameObject explosionAfPrefab;
+    public float rateOfFire = 10;
 
     private float timeOfLife = 0.0f;
+    private bool canFire;
     private List<Pickable> currentStatePickable;
-    private float maxRateofFire = 0.3f;
+    private float maxRateofFire = 0.1f;
     private int shotsFire = 1;
     private int maxShotsFire = 5;
     private PPUpType sidePP = PPUpType.none;
@@ -19,13 +22,25 @@ public class WeaponBehaviour : MonoBehaviour
     void Start()
     {
         currentStatePickable = new List<Pickable>();
+        timeOfLife = rateOfFire;
+        canFire = true;
     }
 
     // Update is called once per frame
     void Update()
     {
+
+    }
+    private void FixedUpdate()
+    {
+        //if (Input.GetKeyDown(KeyCode.Mouse0))
+        //{
+        //    timeOfLife = rateOfFire;
+
+        //}
         if (Input.GetKey(KeyCode.Mouse0))
         {
+            RateFire();
             if (currentStatePickable.Count > 0)
             {
                 foreach (var item in currentStatePickable)
@@ -49,17 +64,28 @@ public class WeaponBehaviour : MonoBehaviour
             ShootPowerWeapon();
         }
     }
-
     void Shoot()
     {
-        if (RateFire())
+        if (canFire)
         {
 
-            Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+            GameObject go = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+            go.GetComponent<Rigidbody2D>().velocity = (go.transform.position - transform.position).normalized * go.GetComponent<Projectile>().speed;
+
             if (shotsFire > 1)
             {
-                Instantiate(bulletPrefab, firePoint.position - new Vector3(.1f, 0, 0), firePoint.rotation);
-                Instantiate(bulletPrefab, firePoint.position + new Vector3(.1f, 0, 0), firePoint.rotation);
+                int numberShotsCount = (shotsFire - 1) / 2;
+                for (int i = 0; i < numberShotsCount; i++)
+                {
+                    GameObject go2 = Instantiate(bulletPrefab, new Vector3((i + 1) * 0.01f, 0, 0) + firePoint.position, firePoint.rotation);
+                    go2.GetComponent<Rigidbody2D>().velocity = //((Quaternion.Euler(0, 0, (i + 1) * step)) * 
+                         (go2.transform.position - transform.position).normalized * go.GetComponent<Projectile>().speed;
+
+                    GameObject go3 = Instantiate(bulletPrefab, new Vector3(-(i + 1) * (0.01f), 0, 0) + firePoint.position, firePoint.rotation);
+                    go3.GetComponent<Rigidbody2D>().velocity = //((Quaternion.Euler(0, 0, (i + 1) * (-step))) * 
+                         (go3.transform.position - transform.position).normalized * go.GetComponent<Projectile>().speed;
+                }
+
             }
         }
     }
@@ -75,12 +101,14 @@ public class WeaponBehaviour : MonoBehaviour
                 Transform player = GetComponentInParent<Transform>();
                 if (player)
                 {
+                    //instantiate the explosion and check for reached obstacles and enemies
+                    Instantiate(explosionAfPrefab, firePoint.position, firePoint.rotation);
                     player.position = pm.mainCam.ScreenToWorldPoint(Input.mousePosition) + new Vector3(0, 0, 10);
                 }
-                //instantiate the explosion and check for reached obstacles and enemies
                 sidePP = PPUpType.none; //or a cold down timer 
                 break;
             case PPUpType.destroyer:
+                Instantiate(destroyerPrefab, firePoint.position, firePoint.rotation);
                 sidePP = PPUpType.none; //or a cold down timer 
                 break;
             case PPUpType.none:
@@ -91,16 +119,19 @@ public class WeaponBehaviour : MonoBehaviour
         }
     }
 
-    private bool RateFire()
+    private void RateFire()
     {
         //contador de vida do projectil para o destroir 
-        if (timeOfLife > rateOfFire)
+        if (timeOfLife >= rateOfFire)
         {
             timeOfLife = 0.0f;
-            return true;
+            canFire = true;
         }
-        timeOfLife += Time.fixedDeltaTime;
-        return false;
+        else
+        {
+            timeOfLife += Time.fixedDeltaTime;
+            canFire = false;
+        }
     }
 
     public void AddPickable(Pickable pickable)
@@ -115,7 +146,7 @@ public class WeaponBehaviour : MonoBehaviour
             case PPUpType.RateOfFire:
                 if (rateOfFire >= maxRateofFire)
                 {
-                    rateOfFire -= 0.3f;
+                    rateOfFire -= 0.1f;
                 }
                 break;
             case PPUpType.ShieldTime:
@@ -126,9 +157,6 @@ public class WeaponBehaviour : MonoBehaviour
                 {
                     shotsFire += 2;
                 }
-                break;
-            case PPUpType.Weapon:
-                //Change weapon (create weopen class)
                 break;
             case PPUpType.Teleport:
                 sidePP = PPUpType.Teleport;

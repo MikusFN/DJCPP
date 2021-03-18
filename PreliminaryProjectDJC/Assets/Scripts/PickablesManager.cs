@@ -7,7 +7,7 @@ public class PickablesManager : MonoBehaviour
     public GameObject[] spritePicksPrefab;
     public GameObject mainCamera;
 
-    private int numPick = 2;
+    private int numPick = 6;
     private List<GameObject> pickables;
     private float startPosX, startPosY;
     CameraController camCont;
@@ -18,12 +18,11 @@ public class PickablesManager : MonoBehaviour
 
         for (int i = 0; i < numPick; i++)
         {
-            int rn = 4;// Random.Range(0, 6);
             if (spritePicksPrefab.Length > 0)
             {
-                GameObject go = Instantiate(spritePicksPrefab[1], this.transform);
+                GameObject go = Instantiate(spritePicksPrefab[i%spritePicksPrefab.Length], this.transform);
                 go.transform.position = FindNewPosition();
-                go.GetComponent<Pickable>().PpType = (PPUpType)rn;
+                go.GetComponent<Pickable>().PpType = (PPUpType)(i%5);
                 //go.GetComponent<GameObstacle>().Damage *= (int)(go.GetComponent<SpriteRenderer>().bounds.size.x * go.GetComponent<SpriteRenderer>().bounds.size.y);
                 pickables.Add(go);
             }
@@ -47,7 +46,7 @@ public class PickablesManager : MonoBehaviour
         Plane[] planes = GeometryUtility.CalculateFrustumPlanes(mainCamera.GetComponent<Camera>());
         //startPosY += planes[3].distance;
         Vector3 newPos = new Vector3((Random.Range(-planes[0].distance, planes[0].distance)),
-                transform.position.y + (Random.Range(planes[3].distance, planes[3].distance * 2)));
+                transform.position.y + (Random.Range(planes[3].distance, planes[3].distance * 4.0f)));
         return newPos;
     }
 

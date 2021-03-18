@@ -20,16 +20,13 @@ public class ObstaclesManager : MonoBehaviour
 
         for (int i = 0; i < numObstacles; i++)
         {
-            GameObject go = Instantiate(spriteObstaclesPrefab[Random.Range(0, numObstacles)], this.transform);
+            GameObject go = Instantiate(spriteObstaclesPrefab[i % spriteObstaclesPrefab.Length], this.transform);
             go.transform.position = FindNewPosition();
-            //go.GetComponent<GameObstacle>().Damage *= (int)(go.GetComponent<SpriteRenderer>().bounds.size.x * go.GetComponent<SpriteRenderer>().bounds.size.y);
             obstacles.Add(go);
         }
     }
     private void Start()
-    {
-        //startPosX = transform.position.x;
-        //startPosY = transform.position.y;
+    {        
     }
 
     // Update is called once per frame
@@ -48,13 +45,13 @@ public class ObstaclesManager : MonoBehaviour
         //    }
         //}
     }
-    
+
     private Vector3 FindNewPosition()
     {
         Plane[] planes = GeometryUtility.CalculateFrustumPlanes(mainCamera.GetComponent<Camera>());
         //startPosY += planes[3].distance;
         Vector3 newPos = new Vector3((Random.Range(-planes[0].distance, planes[0].distance)),
-                transform.position.y + (Random.Range(planes[3].distance, planes[3].distance*2)));
+                transform.position.y + (Random.Range(planes[3].distance, planes[3].distance * 3.0f)));
         return newPos;
     }
 

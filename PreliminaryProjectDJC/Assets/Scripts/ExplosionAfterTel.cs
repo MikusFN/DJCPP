@@ -2,28 +2,29 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Projectile : MonoBehaviour
+public class ExplosionAfterTel : MonoBehaviour
 {
-    public float speed = 10f;
-    public int damage = 20;
-    public Rigidbody2D rb;
+    //public float speed = 10f;
+    public int damage = 100;
+    //public Rigidbody2D rb;
 
 
-    private int currentDamage = 10;
+    private int currentDamage = 100;
     //public GameObject impactEffect;
 
 
     private float timeOfLife = 0.0f;
 
-    // Use this for initialization
+    // Start is called before the first frame update
     void Start()
     {
 
-        //rb.velocity = (GetComponentInParent<WeaponBehaviour>().GetComponentInParent<Transform>().position-transform.position).normalized *speed;
     }
 
-    private void Update()
+    // Update is called once per frame
+    void FixedUpdate()
     {
+        this.transform.localScale = new Vector3(1.0f + timeOfLife * 1.5f, 1.0f + timeOfLife * 1.5f, 1.0f);
         LifeTime();
     }
     void OnTriggerEnter2D(Collider2D hitInfo)
@@ -42,8 +43,8 @@ public class Projectile : MonoBehaviour
             obstacle.takeDamage(currentDamage);
         }
 
-        if (hitInfo.name != "Player" && hitInfo.tag != this.tag)
-            Destroy(gameObject);
+        //if (hitInfo.name != "Player" && hitInfo.tag != this.tag)
+        //    Destroy(gameObject);
     }
 
     private void OnDestroy()
@@ -55,7 +56,7 @@ public class Projectile : MonoBehaviour
     private void LifeTime()
     {
         //contador de vida do projectil para o destroir 
-        if (timeOfLife > 10.0f)
+        if (timeOfLife > 5.0f)
         {
             timeOfLife = 0.0f;
             Destroy(gameObject);

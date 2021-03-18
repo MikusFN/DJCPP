@@ -61,7 +61,12 @@ public class CameraController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        VelocityControl();
+        //VelocityControl();
+        //PlayerController pc = GetComponentInChildren<PlayerController>();
+        //if (pc)
+        //{
+        //    velocity = pc.velocityRB * 1.2f;
+        //}
         transform.position = new Vector3((transform.position.x), transform.position.y + velocity, transform.position.z);
     }
 

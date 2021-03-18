@@ -2,14 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Projectile : MonoBehaviour
+public class DestroyerProjectile : MonoBehaviour
 {
-    public float speed = 10f;
-    public int damage = 20;
-    public Rigidbody2D rb;
+    public float speed = 20f;
+    public int damage = 40;
+    public GameObject explodingPrefab;
 
-
-    private int currentDamage = 10;
+    private int currentDamage = 60;
     //public GameObject impactEffect;
 
 
@@ -18,8 +17,7 @@ public class Projectile : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-
-        //rb.velocity = (GetComponentInParent<WeaponBehaviour>().GetComponentInParent<Transform>().position-transform.position).normalized *speed;
+        GetComponent<Rigidbody2D>().velocity = transform.up * speed;
     }
 
     private void Update()
@@ -39,10 +37,11 @@ public class Projectile : MonoBehaviour
         GameObstacle obstacle;
         if (hitInfo.TryGetComponent<GameObstacle>(out obstacle))
         {
-            obstacle.takeDamage(currentDamage);
+            obstacle.ExplodeOnCollision(currentDamage, hitInfo.transform, explodingPrefab);
+            obstacle.takeDamage(damage);
         }
 
-        if (hitInfo.name != "Player" && hitInfo.tag != this.tag)
+        if (hitInfo.name != "Player" && hitInfo.tag != "Projectile" && hitInfo.tag != "MainCamera")
             Destroy(gameObject);
     }
 
