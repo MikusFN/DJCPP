@@ -8,6 +8,7 @@ public class BulletEnemy : MonoBehaviour
     float speed = 5f;
 
     private int damage = 20;
+    private float timeOfLife = 0.0f;
 
     void Awake() {
     }
@@ -20,6 +21,7 @@ public class BulletEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        LifeTime();
     }
 
 
@@ -34,6 +36,18 @@ public class BulletEnemy : MonoBehaviour
             }
             Destroy(gameObject);
         }
+    }
+
+    
+    private void LifeTime()
+    {
+        //contador de vida do projectil para o destroir 
+        if (timeOfLife > 15.0f)
+        {
+            timeOfLife = 0.0f;
+            Destroy(gameObject);
+        }
+        timeOfLife += Time.fixedDeltaTime;
     }
 
 

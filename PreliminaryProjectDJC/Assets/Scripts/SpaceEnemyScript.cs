@@ -5,7 +5,7 @@ using UnityEngine;
 public class SpaceEnemyScript : MonoBehaviour
 {
     Rigidbody2D rigidBody;
-    private int life = 10;
+    private int life = 9;
     private bool isAlive = true;
 
 
@@ -19,11 +19,6 @@ public class SpaceEnemyScript : MonoBehaviour
     {
         Vector3 position = transform.position;
 
-        Vector3 min = Camera.main.ViewportToWorldPoint(new Vector3 (0,0,0));
-
-        if (transform.position.y < min.y) {
-            Destroy(gameObject);
-        }
     }
 
 
@@ -35,5 +30,10 @@ public class SpaceEnemyScript : MonoBehaviour
         {
             player.TakeDamage(55);
         }
+
+        else if(hitInfo.name == "Projectile") {
+            Destroy(gameObject);
+        }
     }
+
 }

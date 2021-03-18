@@ -6,11 +6,12 @@ public class EnemyGun : MonoBehaviour
 {
 
     public GameObject bullet;
+    public GameObject MainCamera;
+    CameraController camCont;
     // Start is called before the first frame update
     void Start()
     {
-        Invoke ("FireEnemyBullet", 0.3f);
-        Invoke ("FireEnemyBullet", 2.5f);
+        InvokeRepeating ("FireEnemyBullet", 0.5f, 0.5f);
     }
 
     // Update is called once per frame
@@ -22,7 +23,7 @@ public class EnemyGun : MonoBehaviour
 
         GameObject player = GameObject.Find ("Player");
 
-        if (player != null && isInside()) {
+        if (player != null) {
 
             Vector3 direction = player.transform.position - transform.position;
 
@@ -30,11 +31,5 @@ public class EnemyGun : MonoBehaviour
             go.GetComponent<Rigidbody2D>().velocity = (direction - go.transform.position).normalized * 2f;
 
         }
-    }
-
-    bool isInside() {
-        //verify if the enemy is inside the screen
-
-        return true;
     }
 }
