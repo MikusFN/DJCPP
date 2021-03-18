@@ -183,7 +183,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firePoint: {fileID: 7027169581027808654}
-  bulletPrefab: {fileID: 1539632861300792, guid: d98f56223e17a314fbc3a8c67b114bde, type: 3}
-  destroyerPrefab: {fileID: 0}
-  explosionAfPrefab: {fileID: 0}
-  rateOfFire: 1
+  bulletPrefab: {fileID: 1539632861300792, guid: d98f56223e17a314fbc3a8c67b114bde,
+    type: 3}
+  destroyerPrefab: {fileID: 1978248147597285847, guid: 368843303c4955c4c9ba856bede8c7a1,
+    type: 3}
+  explosionAfPrefab: {fileID: 1978248147597285847, guid: b719f9f8b1feadc47998bb42e953d3e3,
+    type: 3}
+  rateOfFire: 0.7
