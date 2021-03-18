@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 1
-  lastUpdatedAtString: 2021-03-17T23:47:11.595+00:00
-  initializedAtString: 2021-03-17T21:43:52.406+00:00
+  lastUpdatedAtString: 2021-03-18T13:45:57.516+00:00
+  initializedAtString: 2021-03-18T13:45:57.516+00:00
   currentGitRemote:
     name: origin
     url: https://github.com/MikusFN/DJCPP.git
@@ -24,14 +24,14 @@ MonoBehaviour:
     function: 0
     token: 
   currentGitBranch:
-    name: explosionPowerUP
-    tracking: origin/explosionPowerUP
+    name: ShieldAdd
+    tracking: origin/ShieldAdd
   currentConfigBranch:
-    name: explosionPowerUP
+    name: ShieldAdd
     remote:
       name: origin
       url: https://github.com/MikusFN/DJCPP.git
-    trackingBranch: explosionPowerUP
+    trackingBranch: ShieldAdd
   currentConfigRemote:
     name: origin
     url: https://github.com/MikusFN/DJCPP.git
