@@ -82,7 +82,7 @@ public class EnemyScript : MonoBehaviour {
         if(hitInfo.TryGetComponent<PlayerController>(out player))
         {
             Debug.Log("OSTION");
-            player.TakeDamage(55);
+            player.TakeDamage(50);
         }
     }
 

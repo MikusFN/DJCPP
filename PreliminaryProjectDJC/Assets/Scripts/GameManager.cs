@@ -40,6 +40,7 @@ public class GameManager : MonoBehaviour
 
             gameplayUI.SetActive(false);
             settingsUI.SetActive(false);
+            gameOverUI.SetActive(false);
             
                 break;
             case GameManagerState.Gameplay:
@@ -48,6 +49,7 @@ public class GameManager : MonoBehaviour
             background.SetActive(true);
             gameplayUI.SetActive(true);
             settingsUI.SetActive(false);
+            gameOverUI.SetActive(false);
 
                 break;
             case GameManagerState.Pause:
@@ -56,6 +58,7 @@ public class GameManager : MonoBehaviour
             background.SetActive(false);
             gameplayUI.SetActive(true);
             settingsUI.SetActive(true);
+            gameOverUI.SetActive(false);
 
 
                 break;

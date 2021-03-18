@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
 
     public GameObject gameManager;
     public Text lifeUI;
+    public Slider health;
 
 
     [Header("Events")]
@@ -32,6 +33,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         lifeUI.text = life.ToString();
+        health.value = life;
 
     }
 
@@ -91,6 +93,7 @@ public class PlayerController : MonoBehaviour
                 GetComponent<SpriteRenderer>().color.b, GetComponent<SpriteRenderer>().color.a * 0.1f);
             Debug.Log("Taken Damage");
             lifeUI.text = life.ToString();
+            health.value = life;
 
         }
         else
@@ -102,13 +105,19 @@ public class PlayerController : MonoBehaviour
                 GetComponent<SpriteRenderer>().color.b, GetComponent<SpriteRenderer>().color.a * 0.1f);
             Debug.Log("You Died");
 
+            lifeUI.text = life.ToString();
+            health.value = life;
+
             gameManager.GetComponent<GameManager>().SetGameManagerState(GameManager.GameManagerState.GameOver);
 
         }
     }
 
     public void ResetPlayer() {
-        life = 50;
+        this.life = 100;
+        isAlive = true;
+        lifeUI.text = life.ToString();
+        health.value = life;
     }
 
     
