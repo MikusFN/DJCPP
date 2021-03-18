@@ -5,13 +5,11 @@ using UnityEngine;
 public class EnemyGun : MonoBehaviour
 {
 
-    public GameObject bullet;
-    public GameObject MainCamera;
-    CameraController camCont;
+    public GameObject EnemyBullets;
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating ("FireEnemyBullet", 0.5f, 0.5f);
+        Invoke ("FireEnemyBullet", 1f);
     }
 
     // Update is called once per frame
@@ -25,11 +23,15 @@ public class EnemyGun : MonoBehaviour
 
         if (player != null) {
 
-            Vector3 direction = player.transform.position - transform.position;
+            GameObject bullet = (GameObject)Instantiate(EnemyBullets);
 
-            GameObject go = Instantiate(bullet, transform.position, transform.rotation);
-            go.GetComponent<Rigidbody2D>().velocity = (direction - go.transform.position).normalized * 2f;
+            bullet.transform.position = transform.position;
 
+            Vector3 direction = player.transform.position - bullet.transform.position;
+
+            //Debug.Log("aqui bien");
+
+            bullet.GetComponent<BulletEnemy>().setDirection(direction);
         }
     }
 }

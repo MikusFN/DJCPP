@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:PreliminaryProjectDJC/Assets/EnemySpace.prefab.meta
 guid: 6fd0ec9598a6c194a973f4457a5d10df
+=======
+guid: dd1becf2238eff84782f8ff879ffbee8
+>>>>>>> main:PreliminaryProjectDJC/Assets/Game Assets/Game Prefabs/Destroyer.prefab.meta
 PrefabImporter:
   externalObjects: {}
   userData: 
