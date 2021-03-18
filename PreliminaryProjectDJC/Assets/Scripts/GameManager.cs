@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -11,6 +12,9 @@ public class GameManager : MonoBehaviour
     public GameObject gameplayUI;
     public GameObject settingsUI;
     public GameObject gameOverUI;
+    public GameObject soundIconON;
+    public GameObject soundIconOFF;
+    public Text soundText;
 
     public enum GameManagerState {
         Opening,
@@ -91,5 +95,17 @@ public class GameManager : MonoBehaviour
 
     public void ExitGame() {
         Application.Quit();
+    }
+
+    public void SoundON() {
+        soundIconON.SetActive(true);
+        soundIconOFF.SetActive(false);
+        soundText.text = "ON";
+    }
+
+    public void SoundOFF() {
+        soundIconON.SetActive(false);
+        soundIconOFF.SetActive(true);
+        soundText.text = "OFF";
     }
 }
