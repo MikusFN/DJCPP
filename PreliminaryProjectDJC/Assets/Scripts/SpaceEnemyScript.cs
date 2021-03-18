@@ -24,14 +24,15 @@ public class SpaceEnemyScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D hitInfo)
     {
-    
+
         PlayerController player;
-        if(hitInfo.TryGetComponent<PlayerController>(out player))
+        if (hitInfo.TryGetComponent<PlayerController>(out player))
         {
             player.TakeDamage(55);
         }
 
-        else if(hitInfo.name == "Projectile") {
+        else if (hitInfo.name == "Projectile")
+        {
             Destroy(gameObject);
         }
     }

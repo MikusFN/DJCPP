@@ -10,7 +10,8 @@ public class BulletEnemy : MonoBehaviour
     private int damage = 20;
     private float timeOfLife = 0.0f;
 
-    void Awake() {
+    void Awake()
+    {
     }
 
     // Start is called before the first frame update
@@ -27,10 +28,11 @@ public class BulletEnemy : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D hitInfo)
     {
-        
-        if (hitInfo.name == "Player") {
-        PlayerController player;
-            if(hitInfo.TryGetComponent<PlayerController>(out player))
+
+        if (hitInfo.name == "Player")
+        {
+            PlayerController player;
+            if (hitInfo.TryGetComponent<PlayerController>(out player))
             {
                 player.TakeDamage(damage);
             }
@@ -38,7 +40,7 @@ public class BulletEnemy : MonoBehaviour
         }
     }
 
-    
+
     private void LifeTime()
     {
         //contador de vida do projectil para o destroir 
