@@ -7,13 +7,12 @@ public class EnemyScript : MonoBehaviour {
     public float speed;
     Rigidbody2D rigidBody;
     private int life = 10;
-    private bool isAlive = true;
 
     public bool canShoot;
     public bool canMove = true;
 
-    public Transform attack;
-    public GameObject enemyBullet;
+    GameObject scoreTextUI;
+
 
     private bool moveLeft = false;
     private bool moveRight = false;
@@ -28,6 +27,8 @@ public class EnemyScript : MonoBehaviour {
     // Start is called before the first frame update
     void Start()
     {
+        scoreTextUI = GameObject.FindGameObjectWithTag ("ScoreTextTag");
+
         if( is_enemyBullet) {
             speed *= -1f;
         }
@@ -59,31 +60,36 @@ public class EnemyScript : MonoBehaviour {
     }
 
     void WhereAreYou() {
-            if(rigidBody.position.x >= 1) {
-                moveLeft = true;
-            }
+        if(rigidBody.position.x >= 1) {
+            moveLeft = true;
+        }
 
-            else if(rigidBody.position.x <= -1) {
-                moveRight = true;
-            }
+        else if(rigidBody.position.x <= -1) {
+            moveRight = true;
+        }
     }
 
-    void StartShooting() {
-        GameObject bullet = Instantiate(enemyBullet, attack.position, Quaternion.identity);
-        bullet.GetComponent<BulletEnemy>().Move();
 
-        Invoke("StartShooting", Random.Range(1f, 3f));
+    public void takeDamage(int damage)
+    {
+        if (damage >= life)
+        {
+            GetComponent<BoxCollider2D>().enabled = false;
+            GetComponent<SpriteRenderer>().enabled = false;
+            scoreTextUI.GetComponent<ScoreScript>().Score += 10;
+            //animation of damage
+            //destroy(gameobject);
+        }
+        else
+        {
+            life -= damage;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D hitInfo)
     {
     
         PlayerController player;
-        if(hitInfo.TryGetComponent<PlayerController>(out player))
-        {
-            player.TakeDamage(50);
-        }
-
         if(hitInfo.TryGetComponent<PlayerController>(out player))
         {
             player.TakeDamage(50);

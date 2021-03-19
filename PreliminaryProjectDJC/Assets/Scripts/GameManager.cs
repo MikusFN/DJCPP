@@ -15,6 +15,8 @@ public class GameManager : MonoBehaviour
     public GameObject soundIconON;
     public GameObject soundIconOFF;
     public Text soundText;
+    public GameObject scoreTextUI;
+    public GameObject scoreBox;
 
 
     public enum GameManagerState {
@@ -30,6 +32,7 @@ public class GameManager : MonoBehaviour
     {
         GMState = GameManagerState.Opening;
 
+        scoreTextUI.GetComponent<ScoreScript>().Score = 0;
 
     }
 
@@ -45,6 +48,12 @@ public class GameManager : MonoBehaviour
 
             settingsUI.SetActive(false);
             gameOverUI.SetActive(false);
+            menuInit.SetActive(true);
+            background.SetActive(false);
+            gameplayUI.SetActive(false);
+            scoreBox.SetActive(false);
+            scoreTextUI.GetComponent<ScoreScript>().Score = 0;
+
             
                 break;
             case GameManagerState.Gameplay:
@@ -54,6 +63,9 @@ public class GameManager : MonoBehaviour
             gameplayUI.SetActive(true);
             settingsUI.SetActive(false);
             gameOverUI.SetActive(false);
+            scoreBox.SetActive(true);
+
+            
 
                 break;
             case GameManagerState.Pause:
@@ -63,16 +75,20 @@ public class GameManager : MonoBehaviour
             gameplayUI.SetActive(true);
             settingsUI.SetActive(true);
             gameOverUI.SetActive(false);
+            scoreBox.SetActive(false);
 
 
                 break;
             case GameManagerState.GameOver:
 
             menuInit.SetActive(false);
-            background.SetActive(true);
+            background.SetActive(false);
             gameplayUI.SetActive(false);
             settingsUI.SetActive(false);
             gameOverUI.SetActive(true);
+            scoreBox.transform.Translate(Vector3.right * 372);
+            scoreBox.SetActive(true);
+
 
                 break;
         }
@@ -91,6 +107,12 @@ public class GameManager : MonoBehaviour
     public void SettingsMenu() {
         GMState = GameManagerState.Pause;
         UpdateGameManagerState();
+    }
+
+    public void ExitGamePlay() {
+        GMState = GameManagerState.Opening;
+        UpdateGameManagerState();
+        scoreBox.transform.position = new Vector3(110,350,0);
     }
 
     public void ExitGame() {

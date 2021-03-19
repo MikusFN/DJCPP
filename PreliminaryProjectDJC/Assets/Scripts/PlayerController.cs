@@ -15,8 +15,9 @@ public class PlayerController : MonoBehaviour
 
     public GameObject gameManager;
     public Text lifeUI;
-    public Text scoreText;
     public Slider health;
+
+    GameObject scoreTextUI;
 
 
     [Header("Events")]
@@ -36,7 +37,8 @@ public class PlayerController : MonoBehaviour
     {
         lifeUI.text = life.ToString();
         health.value = life;
-        scoreText.text = score.ToString();
+        scoreTextUI = GameObject.FindGameObjectWithTag ("ScoreTextTag");
+
     }
 
     // Update is called once per frame
@@ -111,6 +113,7 @@ public class PlayerController : MonoBehaviour
             health.value = life;
 
 
+
             gameManager.GetComponent<GameManager>().SetGameManagerState(GameManager.GameManagerState.GameOver);
 
         }
@@ -121,18 +124,7 @@ public class PlayerController : MonoBehaviour
         isAlive = true;
         lifeUI.text = life.ToString();
         health.value = life;
-        this.score = 0;
     }
-
-    public void sumScore(int scoreToAdd) {
-        Debug.Log("scoreToAdd:" + scoreToAdd);
-        Debug.Log("scoreBefore:" + score);
-        score += scoreToAdd;
-        Debug.Log("scoreAfter:" + score);
-        Debug.Log(scoreText);
-        scoreText.text = score.ToString();
-    }
-
     
 }
 

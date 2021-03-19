@@ -6,13 +6,13 @@ public class SpaceEnemyScript : MonoBehaviour
 {
     Rigidbody2D rigidBody;
     private int life = 10;
-    private bool isAlive = true;
 
     public bool canShoot;
     public bool canMove = true;
 
     public Transform attack;
     public GameObject enemyBullet;
+    GameObject scoreTextUI;
 
     [HideInInspector]
     public bool is_enemyBullet = false;
@@ -24,12 +24,29 @@ public class SpaceEnemyScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        scoreTextUI = GameObject.FindGameObjectWithTag ("ScoreTextTag");
         StartShooting();
     }
 
     // Update is called once per frame
     void Update()
     {
+    }
+
+    public void takeDamage(int damage)
+    {
+        if (damage >= life)
+        {
+            GetComponent<BoxCollider2D>().enabled = false;
+            GetComponent<SpriteRenderer>().enabled = false;
+            scoreTextUI.GetComponent<ScoreScript>().Score += 20;
+            //animation of damage
+            //destroy(gameobject);
+        }
+        else
+        {
+            life -= damage;
+        }
     }
 
 

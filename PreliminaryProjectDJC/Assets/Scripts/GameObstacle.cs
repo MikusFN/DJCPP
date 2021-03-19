@@ -15,11 +15,14 @@ public class GameObstacle : MonoBehaviour
     private int initialLife = 10;
     private int damage = 10;
     private float timeOfLife = 0.0f;
+    GameObject scoreTextUI;
 
 
     // Start is called before the first frame update
     void Start()
     {
+
+        scoreTextUI = GameObject.FindGameObjectWithTag ("ScoreTextTag");
         SpriteRenderer sr;
 
         if (TryGetComponent<SpriteRenderer>(out sr))
@@ -46,6 +49,7 @@ public class GameObstacle : MonoBehaviour
         {
             GetComponent<CapsuleCollider2D>().enabled = false;
             GetComponent<SpriteRenderer>().enabled = false;
+            scoreTextUI.GetComponent<ScoreScript>().Score += 5;
             //animation of damage
             //destroy(gameobject);
         }
@@ -88,7 +92,6 @@ public class GameObstacle : MonoBehaviour
         PlayerController player;
         if (collision.TryGetComponent<PlayerController>(out player))
         {
-            Debug.Log("aqui si");
             player.TakeDamage(damage);
         }
     }

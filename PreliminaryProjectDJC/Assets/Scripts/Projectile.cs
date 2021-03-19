@@ -7,7 +7,7 @@ public class Projectile : MonoBehaviour
     public float speed = 10f;
     public int damage = 20;
     public Rigidbody2D rb;
-    public GameObject Player;
+    GameObject scoreTextUI;
 
 
     private int currentDamage = 10;
@@ -19,6 +19,7 @@ public class Projectile : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        scoreTextUI = GameObject.FindGameObjectWithTag ("ScoreTextTag");
 
         //rb.velocity = (GetComponentInParent<WeaponBehaviour>().GetComponentInParent<Transform>().position-transform.position).normalized *speed;
     }
@@ -38,21 +39,24 @@ public class Projectile : MonoBehaviour
         //Instantiate(impactEffect, transform.position, transform.rotation);
 
         GameObstacle obstacle;
+        SpaceEnemyScript spaceEnemy;
+        EnemyScript enemy;
         PlayerController player;
         if (hitInfo.TryGetComponent<GameObstacle>(out obstacle))
         {
             obstacle.takeDamage(currentDamage);
 
             Debug.Log("obstacle destroyed");
-            Player.GetComponent<PlayerController>().sumScore(5);
         }
 
-        if(hitInfo.name == "Enemy") {
-            Player.GetComponent<PlayerController>().sumScore(10);
+        else if (hitInfo.TryGetComponent<SpaceEnemyScript>(out spaceEnemy))
+        {
+            spaceEnemy.takeDamage(currentDamage);
         }
         
-        if(hitInfo.name == "EnemySpace") {
-            Player.GetComponent<PlayerController>().sumScore(15);
+        else if (hitInfo.TryGetComponent<EnemyScript>(out enemy))
+        {
+            enemy.takeDamage(currentDamage);
         }
 
         if (hitInfo.name != "Player" && hitInfo.tag != this.tag)
