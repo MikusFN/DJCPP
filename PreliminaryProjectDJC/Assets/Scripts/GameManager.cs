@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
     public GameObject soundIconOFF;
     public Text soundText;
 
+
     public enum GameManagerState {
         Opening,
         Gameplay,
@@ -28,13 +29,13 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         GMState = GameManagerState.Opening;
-        
+
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
     }
 
     void UpdateGameManagerState() {
@@ -42,7 +43,6 @@ public class GameManager : MonoBehaviour
         switch(GMState) {
             case GameManagerState.Opening:
 
-            gameplayUI.SetActive(false);
             settingsUI.SetActive(false);
             gameOverUI.SetActive(false);
             
@@ -108,4 +108,6 @@ public class GameManager : MonoBehaviour
         soundIconOFF.SetActive(true);
         soundText.text = "OFF";
     }
+
+
 }

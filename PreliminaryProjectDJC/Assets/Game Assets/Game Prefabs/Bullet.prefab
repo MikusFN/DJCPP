@@ -137,3 +137,4 @@ MonoBehaviour:
   speed: 10
   damage: 40
   rb: {fileID: 50231956401082150}
+  Player: {fileID: 7027169582667649510, guid: 944e4d30a72620544a28352199519692, type: 3}

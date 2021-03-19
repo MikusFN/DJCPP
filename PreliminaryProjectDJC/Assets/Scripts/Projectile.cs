@@ -7,6 +7,7 @@ public class Projectile : MonoBehaviour
     public float speed = 10f;
     public int damage = 20;
     public Rigidbody2D rb;
+    public GameObject Player;
 
 
     private int currentDamage = 10;
@@ -37,9 +38,21 @@ public class Projectile : MonoBehaviour
         //Instantiate(impactEffect, transform.position, transform.rotation);
 
         GameObstacle obstacle;
+        PlayerController player;
         if (hitInfo.TryGetComponent<GameObstacle>(out obstacle))
         {
             obstacle.takeDamage(currentDamage);
+
+            Debug.Log("obstacle destroyed");
+            Player.GetComponent<PlayerController>().sumScore(5);
+        }
+
+        if(hitInfo.name == "Enemy") {
+            Player.GetComponent<PlayerController>().sumScore(10);
+        }
+        
+        if(hitInfo.name == "EnemySpace") {
+            Player.GetComponent<PlayerController>().sumScore(15);
         }
 
         if (hitInfo.name != "Player" && hitInfo.tag != this.tag)
