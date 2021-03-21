@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
 
     GameObject scoreTextUI;
 
+    AudioSource audioDamage;
 
     [Header("Events")]
     [Space]
@@ -98,6 +99,9 @@ public class PlayerController : MonoBehaviour
             Debug.Log("Taken Damage");
             lifeUI.text = life.ToString();
             health.value = life;
+
+            audioDamage = GetComponent<AudioSource>();
+            audioDamage.Play();
 
         }
         else

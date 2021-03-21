@@ -185,17 +185,22 @@ public class GameManager : MonoBehaviour
         soundIconONSettings.SetActive(true);
         soundIconOFFSettings.SetActive(false);
         soundTextSettings.text = "ON";
-        backgroundSound.GetComponent<AudioSource>().Play();
+        
+        AudioListener.pause = false;
+        AudioListener.volume = 1;
     }
 
     public void SoundOFF() {
+
         soundIconONPause.SetActive(false);
         soundIconOFFPause.SetActive(true);
         soundTextPause.text = "OFF";
         soundIconONSettings.SetActive(false);
         soundIconOFFSettings.SetActive(true);
         soundTextSettings.text = "OFF";
-        backgroundSound.GetComponent<AudioSource>().Stop();
+
+        AudioListener.pause = true;
+        AudioListener.volume = 0;
     }
 
 }
