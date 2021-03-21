@@ -11,19 +11,28 @@ public class GameManager : MonoBehaviour
     public GameObject background;
     public GameObject gameplayUI;
     public GameObject settingsUI;
+    public GameObject settings;
     public GameObject gameOverUI;
-    public GameObject soundIconON;
-    public GameObject soundIconOFF;
-    public Text soundText;
+    public GameObject soundIconONPause;
+    public GameObject soundIconOFFPause;
+    public Text soundTextPause;
+    public GameObject soundIconONSettings;
+    public GameObject soundIconOFFSettings;
+    public Text soundTextSettings;
     public GameObject scoreTextUI;
     public GameObject scoreBox;
+    public GameObject timeCounter;
+    public GameObject timeBox;
+    public GameObject backgroundSound;
 
+    bool backMainMenu = false;
 
     public enum GameManagerState {
         Opening,
         Gameplay,
         Pause,
         GameOver,
+        Settings,
     }
 
     GameManagerState GMState;
@@ -52,7 +61,27 @@ public class GameManager : MonoBehaviour
             background.SetActive(false);
             gameplayUI.SetActive(false);
             scoreBox.SetActive(false);
-            scoreTextUI.GetComponent<ScoreScript>().Score = 0;
+            timeBox.SetActive(false);
+            settings.SetActive(false);
+
+            if (!backMainMenu) {
+                scoreTextUI.GetComponent<ScoreScript>().Score = 0;
+            }
+
+            backMainMenu = false;
+
+                break;
+
+            case GameManagerState.Settings:
+
+            settingsUI.SetActive(false);
+            gameOverUI.SetActive(false);
+            menuInit.SetActive(false);
+            background.SetActive(false);
+            gameplayUI.SetActive(false);
+            scoreBox.SetActive(false);
+            timeBox.SetActive(false);
+            settings.SetActive(true);
 
             
                 break;
@@ -64,6 +93,9 @@ public class GameManager : MonoBehaviour
             settingsUI.SetActive(false);
             gameOverUI.SetActive(false);
             scoreBox.SetActive(true);
+            timeBox.SetActive(true);
+            settings.SetActive(false);
+
 
             
 
@@ -75,7 +107,9 @@ public class GameManager : MonoBehaviour
             gameplayUI.SetActive(true);
             settingsUI.SetActive(true);
             gameOverUI.SetActive(false);
-            scoreBox.SetActive(false);
+            scoreBox.SetActive(true);
+            timeBox.SetActive(true);
+            settings.SetActive(false);
 
 
                 break;
@@ -86,8 +120,13 @@ public class GameManager : MonoBehaviour
             gameplayUI.SetActive(false);
             settingsUI.SetActive(false);
             gameOverUI.SetActive(true);
-            scoreBox.transform.Translate(Vector3.right * 372);
             scoreBox.SetActive(true);
+            timeBox.SetActive(true);
+            settings.SetActive(false);
+
+            timeCounter.GetComponent<TimeCounter>().StopTimeCounter();
+            timeCounter.GetComponent<TimeCounter>().startTime = 0f;
+            timeCounter.GetComponent<TimeCounter>().myTime = 0f;
 
 
                 break;
@@ -100,19 +139,39 @@ public class GameManager : MonoBehaviour
     }
 
     public void StartGamePlay() {
+        timeCounter.GetComponent<TimeCounter>().StartTimeCounter();
         GMState = GameManagerState.Gameplay;
         UpdateGameManagerState();
     }
 
-    public void SettingsMenu() {
+    public void ResumeGamePlay() {
+        timeCounter.GetComponent<TimeCounter>().resumeTimeCounter();
+        GMState = GameManagerState.Gameplay;
+        UpdateGameManagerState();
+    }
+
+    public void PauseMenu() {
+        timeCounter.GetComponent<TimeCounter>().StopTimeCounter();
         GMState = GameManagerState.Pause;
         UpdateGameManagerState();
     }
 
+    public void SettingsMenu() {
+        GMState = GameManagerState.Settings;
+        UpdateGameManagerState();
+    }
+
+
     public void ExitGamePlay() {
         GMState = GameManagerState.Opening;
         UpdateGameManagerState();
-        scoreBox.transform.position = new Vector3(110,350,0);
+    }
+
+    
+    public void BackMainMenu() {
+        backMainMenu = true;
+        GMState = GameManagerState.Opening;
+        UpdateGameManagerState();
     }
 
     public void ExitGame() {
@@ -120,16 +179,23 @@ public class GameManager : MonoBehaviour
     }
 
     public void SoundON() {
-        soundIconON.SetActive(true);
-        soundIconOFF.SetActive(false);
-        soundText.text = "ON";
+        soundIconONPause.SetActive(true);
+        soundIconOFFPause.SetActive(false);
+        soundTextPause.text = "ON";
+        soundIconONSettings.SetActive(true);
+        soundIconOFFSettings.SetActive(false);
+        soundTextSettings.text = "ON";
+        backgroundSound.GetComponent<AudioSource>().Play();
     }
 
     public void SoundOFF() {
-        soundIconON.SetActive(false);
-        soundIconOFF.SetActive(true);
-        soundText.text = "OFF";
+        soundIconONPause.SetActive(false);
+        soundIconOFFPause.SetActive(true);
+        soundTextPause.text = "OFF";
+        soundIconONSettings.SetActive(false);
+        soundIconOFFSettings.SetActive(true);
+        soundTextSettings.text = "OFF";
+        backgroundSound.GetComponent<AudioSource>().Stop();
     }
-
 
 }
