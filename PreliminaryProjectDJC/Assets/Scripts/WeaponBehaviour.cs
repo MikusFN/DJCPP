@@ -22,7 +22,7 @@ public class WeaponBehaviour : MonoBehaviour
     void Start()
     {
         currentStatePickable = new List<Pickable>();
-        timeOfLife = rateOfFire;
+        timeOfLife = 0.0f;
         canFire = true;
     }
 
@@ -33,34 +33,21 @@ public class WeaponBehaviour : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        //if (Input.GetKeyDown(KeyCode.Mouse0))
-        //{
-        //    timeOfLife = rateOfFire;
-
-        //}
-        if (Input.GetKey(KeyCode.Mouse0))
+        if (currentStatePickable.Count > 0)
+        {
+            foreach (var item in currentStatePickable)
+            {
+                UsePPUP(item.PpType);
+            }
+            currentStatePickable.Clear();
+        }
+        if (Input.GetKey(KeyCode.Mouse0) || Input.GetKeyDown(KeyCode.Mouse0))
         {
             RateFire();
-            if (currentStatePickable.Count > 0)
-            {
-                foreach (var item in currentStatePickable)
-                {
-                    UsePPUP(item.PpType);
-                }
-                currentStatePickable.Clear();
-            }
             Shoot();
         }
         if (Input.GetKey(KeyCode.Mouse1))
         {
-            if (currentStatePickable.Count > 0)
-            {
-                foreach (var item in currentStatePickable)
-                {
-                    UsePPUP(item.PpType);
-                }
-                currentStatePickable.Clear();
-            }
             ShootPowerWeapon();
         }
     }
@@ -69,7 +56,7 @@ public class WeaponBehaviour : MonoBehaviour
         if (canFire)
         {
 
-            GameObject go = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+            GameObject go = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation, this.transform);
             go.GetComponent<Rigidbody2D>().velocity = (go.transform.position - transform.position).normalized * go.GetComponent<Projectile>().speed;
 
             if (shotsFire > 1)
@@ -77,11 +64,11 @@ public class WeaponBehaviour : MonoBehaviour
                 int numberShotsCount = (shotsFire - 1) / 2;
                 for (int i = 0; i < numberShotsCount; i++)
                 {
-                    GameObject go2 = Instantiate(bulletPrefab, new Vector3((i + 1) * 0.01f, 0, 0) + firePoint.position, firePoint.rotation);
+                    GameObject go2 = Instantiate(bulletPrefab, new Vector3((i + 1) * 0.01f, 0, 0) + firePoint.position, firePoint.rotation, this.transform);
                     go2.GetComponent<Rigidbody2D>().velocity = //((Quaternion.Euler(0, 0, (i + 1) * step)) * 
                          (go2.transform.position - transform.position).normalized * go.GetComponent<Projectile>().speed;
 
-                    GameObject go3 = Instantiate(bulletPrefab, new Vector3(-(i + 1) * (0.01f), 0, 0) + firePoint.position, firePoint.rotation);
+                    GameObject go3 = Instantiate(bulletPrefab, new Vector3(-(i + 1) * (0.01f), 0, 0) + firePoint.position, firePoint.rotation, this.transform);
                     go3.GetComponent<Rigidbody2D>().velocity = //((Quaternion.Euler(0, 0, (i + 1) * (-step))) * 
                          (go3.transform.position - transform.position).normalized * go.GetComponent<Projectile>().speed;
                 }
@@ -92,23 +79,32 @@ public class WeaponBehaviour : MonoBehaviour
 
     void ShootPowerWeapon()
     {
+        PlayerController pc;
+        PlayerMovement pm;
+
         switch (sidePP)
         {
             case PPUpType.Teleport:
                 //set new player position             
-                PlayerMovement pm;
                 TryGetComponent<PlayerMovement>(out pm);
                 Transform player = GetComponentInParent<Transform>();
                 if (player)
                 {
                     //instantiate the explosion and check for reached obstacles and enemies
-                    Instantiate(explosionAfPrefab, firePoint.position, firePoint.rotation);
+                    GameObject go = Instantiate(explosionAfPrefab, firePoint.position, firePoint.rotation, this.transform);
+                    Vector3 auxPos =   new Vector3(firePoint.position.x, firePoint.position.y, firePoint.position.z);
                     player.position = pm.mainCam.ScreenToWorldPoint(Input.mousePosition) + new Vector3(0, 0, 10);
+                    go.transform.position = auxPos;
+
                 }
                 sidePP = PPUpType.none; //or a cold down timer 
                 break;
             case PPUpType.destroyer:
-                Instantiate(destroyerPrefab, firePoint.position, firePoint.rotation);
+                if (TryGetComponent<PlayerController>(out pc))
+                {
+                    pc.ResetShield();
+                }
+                Instantiate(destroyerPrefab, firePoint.position, firePoint.rotation, this.transform);
                 sidePP = PPUpType.none; //or a cold down timer 
                 break;
             case PPUpType.none:
@@ -136,13 +132,23 @@ public class WeaponBehaviour : MonoBehaviour
 
     public void AddPickable(Pickable pickable)
     {
+        GetComponent<PlayerController>().Score += (int)pickable.PpType;
         currentStatePickable.Add(pickable);
     }
 
     public void UsePPUP(PPUpType pPUpType)
     {
+        PlayerController player;
+
         switch (pPUpType)
         {
+
+            case PPUpType.life:
+                if (TryGetComponent<PlayerController>(out player))
+                {
+                    player.AddLifeShield(pPUpType);
+                }
+                break;
             case PPUpType.RateOfFire:
                 if (rateOfFire >= maxRateofFire)
                 {
@@ -150,7 +156,10 @@ public class WeaponBehaviour : MonoBehaviour
                 }
                 break;
             case PPUpType.ShieldTime:
-                //Up shield time or recover time
+                if (TryGetComponent<PlayerController>(out player))
+                {
+                    player.AddLifeShield(pPUpType);
+                }
                 break;
             case PPUpType.ShotsNum:
                 if (shotsFire <= maxShotsFire)

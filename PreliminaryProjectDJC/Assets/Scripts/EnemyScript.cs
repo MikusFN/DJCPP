@@ -75,6 +75,11 @@ public class EnemyScript : MonoBehaviour {
         Invoke("StartShooting", Random.Range(1f, 3f));
     }
 
+    public void TakeDamage(int damage)
+    {
+        this.life -= damage;
+    }
+
     private void OnTriggerEnter2D(Collider2D hitInfo)
     {
     
@@ -83,6 +88,15 @@ public class EnemyScript : MonoBehaviour {
         {
             Debug.Log("OSTION");
             player.TakeDamage(55);
+        }
+
+        GameObstacle go;
+        if(hitInfo.TryGetComponent<GameObstacle>(out go))
+        {
+            if(go.hasLifeSpan)
+            {
+                this.TakeDamage(go.Damage);
+            }
         }
     }
 

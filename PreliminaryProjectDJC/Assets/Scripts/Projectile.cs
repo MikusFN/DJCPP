@@ -40,6 +40,7 @@ public class Projectile : MonoBehaviour
         if (hitInfo.TryGetComponent<GameObstacle>(out obstacle))
         {
             obstacle.takeDamage(currentDamage);
+            GetComponentInParent<WeaponBehaviour>().GetComponent<PlayerController>().Score += currentDamage;
         }
 
         if (hitInfo.name != "Player" && hitInfo.tag != this.tag)
