@@ -17,7 +17,7 @@ public class CameraController : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        velocity = velocityMin;
+        velocity = velovityMax;
 
         Plane[] planes = GeometryUtility.CalculateFrustumPlanes(this.GetComponent<Camera>());
 

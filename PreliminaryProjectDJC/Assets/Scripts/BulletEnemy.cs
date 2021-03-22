@@ -5,48 +5,53 @@ using UnityEngine;
 public class BulletEnemy : MonoBehaviour
 {
 
-    public Transform gunPosition;
-    public float speed;
-    Vector3 _direction;
-    bool isReady;
-    public GameObject enemyBullet;
+    float speed = 5f;
 
-    void Awake() {
+    private int damage = 20;
+    private float timeOfLife = 0.0f;
 
+    void Awake()
+    {
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        speed = 5f;
-        isReady = false;
     }
 
     // Update is called once per frame
     void Update()
     {
+        LifeTime();
     }
 
-    public void Move() {
-    }
 
-    public void setDirection(Vector3 direction) {
-        _direction = direction;
+    void OnTriggerEnter2D(Collider2D hitInfo)
+    {
 
-        //Debug.Log("bieen niño");
-
-
-        Instantiate(enemyBullet, gunPosition.position, gunPosition.rotation);
-        Instantiate(enemyBullet, gunPosition.position  - _direction, gunPosition.rotation);
-
-        Vector3 min = Camera.main.ViewportToWorldPoint(new Vector3(0,0,0));
-
-        Vector3 max = Camera.main.ViewportToWorldPoint(new Vector3(1,1,0));
-
-        if((transform.position.x < min.x) || (transform.position.x > max.x) ||
-            (transform.position.y < min.y) || (transform.position.y > max.y)) {
-                Destroy(gameObject);
+        if (hitInfo.name == "Player")
+        {
+            PlayerController player;
+            if (hitInfo.TryGetComponent<PlayerController>(out player))
+            {
+                player.TakeDamage(damage);
             }
+            Destroy(gameObject);
+        }
     }
+
+
+    private void LifeTime()
+    {
+        //contador de vida do projectil para o destroir 
+        if (timeOfLife > 15.0f)
+        {
+            timeOfLife = 0.0f;
+            Destroy(gameObject);
+        }
+        timeOfLife += Time.fixedDeltaTime;
+    }
+
+
 
 }

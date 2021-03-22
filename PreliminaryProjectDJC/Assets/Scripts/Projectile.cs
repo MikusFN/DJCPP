@@ -46,7 +46,6 @@ public class Projectile : MonoBehaviour
         {
             obstacle.takeDamage(currentDamage);
 
-            Debug.Log("obstacle destroyed");
         }
 
         else if (hitInfo.TryGetComponent<SpaceEnemyScript>(out spaceEnemy))
@@ -57,10 +56,11 @@ public class Projectile : MonoBehaviour
         else if (hitInfo.TryGetComponent<EnemyScript>(out enemy))
         {
             enemy.takeDamage(currentDamage);
-        }
-
-        if (hitInfo.name != "Player" && hitInfo.tag != this.tag)
-            Destroy(gameObject);
+		}
+		
+        GetComponentInParent<WeaponBehaviour>().GetComponent<PlayerController>().Score += currentDamage;       
+		if (hitInfo.name != "Player" && hitInfo.tag != this.tag)
+        Destroy(gameObject);
     }
 
     private void OnDestroy()
