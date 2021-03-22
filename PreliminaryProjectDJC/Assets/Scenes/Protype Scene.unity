@@ -770,6 +770,17 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 3253572857935700749, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
+        type: 3}
+      propertyPath: bullet
+      value: 
+      objectReference: {fileID: 7536724106932670203, guid: d278ac827c8738541867c9ae786bf015,
+        type: 3}
+    - target: {fileID: 3253572857935700749, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
+        type: 3}
+      propertyPath: MainCamera
+      value: 
+      objectReference: {fileID: 519420028}
     - target: {fileID: 3371311055171120652, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
         type: 3}
       propertyPath: m_IsActive
@@ -845,6 +856,21 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8711787665785602260, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8711787665785602260, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8711787665785602260, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9054611875470758448, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
         type: 3}
       propertyPath: m_SortingOrder
@@ -891,6 +917,11 @@ PrefabInstance:
       propertyPath: background
       value: 
       objectReference: {fileID: 70339746}
+    - target: {fileID: 7345205602441361252, guid: c41882268c4f60a41bb5c2c6ac427ee2,
+        type: 3}
+      propertyPath: velovityMax
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: 7345205602441361254, guid: c41882268c4f60a41bb5c2c6ac427ee2,
         type: 3}
       propertyPath: m_Name

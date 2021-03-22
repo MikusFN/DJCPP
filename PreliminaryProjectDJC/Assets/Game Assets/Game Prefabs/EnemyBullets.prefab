@@ -46,7 +46,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5dcd3d154f8c8304f9cfd1ad8fe87cc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gun: {fileID: 1661781656491360003, guid: 6fd0ec9598a6c194a973f4457a5d10df, type: 3}
 --- !u!212 &5108934896637636109
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -86,7 +85,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: b30f8f709f2a30c46866403b10028b40, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -106,15 +105,15 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7536724106932670203}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 6200000, guid: a94b09979d7ffde4aa539ee8f217cde7, type: 2}
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -128,7 +127,7 @@ CapsuleCollider2D:
   m_GameObject: {fileID: 7536724106932670203}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: a94b09979d7ffde4aa539ee8f217cde7, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
