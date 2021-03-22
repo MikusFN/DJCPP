@@ -63,7 +63,7 @@ Transform:
   m_LocalScale: {x: 0.4, y: 0.5, z: 1}
   m_Children:
   - {fileID: 7027169581027808654}
-  - {fileID: 7291353230753272587}
+  - {fileID: 41240506567550475}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -189,7 +189,7 @@ MonoBehaviour:
   destroyerPrefab: {fileID: 0}
   explosionAfPrefab: {fileID: 0}
   rateOfFire: 1
---- !u!1001 &2254536976645020818
+--- !u!1001 &8857219593954535826
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -214,7 +214,7 @@ PrefabInstance:
     - target: {fileID: 8825276597978976153, guid: 8b631e6595f98ae4eb9390ff5b14f03c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.01
+      value: 0.07
       objectReference: {fileID: 0}
     - target: {fileID: 8825276597978976153, guid: 8b631e6595f98ae4eb9390ff5b14f03c,
         type: 3}
@@ -258,9 +258,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b631e6595f98ae4eb9390ff5b14f03c, type: 3}
---- !u!4 &7291353230753272587 stripped
+--- !u!4 &41240506567550475 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8825276597978976153, guid: 8b631e6595f98ae4eb9390ff5b14f03c,
     type: 3}
-  m_PrefabInstance: {fileID: 2254536976645020818}
+  m_PrefabInstance: {fileID: 8857219593954535826}
   m_PrefabAsset: {fileID: 0}

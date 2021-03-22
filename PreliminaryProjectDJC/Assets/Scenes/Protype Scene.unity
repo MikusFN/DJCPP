@@ -205,6 +205,12 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &850278151 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3267097987666309023, guid: c41882268c4f60a41bb5c2c6ac427ee2,
+    type: 3}
+  m_PrefabInstance: {fileID: 7345205602467729178}
+  m_PrefabAsset: {fileID: 0}
 --- !u!850595691 &1066801820
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -791,6 +797,42 @@ PrefabInstance:
       propertyPath: mainCamera
       value: 
       objectReference: {fileID: 519420028}
+    - target: {fileID: 3946835637938269943, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
+        type: 3}
+      propertyPath: spritePicksPrefab.Array.data[0]
+      value: 
+      objectReference: {fileID: 1618093637480710077, guid: 85f6456a9ea8b0645ace6e305982d7c3,
+        type: 3}
+    - target: {fileID: 3946835637938269943, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
+        type: 3}
+      propertyPath: spritePicksPrefab.Array.data[1]
+      value: 
+      objectReference: {fileID: 1618093637480710077, guid: 6540f98f652e1b647afea57960a74a94,
+        type: 3}
+    - target: {fileID: 3946835637938269943, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
+        type: 3}
+      propertyPath: spritePicksPrefab.Array.data[2]
+      value: 
+      objectReference: {fileID: 2363797982525288867, guid: b2f1ea1850e6e4a4da19e12ed34848fc,
+        type: 3}
+    - target: {fileID: 3946835637938269943, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
+        type: 3}
+      propertyPath: spritePicksPrefab.Array.data[3]
+      value: 
+      objectReference: {fileID: 2363797982525288867, guid: bdd48319e00250b4e91421ebb2812897,
+        type: 3}
+    - target: {fileID: 3946835637938269943, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
+        type: 3}
+      propertyPath: spritePicksPrefab.Array.data[4]
+      value: 
+      objectReference: {fileID: 1618093637480710077, guid: 4323563dd55925b48ad3a61db8dda0b7,
+        type: 3}
+    - target: {fileID: 3946835637938269943, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
+        type: 3}
+      propertyPath: spritePicksPrefab.Array.data[5]
+      value: 
+      objectReference: {fileID: 1618093637480710077, guid: 81beae4bf3e12544eaedc98dcf047962,
+        type: 3}
     - target: {fileID: 5384785882944478906, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
         type: 3}
       propertyPath: m_IsActive
@@ -912,6 +954,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1978248147597285847, guid: b719f9f8b1feadc47998bb42e953d3e3,
         type: 3}
+    - target: {fileID: 7345205602099839694, guid: c41882268c4f60a41bb5c2c6ac427ee2,
+        type: 3}
+      propertyPath: shield
+      value: 
+      objectReference: {fileID: 850278151}
     - target: {fileID: 7345205602441361252, guid: c41882268c4f60a41bb5c2c6ac427ee2,
         type: 3}
       propertyPath: background
