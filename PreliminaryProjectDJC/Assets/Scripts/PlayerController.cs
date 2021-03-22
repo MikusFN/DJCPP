@@ -8,37 +8,56 @@ public class PlayerController : MonoBehaviour
     [Range(0, .3f)] [SerializeField] private float m_MovementSmoothing = .05f;
     private Rigidbody2D m_Rigidbody2D;
     private Vector3 m_Velocity = Vector3.zero;
-    private int life = 50;
+    private int life;
     private bool isAlive = true;
+    private bool isShielding = true;
+    private float shieldTime;
+    private int score;
+    //private SpriteRenderer shieldRenderer;
 
 
-    [Header("Events")]
-    [Space]
-    public UnityEvent OnLandEvent;
+    //[Header("Events")]
+    //[Space]
+    //public UnityEvent OnLandEvent;
 
+    public GameObject shield;
     public float velocityRB;
+    public int maxLife = 500;
+    public float maxShieldTime = 10.0f;
+
+    public bool IsAlive { get => isAlive; set => isAlive = value; }
+    public bool IsShielding { get => isShielding; set => isShielding = value; }
+    public int Score { get => score; set => score = value; }
 
     private void Awake()
     {
         m_Rigidbody2D = GetComponent<Rigidbody2D>();
         velocityRB = m_Rigidbody2D.velocity.y;
+        shieldTime = maxShieldTime;
+        life = maxLife;
+        Score = 0;
     }
 
     // Start is called before the first frame update
     void Start()
     {
-
+        shield.GetComponent<SpriteRenderer>().color =
+            new Color(shield.GetComponent<SpriteRenderer>().color.r, shield.GetComponent<SpriteRenderer>().color.g, shield.GetComponent<SpriteRenderer>().color.b, 0.5f);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (isAlive == true && GetComponent<SpriteRenderer>().color.a < 1.0f)
-        {
-            GetComponent<SpriteRenderer>().color
-                = new Color(GetComponent<SpriteRenderer>().color.r, GetComponent<SpriteRenderer>().color.g,
-                GetComponent<SpriteRenderer>().color.b, (GetComponent<SpriteRenderer>().color.a + Time.deltaTime));
-        }
+        isShielding = UpdateShield();
+        if (!isShielding)
+            if (IsAlive == true && GetComponent<SpriteRenderer>().color.a < 1.0f)
+            {
+                GetComponent<SpriteRenderer>().color
+                    = new Color(GetComponent<SpriteRenderer>().color.r, GetComponent<SpriteRenderer>().color.g,
+                    GetComponent<SpriteRenderer>().color.b, (GetComponent<SpriteRenderer>().color.a + Time.deltaTime));
+            }
+
+        Debug.Log("Score " + score);
     }
 
     public void Move(float move, bool axis, float torqueValue)
@@ -76,27 +95,76 @@ public class PlayerController : MonoBehaviour
         //m_Rigidbody2D.rotation = angle;
     }
 
+    public bool UpdateShield()
+    {
+        if (isShielding)
+        {
+            shieldTime -= Time.deltaTime;
+            shield.GetComponent<SpriteRenderer>().color =
+            new Color(shield.GetComponent<SpriteRenderer>().color.r, shield.GetComponent<SpriteRenderer>().color.g, shield.GetComponent<SpriteRenderer>().color.b, (shieldTime / maxShieldTime) * 0.5f);
+        }
+        return shieldTime > 0.0f;
+    }
+
     public void TakeDamage(int damage)
     {
-        if (life > damage)
+        if (!isShielding)
+            if (life > damage)
+            {
+                life -= damage;
+                GetComponent<SpriteRenderer>().color
+                    = new Color(GetComponent<SpriteRenderer>().color.r, GetComponent<SpriteRenderer>().color.g,
+                    GetComponent<SpriteRenderer>().color.b, GetComponent<SpriteRenderer>().color.a * 0.1f);
+                Debug.Log("Taken Damage");
+            }
+            else
+            {
+                life -= damage;
+                IsAlive = false;
+                GetComponent<SpriteRenderer>().color
+                    = new Color(GetComponent<SpriteRenderer>().color.r, GetComponent<SpriteRenderer>().color.g,
+                    GetComponent<SpriteRenderer>().color.b, GetComponent<SpriteRenderer>().color.a * 0.1f);
+                Debug.Log("You Died");
+            }
+    }
+
+    public void AddLifeShield(PPUpType upType)
+    {
+        switch (upType)
         {
-            life -= damage;
-            GetComponent<SpriteRenderer>().color
-                = new Color(GetComponent<SpriteRenderer>().color.r, GetComponent<SpriteRenderer>().color.g,
-                GetComponent<SpriteRenderer>().color.b, GetComponent<SpriteRenderer>().color.a * 0.1f);
-            Debug.Log("Taken Damage");
-        }
-        else
-        {
-            life -= damage;
-            isAlive = false;
-            GetComponent<SpriteRenderer>().color
-                = new Color(GetComponent<SpriteRenderer>().color.r, GetComponent<SpriteRenderer>().color.g,
-                GetComponent<SpriteRenderer>().color.b, GetComponent<SpriteRenderer>().color.a * 0.1f);
-            Debug.Log("You Died");
+            case PPUpType.ShieldTime:
+                if (shieldTime < maxShieldTime)
+                //if ((shieldTime + 2) < maxShieldTime)
+                //{
+                //    shieldTime += 2;
+                //}                    
+                {
+                    shieldTime = maxShieldTime;
+                }
+                Debug.Log("Shield " + shieldTime);
+                break;
+            case PPUpType.life:
+                if (life < maxLife)
+                    if ((life + 50) < maxLife)
+                    {
+                        life += 50;
+                    }
+                    else
+                    {
+                        life = maxLife;
+                    }
+                Debug.Log("Life " + life);
+                break;
+            case PPUpType.none:
+                break;
+            default:
+                break;
         }
     }
 
-    
+    public void ResetShield()
+    {
+        shieldTime = maxShieldTime;
+    }
 }
 

@@ -28,11 +28,11 @@ public class PlayerMovement : MonoBehaviour
 
         horizontalMove = Input.GetAxisRaw("Horizontal") * multSpeed;
         verticalMove = Input.GetAxisRaw("Vertical") * multSpeed;
-        if (Input.GetKey(KeyCode.LeftShift))
-        {
-            torqueValue = horizontalMove / multSpeed;
-            horizontalMove = 0.0f;
-        }
+        //if (Input.GetKey(KeyCode.LeftShift))
+        //{
+        //    torqueValue = horizontalMove / multSpeed;
+        //    horizontalMove = 0.0f;
+        //}
 
         //mousePos = mainCam.ScreenToWorldPoint(Input.mousePosition);
     }

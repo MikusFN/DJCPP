@@ -18,13 +18,13 @@ public class ExplosionAfterTel : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        GetComponent<Rigidbody2D>().velocity = -transform.up;
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        this.transform.localScale = new Vector3(1.0f + timeOfLife * 1.5f, 1.0f + timeOfLife * 1.5f, 1.0f);
+        this.transform.localScale = new Vector3(1.0f + timeOfLife * 2f, 1.0f + timeOfLife * 2f, 1.0f);
         LifeTime();
     }
     void OnTriggerEnter2D(Collider2D hitInfo)
@@ -41,6 +41,7 @@ public class ExplosionAfterTel : MonoBehaviour
         if (hitInfo.TryGetComponent<GameObstacle>(out obstacle))
         {
             obstacle.takeDamage(currentDamage);
+            GetComponentInParent<WeaponBehaviour>().GetComponent<PlayerController>().Score += currentDamage;
         }
 
         //if (hitInfo.name != "Player" && hitInfo.tag != this.tag)

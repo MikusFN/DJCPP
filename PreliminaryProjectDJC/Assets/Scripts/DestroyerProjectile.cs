@@ -39,6 +39,7 @@ public class DestroyerProjectile : MonoBehaviour
         {
             obstacle.ExplodeOnCollision(currentDamage, hitInfo.transform, explodingPrefab);
             obstacle.takeDamage(damage);
+            GetComponentInParent<WeaponBehaviour>().GetComponent<PlayerController>().Score += currentDamage;
         }
 
         if (hitInfo.name != "Player" && hitInfo.tag != "Projectile" && hitInfo.tag != "MainCamera")
