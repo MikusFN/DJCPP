@@ -111,6 +111,7 @@ GameObject:
   - component: {fileID: 271369705327736243}
   - component: {fileID: 2772303925439949214}
   - component: {fileID: 2810286197042782966}
+  - component: {fileID: -2213287164463317636}
   m_Layer: 0
   m_Name: EnemySpace
   m_TagString: Player
@@ -243,3 +244,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e830a765513f058458b1e01057ec01a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canShoot: 0
+  canMove: 1
+  attack: {fileID: 0}
+  enemyBullet: {fileID: 0}
+  is_enemyBullet: 0
+--- !u!114 &-2213287164463317636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4472521699452147047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22833da09b90c28479627f65339d3574, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MainCamera: {fileID: 0}
+  background: {fileID: 0}
+  effectStrenght: 0

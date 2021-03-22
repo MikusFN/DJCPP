@@ -10,8 +10,8 @@ public class SpaceEnemyScript : MonoBehaviour
     public bool canShoot;
     public bool canMove = true;
 
-    public Transform attack;
-    public GameObject enemyBullet;
+    //public Transform attack;
+    //public GameObject enemyBullet;
     GameObject scoreTextUI;
 
     [HideInInspector]
@@ -25,7 +25,7 @@ public class SpaceEnemyScript : MonoBehaviour
     void Start()
     {
         scoreTextUI = GameObject.FindGameObjectWithTag ("ScoreTextTag");
-        StartShooting();
+        //StartShooting();
     }
 
     // Update is called once per frame
@@ -51,7 +51,7 @@ public class SpaceEnemyScript : MonoBehaviour
 
 
     void StartShooting() {
-        GameObject bullet = Instantiate(enemyBullet, attack.position, Quaternion.identity);
+        //GameObject bullet = Instantiate(enemyBullet, attack.position, Quaternion.identity);
 
         Invoke("StartShooting", Random.Range(1f, 3f));
     }

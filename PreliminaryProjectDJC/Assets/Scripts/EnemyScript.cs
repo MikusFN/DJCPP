@@ -74,7 +74,7 @@ public class EnemyScript : MonoBehaviour {
     {
         if (damage >= life)
         {
-            GetComponent<BoxCollider2D>().enabled = false;
+            GetComponent<CircleCollider2D>().enabled = false;
             GetComponent<SpriteRenderer>().enabled = false;
             scoreTextUI.GetComponent<ScoreScript>().Score += 10;
             //animation of damage

@@ -6,20 +6,32 @@ public class EnemyGun : MonoBehaviour
 {
 
     public GameObject bullet;
-    public GameObject MainCamera;
-    CameraController camCont;
-    int aux = 0;
+    public CameraController MainCamera;
+    public SpaceEnemyScript ses;
+
+    private float coolDownTime = 0.0f;
+
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("FireEnemyBullet", 0.5f, 0.5f);
-        FireEnemyBullet();
+        //InvokeRepeating("FireEnemyBullet", 0.5f, 0.5f);
+        //FireEnemyBullet();
     }
 
     // Update is called once per frame
     void Update()
     {       
-
+        //add cool down timer 
+        if(MainCamera.IsInsideScreen(ses.GetComponent<SpriteRenderer>().bounds))
+        {
+            if (coolDownTime > 1.0f)
+            {
+                FireEnemyBullet();
+                coolDownTime = 0.0f;
+            }
+        }
+        
+        coolDownTime += Time.deltaTime;
     }
 
     void FireEnemyBullet()
