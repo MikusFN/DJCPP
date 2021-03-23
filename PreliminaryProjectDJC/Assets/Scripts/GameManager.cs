@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public GameObject menuInit;
     public GameObject MainCamera;
     public GameObject background;
+    public GameObject player;
     public GameObject gameplayUI;
     public GameObject settingsUI;
     public GameObject settings;
@@ -27,7 +28,8 @@ public class GameManager : MonoBehaviour
 
     bool backMainMenu = false;
 
-    public enum GameManagerState {
+    public enum GameManagerState
+    {
         Opening,
         Gameplay,
         Pause,
@@ -50,147 +52,165 @@ public class GameManager : MonoBehaviour
     {
     }
 
-    void UpdateGameManagerState() {
+    void UpdateGameManagerState()
+    {
 
-        switch(GMState) {
+        switch (GMState)
+        {
             case GameManagerState.Opening:
 
-            settingsUI.SetActive(false);
-            gameOverUI.SetActive(false);
-            menuInit.SetActive(true);
-            background.SetActive(false);
-            gameplayUI.SetActive(false);
-            scoreBox.SetActive(false);
-            timeBox.SetActive(false);
-            settings.SetActive(false);
+                settingsUI.SetActive(false);
+                gameOverUI.SetActive(false);
+                menuInit.SetActive(true);
+                background.SetActive(false);
+                player.SetActive(false);
+                gameplayUI.SetActive(false);
+                scoreBox.SetActive(false);
+                timeBox.SetActive(false);
+                settings.SetActive(false);
 
-            if (!backMainMenu) {
-                scoreTextUI.GetComponent<ScoreScript>().Score = 0;
-            }
+                if (!backMainMenu)
+                {
+                    scoreTextUI.GetComponent<ScoreScript>().Score = 0;
+                }
 
-            backMainMenu = false;
+                backMainMenu = false;
 
                 break;
 
             case GameManagerState.Settings:
 
-            settingsUI.SetActive(false);
-            gameOverUI.SetActive(false);
-            menuInit.SetActive(false);
-            background.SetActive(false);
-            gameplayUI.SetActive(false);
-            scoreBox.SetActive(false);
-            timeBox.SetActive(false);
-            settings.SetActive(true);
+                settingsUI.SetActive(false);
+                gameOverUI.SetActive(false);
+                menuInit.SetActive(false);
+                background.SetActive(false);
+                player.SetActive(false);
+                gameplayUI.SetActive(false);
+                scoreBox.SetActive(false);
+                timeBox.SetActive(false);
+                settings.SetActive(true);
 
-            
+
                 break;
             case GameManagerState.Gameplay:
 
-            menuInit.SetActive(false);
-            background.SetActive(true);
-            gameplayUI.SetActive(true);
-            settingsUI.SetActive(false);
-            gameOverUI.SetActive(false);
-            scoreBox.SetActive(true);
-            timeBox.SetActive(true);
-            settings.SetActive(false);
+                menuInit.SetActive(false);
+                background.SetActive(true);
+                player.SetActive(true);
+                gameplayUI.SetActive(true);
+                settingsUI.SetActive(false);
+                gameOverUI.SetActive(false);
+                scoreBox.SetActive(true);
+                timeBox.SetActive(true);
+                settings.SetActive(false);
 
 
-            
+
 
                 break;
             case GameManagerState.Pause:
 
-            menuInit.SetActive(false);
-            background.SetActive(false);
-            gameplayUI.SetActive(true);
-            settingsUI.SetActive(true);
-            gameOverUI.SetActive(false);
-            scoreBox.SetActive(true);
-            timeBox.SetActive(true);
-            settings.SetActive(false);
+                menuInit.SetActive(false);
+                background.SetActive(false);
+                player.SetActive(false);
+                gameplayUI.SetActive(true);
+                settingsUI.SetActive(true);
+                gameOverUI.SetActive(false);
+                scoreBox.SetActive(true);
+                timeBox.SetActive(true);
+                settings.SetActive(false);
 
 
                 break;
             case GameManagerState.GameOver:
 
-            menuInit.SetActive(false);
-            background.SetActive(false);
-            gameplayUI.SetActive(false);
-            settingsUI.SetActive(false);
-            gameOverUI.SetActive(true);
-            scoreBox.SetActive(true);
-            timeBox.SetActive(true);
-            settings.SetActive(false);
+                menuInit.SetActive(false);
+                background.SetActive(false);
+                player.SetActive(false);
+                gameplayUI.SetActive(false);
+                settingsUI.SetActive(false);
+                gameOverUI.SetActive(true);
+                scoreBox.SetActive(true);
+                timeBox.SetActive(true);
+                settings.SetActive(false);
 
-            timeCounter.GetComponent<TimeCounter>().StopTimeCounter();
-            timeCounter.GetComponent<TimeCounter>().startTime = 0f;
-            timeCounter.GetComponent<TimeCounter>().myTime = 0f;
+                timeCounter.GetComponent<TimeCounter>().StopTimeCounter();
+                timeCounter.GetComponent<TimeCounter>().startTime = 0f;
+                timeCounter.GetComponent<TimeCounter>().myTime = 0f;
 
 
                 break;
         }
     }
 
-    public void SetGameManagerState(GameManagerState state) {
+    public void SetGameManagerState(GameManagerState state)
+    {
         GMState = state;
         UpdateGameManagerState();
     }
 
-    public void StartGamePlay() {
+    public void StartGamePlay()
+    {
         timeCounter.GetComponent<TimeCounter>().StartTimeCounter();
         GMState = GameManagerState.Gameplay;
         UpdateGameManagerState();
     }
 
-    public void ResumeGamePlay() {
+    public void ResumeGamePlay()
+    {
         timeCounter.GetComponent<TimeCounter>().resumeTimeCounter();
         GMState = GameManagerState.Gameplay;
         UpdateGameManagerState();
     }
 
-    public void PauseMenu() {
+    public void PauseMenu()
+    {
         timeCounter.GetComponent<TimeCounter>().StopTimeCounter();
         GMState = GameManagerState.Pause;
         UpdateGameManagerState();
     }
 
-    public void SettingsMenu() {
+    public void SettingsMenu()
+    {
         GMState = GameManagerState.Settings;
         UpdateGameManagerState();
     }
 
 
-    public void ExitGamePlay() {
+    public void ExitGamePlay()
+    {
         GMState = GameManagerState.Opening;
         UpdateGameManagerState();
     }
 
-    
-    public void BackMainMenu() {
+
+    public void BackMainMenu()
+    {
         backMainMenu = true;
         GMState = GameManagerState.Opening;
         UpdateGameManagerState();
     }
 
-    public void ExitGame() {
+    public void ExitGame()
+    {
         Application.Quit();
     }
 
-    public void SoundON() {
+    public void SoundON()
+    {
         soundIconONPause.SetActive(true);
         soundIconOFFPause.SetActive(false);
         soundTextPause.text = "ON";
         soundIconONSettings.SetActive(true);
         soundIconOFFSettings.SetActive(false);
         soundTextSettings.text = "ON";
-        
+
         AudioListener.pause = false;
         AudioListener.volume = 1;
     }
 
-    public void SoundOFF() {
+    public void SoundOFF()
+    {
 
         soundIconONPause.SetActive(false);
         soundIconOFFPause.SetActive(true);

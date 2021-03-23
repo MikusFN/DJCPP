@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,6 +9,7 @@ public class WeaponBehaviour : MonoBehaviour
     public GameObject bulletPrefab;
     public GameObject destroyerPrefab;
     public GameObject explosionAfPrefab;
+    public GameObject DopplerPrefab;
     public float rateOfFire = 10;
 
     private float timeOfLife = 0.0f;
@@ -22,7 +24,7 @@ public class WeaponBehaviour : MonoBehaviour
     void Start()
     {
         currentStatePickable = new List<Pickable>();
-        timeOfLife = 0.0f;
+        timeOfLife = rateOfFire;
         canFire = true;
     }
 
@@ -51,6 +53,7 @@ public class WeaponBehaviour : MonoBehaviour
             ShootPowerWeapon();
         }
     }
+
     void Shoot()
     {
         if (canFire)
@@ -77,26 +80,66 @@ public class WeaponBehaviour : MonoBehaviour
         }
     }
 
+    private void TeleportPreview()
+    {
+        PlayerMovement pm;
+
+        if (TryGetComponent<PlayerMovement>(out pm))
+        {
+            Transform player = GetComponentInParent<Transform>();
+            if (player)
+            {
+                //instantiate the explosion and check for reached obstacles and enemies
+                Vector3 direction = (pm.mainCam.ScreenToWorldPoint(Input.mousePosition) + new Vector3(0, 0, 10)) - this.transform.position;
+                int size = (int)(direction.magnitude / (Math.Sqrt(
+                    (GetComponent<SpriteRenderer>().bounds.size.x * GetComponent<SpriteRenderer>().bounds.size.x)
+                    +
+                    (GetComponent<SpriteRenderer>().bounds.size.y * GetComponent<SpriteRenderer>().bounds.size.y))) + 1);
+
+                for (int i = 0; i < size; i++)
+                {
+                    GameObject go1 = Instantiate(DopplerPrefab, this.transform.position + ((direction / size) * (i + 1)), this.transform.rotation);
+                    go1.GetComponent<DopplerFade>().TimetoDestroy *= (i + 1);
+                    //go1.GetComponent<DopplerFade>().Col.a = (i + 1);
+                    GameObject go2 = Instantiate(DopplerPrefab, this.transform.position + ((direction / size) * (i + 0.66f)), this.transform.rotation);
+                    go2.GetComponent<DopplerFade>().TimetoDestroy *= (i + 0.66f);
+                    //go2.GetComponent<DopplerFade>().TimetoDestroy *= (i + 0.66f);
+                    GameObject go3 = Instantiate(DopplerPrefab, this.transform.position + ((direction / size) * (i + 0.33f)), this.transform.rotation);
+                    go3.GetComponent<DopplerFade>().TimetoDestroy *= (i + 0.33f);
+                    //go3.GetComponent<DopplerFade>().TimetoDestroy *= (i + 0.33f);
+
+                }
+            }
+        }
+    }
+
+    void TeleportNow()
+    {
+        PlayerMovement pm;
+
+        if (TryGetComponent<PlayerMovement>(out pm))
+        {
+            TeleportPreview();
+            Transform player = GetComponentInParent<Transform>();
+            if (player)
+            {
+                //instantiate the explosion and check for reached obstacles and enemies
+                GameObject go = Instantiate(explosionAfPrefab, firePoint.position, firePoint.rotation, this.transform);
+                Vector3 auxPos = new Vector3(firePoint.position.x, firePoint.position.y, firePoint.position.z);
+                player.position = pm.mainCam.ScreenToWorldPoint(Input.mousePosition) + new Vector3(0, 0, 10);
+                go.transform.position = auxPos;
+            }
+        }
+    }
+
     void ShootPowerWeapon()
     {
         PlayerController pc;
-        PlayerMovement pm;
 
         switch (sidePP)
         {
             case PPUpType.Teleport:
-                //set new player position             
-                TryGetComponent<PlayerMovement>(out pm);
-                Transform player = GetComponentInParent<Transform>();
-                if (player)
-                {
-                    //instantiate the explosion and check for reached obstacles and enemies
-                    GameObject go = Instantiate(explosionAfPrefab, firePoint.position, firePoint.rotation, this.transform);
-                    Vector3 auxPos =   new Vector3(firePoint.position.x, firePoint.position.y, firePoint.position.z);
-                    player.position = pm.mainCam.ScreenToWorldPoint(Input.mousePosition) + new Vector3(0, 0, 10);
-                    go.transform.position = auxPos;
-
-                }
+                TeleportNow();
                 sidePP = PPUpType.none; //or a cold down timer 
                 break;
             case PPUpType.destroyer:

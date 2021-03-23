@@ -26,13 +26,20 @@ public class DestroyerProjectile : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D hitInfo)
     {
-        //Enemy enemy = hitInfo.GetComponent<Enemy>();
-        //if (enemy != null)
-        //{
-        //	enemy.TakeDamage(damage);
-        //}
+        SpaceEnemyScript spaceEnemy;
+        EnemyScript enemy;        
 
-        //Instantiate(impactEffect, transform.position, transform.rotation);
+        if (hitInfo.TryGetComponent<SpaceEnemyScript>(out spaceEnemy))
+        {
+            spaceEnemy.takeDamage(currentDamage);
+            GetComponentInParent<WeaponBehaviour>().GetComponent<PlayerController>().Score += currentDamage;
+        }
+
+        else if (hitInfo.TryGetComponent<EnemyScript>(out enemy))
+        {
+            enemy.takeDamage(currentDamage);
+            GetComponentInParent<WeaponBehaviour>().GetComponent<PlayerController>().Score += currentDamage;
+        }
 
         GameObstacle obstacle;
         if (hitInfo.TryGetComponent<GameObstacle>(out obstacle))

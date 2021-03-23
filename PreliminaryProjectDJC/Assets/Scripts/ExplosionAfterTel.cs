@@ -29,18 +29,25 @@ public class ExplosionAfterTel : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D hitInfo)
     {
-        //Enemy enemy = hitInfo.GetComponent<Enemy>();
-        //if (enemy != null)
-        //{
-        //	enemy.TakeDamage(damage);
-        //}
-
-        //Instantiate(impactEffect, transform.position, transform.rotation);
-
         GameObstacle obstacle;
+        SpaceEnemyScript spaceEnemy;
+        EnemyScript enemy;
+
         if (hitInfo.TryGetComponent<GameObstacle>(out obstacle))
         {
             obstacle.takeDamage(currentDamage);
+            GetComponentInParent<WeaponBehaviour>().GetComponent<PlayerController>().Score += currentDamage;
+        }
+
+        else if (hitInfo.TryGetComponent<SpaceEnemyScript>(out spaceEnemy))
+        {
+            spaceEnemy.takeDamage(currentDamage);
+            GetComponentInParent<WeaponBehaviour>().GetComponent<PlayerController>().Score += currentDamage;
+        }
+
+        else if (hitInfo.TryGetComponent<EnemyScript>(out enemy))
+        {
+            enemy.takeDamage(currentDamage);
             GetComponentInParent<WeaponBehaviour>().GetComponent<PlayerController>().Score += currentDamage;
         }
 

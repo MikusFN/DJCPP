@@ -69,7 +69,7 @@ public class PlayerController : MonoBehaviour
                     GetComponent<SpriteRenderer>().color.b, (GetComponent<SpriteRenderer>().color.a + Time.deltaTime));
             }
 
-        Debug.Log("Score " + score);
+        //Debug.Log("Score " + score);
     }
 
     public void Move(float move, bool axis, float torqueValue)
@@ -127,7 +127,7 @@ public class PlayerController : MonoBehaviour
                 GetComponent<SpriteRenderer>().color
                     = new Color(GetComponent<SpriteRenderer>().color.r, GetComponent<SpriteRenderer>().color.g,
                     GetComponent<SpriteRenderer>().color.b, GetComponent<SpriteRenderer>().color.a * 0.1f);
-                Debug.Log("Taken Damage");
+                //Debug.Log("Taken Damage");
 				lifeUI.text = life.ToString();
             health.value = life;
             }
@@ -170,7 +170,7 @@ public class PlayerController : MonoBehaviour
                     {
                         life = maxLife;
                     }
-                Debug.Log("Life " + life);
+                //Debug.Log("Life " + life);
                 break;
             case PPUpType.none:
                 break;
