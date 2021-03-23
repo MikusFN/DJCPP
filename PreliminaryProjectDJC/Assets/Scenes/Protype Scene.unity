@@ -1775,6 +1775,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7345205602099839692, guid: c41882268c4f60a41bb5c2c6ac427ee2,
         type: 3}
+      propertyPath: DopplerPrefab
+      value: 
+      objectReference: {fileID: 1811517567152119207, guid: 543be6c922797384a9a030bba28112ce,
+        type: 3}
+    - target: {fileID: 7345205602099839692, guid: c41882268c4f60a41bb5c2c6ac427ee2,
+        type: 3}
       propertyPath: destroyerPrefab
       value: 
       objectReference: {fileID: 1978248147597285847, guid: 368843303c4955c4c9ba856bede8c7a1,
