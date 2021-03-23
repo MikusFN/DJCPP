@@ -24,7 +24,6 @@ public class GameManager : MonoBehaviour
     public GameObject timeCounter;
     public GameObject timeBox;
     public GameObject backgroundSound;
-    public GameObject info;
 
     bool backMainMenu = false;
 
@@ -34,7 +33,6 @@ public class GameManager : MonoBehaviour
         Pause,
         GameOver,
         Settings,
-        Info,
     }
 
     GameManagerState GMState;
@@ -132,20 +130,6 @@ public class GameManager : MonoBehaviour
 
 
                 break;
-
-            case GameManagerState.Info:
-
-            settingsUI.SetActive(false);
-            gameOverUI.SetActive(false);
-            menuInit.SetActive(false);
-            background.SetActive(false);
-            gameplayUI.SetActive(false);
-            scoreBox.SetActive(false);
-            timeBox.SetActive(false);
-            settings.SetActive(false);
-            info.SetActive(true);
-
-                break;
         }
     }
 
@@ -187,11 +171,6 @@ public class GameManager : MonoBehaviour
     public void BackMainMenu() {
         backMainMenu = true;
         GMState = GameManagerState.Opening;
-        UpdateGameManagerState();
-    }
-
-    public void GoInfoScreen() {
-        GMState = GameManagerState.Info;
         UpdateGameManagerState();
     }
 
