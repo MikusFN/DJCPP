@@ -155,7 +155,7 @@ public class WeaponBehaviour : MonoBehaviour
                 case PPUpType.life:
                 
                 pickableIcon.GetComponent<PickableIcon>().ChangeIcon("life");
-                pickableText.GetComponent<Text>().text = "Life";
+                pickableText.GetComponent<Text>().text = "+50 Life";
 
 
                 break;
