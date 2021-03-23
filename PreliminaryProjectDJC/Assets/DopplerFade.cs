@@ -2,56 +2,38 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BulletEnemy : MonoBehaviour
+public class DopplerFade : MonoBehaviour
 {
-
-    float speed = 5f;
-
-    private int damage = 20;
+    private float timetoDestroy = 10f;
     private float timeOfLife = 0.0f;
+    private Color col;
 
-    void Awake()
-    {
-    }
+    public float TimetoDestroy { get => timetoDestroy; set => timetoDestroy = value; }
+    public Color Col { get => col; set => col = value; }
 
     // Start is called before the first frame update
     void Start()
     {
+        Col = GetComponent<SpriteRenderer>().color;
     }
 
     // Update is called once per frame
     void Update()
     {
+        ////Color aux = new Color(col.r, col.r, col.b, col.a);
+        //if ((int)timeOfLife % 5 == 0 && (int)timeOfLife > 1)
+        //    col.a *= 0.9f;
         LifeTime();
     }
-
-
-    void OnTriggerEnter2D(Collider2D hitInfo)
-    {
-
-        if (hitInfo.name == "Player")
-        {
-            PlayerController player;
-            if (hitInfo.TryGetComponent<PlayerController>(out player))
-            {
-                player.TakeDamage(damage);
-            }
-            Destroy(gameObject);
-        }
-    }
-
 
     private void LifeTime()
     {
         //contador de vida do projectil para o destroir 
-        if (timeOfLife > 20.0f)
+        if (timeOfLife > timetoDestroy)
         {
             timeOfLife = 0.0f;
             Destroy(gameObject);
         }
         timeOfLife += Time.fixedDeltaTime;
     }
-
-
-
 }

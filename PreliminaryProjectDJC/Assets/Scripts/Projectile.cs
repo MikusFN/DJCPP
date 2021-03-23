@@ -41,25 +41,27 @@ public class Projectile : MonoBehaviour
         GameObstacle obstacle;
         SpaceEnemyScript spaceEnemy;
         EnemyScript enemy;
-        PlayerController player;
+
         if (hitInfo.TryGetComponent<GameObstacle>(out obstacle))
         {
             obstacle.takeDamage(currentDamage);
-
+            GetComponentInParent<WeaponBehaviour>().GetComponent<PlayerController>().Score += currentDamage;
         }
 
         else if (hitInfo.TryGetComponent<SpaceEnemyScript>(out spaceEnemy))
         {
             spaceEnemy.takeDamage(currentDamage);
+            GetComponentInParent<WeaponBehaviour>().GetComponent<PlayerController>().Score += currentDamage;
         }
-        
+
         else if (hitInfo.TryGetComponent<EnemyScript>(out enemy))
         {
             enemy.takeDamage(currentDamage);
-		}
-		
-        GetComponentInParent<WeaponBehaviour>().GetComponent<PlayerController>().Score += currentDamage;       
-		if (hitInfo.name != "Player" && hitInfo.tag != this.tag)
+            GetComponentInParent<WeaponBehaviour>().GetComponent<PlayerController>().Score += currentDamage;
+        }
+
+
+        if (hitInfo.name != "Player" && hitInfo.tag != this.tag)
         Destroy(gameObject);
     }
 

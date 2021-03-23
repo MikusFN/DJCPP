@@ -6,7 +6,8 @@ public class EnemyScript : MonoBehaviour {
 
     public float speed;
     Rigidbody2D rigidBody;
-    private int life = 10;
+    private int life;
+    private int initialLife = 20;
 
     public bool canShoot;
     public bool canMove = true;
@@ -20,8 +21,12 @@ public class EnemyScript : MonoBehaviour {
     [HideInInspector]
     public bool is_enemyBullet = false;
 
+    public int Life { get => life; set => life = value; }
+    public int InitialLife { get => initialLife; set => initialLife = value; }
+
     void Awake() {
         rigidBody = GetComponent<Rigidbody2D>();
+        life = InitialLife;
     }
 
     // Start is called before the first frame update
@@ -72,17 +77,18 @@ public class EnemyScript : MonoBehaviour {
 
     public void takeDamage(int damage)
     {
-        if (damage >= life)
+        if (damage >= Life)
         {
-            GetComponent<CircleCollider2D>().enabled = false;
+            GetComponent<CapsuleCollider2D>().enabled = false;
             GetComponent<SpriteRenderer>().enabled = false;
             scoreTextUI.GetComponent<ScoreScript>().Score += 10;
+            canShoot = false;
             //animation of damage
             //destroy(gameobject);
         }
         else
         {
-            life -= damage;
+            Life -= damage;
         }
     }
 

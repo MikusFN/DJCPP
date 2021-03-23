@@ -5,7 +5,9 @@ using UnityEngine;
 public class SpaceEnemyScript : MonoBehaviour
 {
     Rigidbody2D rigidBody;
-    private int life = 10;
+    private int life;
+    private int initialLife = 20;
+
 
     public bool canShoot;
     public bool canMove = true;
@@ -17,8 +19,12 @@ public class SpaceEnemyScript : MonoBehaviour
     [HideInInspector]
     public bool is_enemyBullet = false;
 
+    public int Life { get => life; set => life = value; }
+    public int InitialLife { get => initialLife; set => initialLife = value; }
+
     void Awake() {
         rigidBody = GetComponent<Rigidbody2D>();
+        life = InitialLife;
     }
 
     // Start is called before the first frame update
@@ -35,9 +41,9 @@ public class SpaceEnemyScript : MonoBehaviour
 
     public void takeDamage(int damage)
     {
-        if (damage >= life)
+        if (damage >= Life)
         {
-            GetComponent<BoxCollider2D>().enabled = false;
+            GetComponent<CapsuleCollider2D>().enabled = false;
             GetComponent<SpriteRenderer>().enabled = false;
             scoreTextUI.GetComponent<ScoreScript>().Score += 20;
             //animation of damage
@@ -45,7 +51,7 @@ public class SpaceEnemyScript : MonoBehaviour
         }
         else
         {
-            life -= damage;
+            Life -= damage;
         }
     }
 
@@ -53,7 +59,7 @@ public class SpaceEnemyScript : MonoBehaviour
     void StartShooting() {
         //GameObject bullet = Instantiate(enemyBullet, attack.position, Quaternion.identity);
 
-        Invoke("StartShooting", Random.Range(1f, 3f));
+        //Invoke("StartShooting", Random.Range(1f, 3f));
     }
 
     private void OnTriggerEnter2D(Collider2D hitInfo)

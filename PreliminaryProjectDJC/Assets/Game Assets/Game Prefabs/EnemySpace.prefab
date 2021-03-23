@@ -45,8 +45,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 7536724106932670203, guid: d278ac827c8738541867c9ae786bf015, type: 3}
-  MainCamera: {fileID: 7345205602441361254, guid: c41882268c4f60a41bb5c2c6ac427ee2,
-    type: 3}
+  MainCamera: {fileID: 0}
+  ses: {fileID: 0}
 --- !u!212 &4154721568405007267
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -108,13 +108,13 @@ GameObject:
   m_Component:
   - component: {fileID: 1661781656491360003}
   - component: {fileID: 6490145912439382266}
-  - component: {fileID: 271369705327736243}
   - component: {fileID: 2772303925439949214}
   - component: {fileID: 2810286197042782966}
   - component: {fileID: -2213287164463317636}
+  - component: {fileID: -2839282170225620603}
   m_Layer: 0
   m_Name: EnemySpace
-  m_TagString: Player
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -185,32 +185,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &271369705327736243
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4472521699452147047}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 6200000, guid: a94b09979d7ffde4aa539ee8f217cde7, type: 2}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.011797309, y: 0.015729815}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.8, y: 0.8}
-    newSize: {x: 0.8, y: 0.8}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.14921615, y: 0.23854041}
-  m_EdgeRadius: 0
 --- !u!50 &2772303925439949214
 Rigidbody2D:
   serializedVersion: 4
@@ -246,8 +220,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canShoot: 0
   canMove: 1
-  attack: {fileID: 0}
-  enemyBullet: {fileID: 0}
   is_enemyBullet: 0
 --- !u!114 &-2213287164463317636
 MonoBehaviour:
@@ -264,3 +236,19 @@ MonoBehaviour:
   MainCamera: {fileID: 0}
   background: {fileID: 0}
   effectStrenght: 0
+--- !u!70 &-2839282170225620603
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4472521699452147047}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.8000002, y: 0.8000002}
+  m_Direction: 0

@@ -22,7 +22,7 @@ public class PickablesManager : MonoBehaviour
             {
                 GameObject go = Instantiate(spritePicksPrefab[i%spritePicksPrefab.Length], this.transform);
                 go.transform.position = FindNewPosition();
-                go.GetComponent<Pickable>().PpType = (PPUpType)(i%6);
+                go.GetComponent<Pickable>().PpType = PPUpType.Teleport;//(PPUpType)(i%6);
                 //go.GetComponent<GameObstacle>().Damage *= (int)(go.GetComponent<SpriteRenderer>().bounds.size.x * go.GetComponent<SpriteRenderer>().bounds.size.y);
                 pickables.Add(go);
             }

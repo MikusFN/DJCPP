@@ -56,15 +56,24 @@ public class ParallaxEffect : MonoBehaviour
                 {
                     startPosY += Random.Range(2.0f, 8.0f) * bSpriteHeight;
                     startPosX = Random.Range(-(bSpriteLenght), (bSpriteLenght));
-                    if (tag == "Obstacle" || tag == "PPUP")
+                    if (tag == "Obstacle" || tag == "PPUP"||tag=="Enemy")
                     {
                         CapsuleCollider2D col;
                         if (TryGetComponent<CapsuleCollider2D>(out col))
                         {
                             col.isTrigger = true;
+                            
                             GameObstacle go;
                             if (TryGetComponent<GameObstacle>(out go))
                                 GetComponent<GameObstacle>().Life = GetComponent<GameObstacle>().InitialLife;
+                            
+                            EnemyScript es;
+                            if (TryGetComponent<EnemyScript>(out es))
+                                GetComponent<EnemyScript>().Life = GetComponent<EnemyScript>().InitialLife;
+                            SpaceEnemyScript ses;
+                            if (TryGetComponent<SpaceEnemyScript>(out ses))
+                                GetComponent<SpaceEnemyScript>().Life = GetComponent<SpaceEnemyScript>().InitialLife;
+
                             GetComponent<SpriteRenderer>().enabled = true;
                             GetComponent<Collider2D>().enabled = true;
                         }
