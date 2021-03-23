@@ -33,8 +33,6 @@ public class WeaponBehaviour : MonoBehaviour
         timeOfLife = rateOfFire;
         canFire = true;
 
-        Debug.Log("Hola guapo");
-
     }
 
     // Update is called once per frame
@@ -189,7 +187,6 @@ public class WeaponBehaviour : MonoBehaviour
     public void AddPickable(Pickable pickable)
     {
 
-        Debug.Log("Pickable addeeeeeeeeed");
         GetComponent<PlayerController>().Score += (int)pickable.PpType;
         currentStatePickable.Add(pickable);
 

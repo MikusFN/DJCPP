@@ -83,8 +83,7 @@ public class EnemyScript : MonoBehaviour {
             GetComponent<SpriteRenderer>().enabled = false;
             scoreTextUI.GetComponent<ScoreScript>().Score += 10;
             canShoot = false;
-            //animation of damage
-            //destroy(gameobject);
+            Destroy(gameObject);
         }
         else
         {
