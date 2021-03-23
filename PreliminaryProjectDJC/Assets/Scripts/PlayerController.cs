@@ -69,7 +69,7 @@ public class PlayerController : MonoBehaviour
                     GetComponent<SpriteRenderer>().color.b, (GetComponent<SpriteRenderer>().color.a + Time.deltaTime));
             }
 
-        Debug.Log("Score " + score);
+        //Debug.Log("Score " + score);
     }
 
     public void Move(float move, bool axis, float torqueValue)
@@ -170,6 +170,7 @@ public class PlayerController : MonoBehaviour
                     {
                         life = maxLife;
                     }
+                lifeUI.text = life.ToString();
                 Debug.Log("Life " + life);
                 break;
             case PPUpType.none:
@@ -185,7 +186,7 @@ public class PlayerController : MonoBehaviour
     }
 	
 	public void ResetPlayer() {
-        this.life = 100;
+        this.life = 500;
         isAlive = true;
         lifeUI.text = life.ToString();
         health.value = life;
