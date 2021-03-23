@@ -2,6 +2,8 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class WeaponBehaviour : MonoBehaviour
 {
@@ -20,12 +22,19 @@ public class WeaponBehaviour : MonoBehaviour
     private int maxShotsFire = 5;
     private PPUpType sidePP = PPUpType.none;
 
+    public GameObject pickableIcon;
+    public GameObject pickableText;
+
+
     // Start is called before the first frame update
     void Start()
     {
         currentStatePickable = new List<Pickable>();
         timeOfLife = rateOfFire;
         canFire = true;
+
+        Debug.Log("Hola guapo");
+
     }
 
     // Update is called once per frame
@@ -141,6 +150,8 @@ public class WeaponBehaviour : MonoBehaviour
             case PPUpType.Teleport:
                 TeleportNow();
                 sidePP = PPUpType.none; //or a cold down timer 
+                pickableIcon.GetComponent<PickableIcon>().emptyIcon();
+                pickableText.GetComponent<Text>().text = "";
                 break;
             case PPUpType.destroyer:
                 if (TryGetComponent<PlayerController>(out pc))
@@ -149,6 +160,8 @@ public class WeaponBehaviour : MonoBehaviour
                 }
                 Instantiate(destroyerPrefab, firePoint.position, firePoint.rotation, this.transform);
                 sidePP = PPUpType.none; //or a cold down timer 
+                pickableIcon.GetComponent<PickableIcon>().emptyIcon();
+                pickableText.GetComponent<Text>().text = "";
                 break;
             case PPUpType.none:
                 //Put a sound or something
@@ -175,8 +188,58 @@ public class WeaponBehaviour : MonoBehaviour
 
     public void AddPickable(Pickable pickable)
     {
+
+        Debug.Log("Pickable addeeeeeeeeed");
         GetComponent<PlayerController>().Score += (int)pickable.PpType;
         currentStatePickable.Add(pickable);
+
+            switch (pickable.PpType)
+            {
+                case PPUpType.life:
+                
+                pickableIcon.GetComponent<PickableIcon>().ChangeIcon("life");
+                pickableText.GetComponent<Text>().text = "+50 Life";
+
+
+                break;
+
+                case PPUpType.ShieldTime:
+
+                pickableIcon.GetComponent<PickableIcon>().ChangeIcon("shield");
+                pickableText.GetComponent<Text>().text = "Shield";
+
+
+                break;
+
+                case PPUpType.RateOfFire:
+
+                pickableIcon.GetComponent<PickableIcon>().ChangeIcon("rateOfFire");
+                pickableText.GetComponent<Text>().text = "Rate of Fire";
+
+                break;
+
+                case PPUpType.ShotsNum:
+
+                pickableIcon.GetComponent<PickableIcon>().ChangeIcon("shotsNum");
+                pickableText.GetComponent<Text>().text = "Shots Num";
+
+
+                break;
+
+                case PPUpType.Teleport:
+                
+                pickableIcon.GetComponent<PickableIcon>().ChangeIcon("teleport");
+                pickableText.GetComponent<Text>().text = "Teleport";
+
+                break;
+
+                case PPUpType.destroyer:
+
+                pickableIcon.GetComponent<PickableIcon>().ChangeIcon("destroyer");
+                pickableText.GetComponent<Text>().text = "Destroyer";
+
+                break;
+            }
     }
 
     public void UsePPUP(PPUpType pPUpType)

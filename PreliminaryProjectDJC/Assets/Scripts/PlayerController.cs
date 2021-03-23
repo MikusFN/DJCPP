@@ -170,7 +170,7 @@ public class PlayerController : MonoBehaviour
                     {
                         life = maxLife;
                     }
-                //Debug.Log("Life " + life);
+                lifeUI.text = life.ToString();
                 break;
             case PPUpType.none:
                 break;
@@ -185,7 +185,7 @@ public class PlayerController : MonoBehaviour
     }
 	
 	public void ResetPlayer() {
-        this.life = 100;
+        this.life = 500;
         isAlive = true;
         lifeUI.text = life.ToString();
         health.value = life;

@@ -150,3 +150,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ead8232d30975664da62e10172a51027, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickableIcon: {fileID: 0}
