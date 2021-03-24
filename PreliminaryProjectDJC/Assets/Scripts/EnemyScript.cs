@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnemyScript : MonoBehaviour {
 
+    public GameObject deathEffect;
     public float speed;
     Rigidbody2D rigidBody;
     private int life;
@@ -84,6 +85,8 @@ public class EnemyScript : MonoBehaviour {
             scoreTextUI.GetComponent<ScoreScript>().Score += 10;
             canShoot = false;
             //animation of damage
+            Instantiate(deathEffect, transform.position, Quaternion.identity);
+
             //destroy(gameobject);
         }
         else

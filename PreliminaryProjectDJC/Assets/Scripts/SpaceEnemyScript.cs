@@ -11,6 +11,8 @@ public class SpaceEnemyScript : MonoBehaviour
 
     public bool canShoot;
     public bool canMove = true;
+    public GameObject deathEffect;
+
 
     //public Transform attack;
     //public GameObject enemyBullet;
@@ -47,6 +49,8 @@ public class SpaceEnemyScript : MonoBehaviour
             GetComponent<SpriteRenderer>().enabled = false;
             scoreTextUI.GetComponent<ScoreScript>().Score += 20;
             //animation of damage
+            Instantiate(deathEffect, transform.position, Quaternion.identity);
+
             //destroy(gameobject);
         }
         else

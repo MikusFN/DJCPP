@@ -7,6 +7,7 @@ public class Projectile : MonoBehaviour
     public float speed = 10f;
     public int damage = 20;
     public Rigidbody2D rb;
+    public GameObject impactEffect;
     GameObject scoreTextUI;
 
 
@@ -36,7 +37,6 @@ public class Projectile : MonoBehaviour
         //	enemy.TakeDamage(damage);
         //}
 
-        //Instantiate(impactEffect, transform.position, transform.rotation);
 
         GameObstacle obstacle;
         SpaceEnemyScript spaceEnemy;
@@ -61,8 +61,12 @@ public class Projectile : MonoBehaviour
         }
 
 
+
         if (hitInfo.name != "Player" && hitInfo.tag != this.tag)
-        Destroy(gameObject);
+        {
+            Destroy(gameObject);
+            Instantiate(impactEffect, transform.position, transform.rotation);
+        }
     }
 
     private void OnDestroy()
@@ -74,7 +78,7 @@ public class Projectile : MonoBehaviour
     private void LifeTime()
     {
         //contador de vida do projectil para o destroir 
-        if (timeOfLife > 10.0f)
+        if (timeOfLife > 15.0f)
         {
             timeOfLife = 0.0f;
             Destroy(gameObject);

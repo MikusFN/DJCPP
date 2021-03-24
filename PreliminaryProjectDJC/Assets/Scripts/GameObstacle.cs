@@ -8,6 +8,7 @@ public class GameObstacle : MonoBehaviour
     public int Damage { get { return damage; } }
     public int mySize = 0;
     public bool hasLifeSpan = false;
+    public GameObject deathEffect;
 
     public int InitialLife { get => initialLife; }
 
@@ -51,6 +52,7 @@ public class GameObstacle : MonoBehaviour
             GetComponent<SpriteRenderer>().enabled = false;
             scoreTextUI.GetComponent<ScoreScript>().Score += 5;
             //animation of damage
+            Instantiate(deathEffect, transform.position, Quaternion.identity);
             //destroy(gameobject);
         }
         else

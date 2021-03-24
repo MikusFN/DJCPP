@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BulletEnemy : MonoBehaviour
 {
+    public GameObject impactEffect;
 
     float speed = 5f;
 
@@ -36,6 +37,8 @@ public class BulletEnemy : MonoBehaviour
             {
                 player.TakeDamage(damage);
             }
+            Instantiate(impactEffect, transform.position, transform.rotation);
+
             Destroy(gameObject);
         }
     }

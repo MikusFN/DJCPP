@@ -100,13 +100,25 @@ public class WeaponBehaviour : MonoBehaviour
                 {
                     GameObject go1 = Instantiate(DopplerPrefab, this.transform.position + ((direction / size) * (i + 1)), this.transform.rotation);
                     go1.GetComponent<DopplerFade>().TimetoDestroy *= (i + 1);
-                    //go1.GetComponent<DopplerFade>().Col.a = (i + 1);
+                    go1.GetComponent<DopplerFade>().Col = new Color(
+                        go1.GetComponent<DopplerFade>().Col.r,
+                        go1.GetComponent<DopplerFade>().Col.g,
+                        go1.GetComponent<DopplerFade>().Col.b,
+                        go1.GetComponent<DopplerFade>().Col.a * (float)(i + 1));
                     GameObject go2 = Instantiate(DopplerPrefab, this.transform.position + ((direction / size) * (i + 0.66f)), this.transform.rotation);
                     go2.GetComponent<DopplerFade>().TimetoDestroy *= (i + 0.66f);
-                    //go2.GetComponent<DopplerFade>().TimetoDestroy *= (i + 0.66f);
+                    go2.GetComponent<DopplerFade>().Col = new Color(
+                        go2.GetComponent<DopplerFade>().Col.r,
+                        go2.GetComponent<DopplerFade>().Col.g,
+                        go2.GetComponent<DopplerFade>().Col.b,
+                        go2.GetComponent<DopplerFade>().Col.a * (float)(i + 0.66f));
                     GameObject go3 = Instantiate(DopplerPrefab, this.transform.position + ((direction / size) * (i + 0.33f)), this.transform.rotation);
                     go3.GetComponent<DopplerFade>().TimetoDestroy *= (i + 0.33f);
-                    //go3.GetComponent<DopplerFade>().TimetoDestroy *= (i + 0.33f);
+                    go3.GetComponent<DopplerFade>().Col = new Color(
+                        go3.GetComponent<DopplerFade>().Col.r,
+                        go3.GetComponent<DopplerFade>().Col.g,
+                        go3.GetComponent<DopplerFade>().Col.b,
+                        go3.GetComponent<DopplerFade>().Col.a * (float)(i + 0.33f));
 
                 }
             }
