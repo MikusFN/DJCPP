@@ -84,10 +84,11 @@ public class EnemyScript : MonoBehaviour {
             GetComponent<SpriteRenderer>().enabled = false;
             scoreTextUI.GetComponent<ScoreScript>().Score += 10;
             canShoot = false;
+
             //animation of damage
             Instantiate(deathEffect, transform.position, Quaternion.identity);
 
-            //destroy(gameobject);
+            Destroy(gameObject);
         }
         else
         {

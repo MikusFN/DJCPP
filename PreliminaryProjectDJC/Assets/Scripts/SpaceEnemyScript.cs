@@ -49,11 +49,12 @@ public class SpaceEnemyScript : MonoBehaviour
             GetComponent<CapsuleCollider2D>().enabled = false;
             GetComponent<SpriteRenderer>().enabled = false;
             scoreTextUI.GetComponent<ScoreScript>().Score += 20;
+
             //animation of damage
             Instantiate(deathEffect, transform.position, Quaternion.identity);
             Thruster.SetActive(false);
-            //Thruster.GetComponentsInChildren<SpriteRenderer>()
-            //destroy(gameobject);
+            Destroy(gameObject);
+
         }
         else
         {
