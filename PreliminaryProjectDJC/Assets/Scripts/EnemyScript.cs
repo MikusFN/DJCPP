@@ -50,6 +50,19 @@ public class EnemyScript : MonoBehaviour {
 
     void Move() {
 
+
+        GameObject player = GameObject.Find("Player");
+
+        if (player != null)
+        {
+
+            Vector3 direction = player.transform.position - transform.position;
+
+            transform.Translate(Time.deltaTime * speed * direction.x, 0, 0);
+
+        }
+        /*
+
         if(canMove) {
             if(moveLeft) {
 
@@ -62,7 +75,9 @@ public class EnemyScript : MonoBehaviour {
         else {
             transform.Translate(Time.deltaTime * speed * Random.Range(-1,1), 0,0);
         }
+
         }
+        */
     }
     //see why they go lleft and dont com eback and make them follow the player
     void WhereAreYou() {
