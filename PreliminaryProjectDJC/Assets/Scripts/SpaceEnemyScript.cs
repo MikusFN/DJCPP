@@ -73,7 +73,7 @@ public class SpaceEnemyScript : MonoBehaviour
     {
     
         PlayerController player;
-        GameObstacle go;
+
         if(hitInfo.TryGetComponent<PlayerController>(out player))
         {
             player.TakeDamage(55);

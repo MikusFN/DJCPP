@@ -6,7 +6,7 @@ public class BulletEnemy : MonoBehaviour
 {
     public GameObject impactEffect;
 
-    float speed = 5f;
+    //float speed = 5f;
 
     private int damage = 20;
     private float timeOfLife = 0.0f;
