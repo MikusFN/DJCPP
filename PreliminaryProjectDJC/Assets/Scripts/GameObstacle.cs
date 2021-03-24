@@ -23,7 +23,7 @@ public class GameObstacle : MonoBehaviour
     void Start()
     {
 
-        scoreTextUI = GameObject.FindGameObjectWithTag ("ScoreTextTag");
+        scoreTextUI = GameObject.FindGameObjectWithTag("ScoreTextTag");
         SpriteRenderer sr;
 
         if (TryGetComponent<SpriteRenderer>(out sr))
@@ -38,7 +38,7 @@ public class GameObstacle : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        if(hasLifeSpan)
+        if (hasLifeSpan)
         {
             LifeTime();
         }
@@ -65,7 +65,7 @@ public class GameObstacle : MonoBehaviour
     {
         if (mySize > 0)
         {
-            int randomMul = Random.Range(5, 10); 
+            int randomMul = Random.Range(5, 10);
             Vector3[] aux = CircularPosition(currentPos, mySize * randomMul);
             int step = (int)(360 / (float)mySize * randomMul);
 
@@ -81,7 +81,7 @@ public class GameObstacle : MonoBehaviour
                 if (go.TryGetComponent<Rigidbody2D>(out rb2D))
                 {
                     //center point calculate to the outer points already in place
-                    rb2D.velocity = ((aux[i] + transform.position)-transform.position).normalized * Random.Range(200.0f, 400.0f);
+                    rb2D.velocity = ((aux[i] + transform.position) - transform.position).normalized * Random.Range(200.0f, 400.0f);
                 }
             }
         }
@@ -92,9 +92,21 @@ public class GameObstacle : MonoBehaviour
         //if (collision.gameObject.tag == "Player")
         //|| collision.gameObject.tag == "Enemy")
         PlayerController player;
+        SpaceEnemyScript ses;
+        EnemyScript es;
         if (collision.TryGetComponent<PlayerController>(out player))
         {
             player.TakeDamage(damage);
+        }
+        else if (collision.TryGetComponent<SpaceEnemyScript>(out ses))
+        {
+            if (this.hasLifeSpan)
+                ses.takeDamage(damage);
+        }
+        else if (collision.TryGetComponent<EnemyScript>(out es))
+        {
+            if (this.hasLifeSpan)
+                es.takeDamage(damage);
         }
     }
 
@@ -102,7 +114,7 @@ public class GameObstacle : MonoBehaviour
     {
         Vector3[] positions = new Vector3[sizeOfPositions];
         int step = (int)(360 / (float)sizeOfPositions);
-        
+
         for (int i = 0; i < sizeOfPositions; i++)
         {
             step *= Random.Range(-((int)step / 4), ((int)step / 4));

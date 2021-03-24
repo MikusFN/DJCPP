@@ -20,7 +20,7 @@ public class Projectile : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        scoreTextUI = GameObject.FindGameObjectWithTag ("ScoreTextTag");
+        scoreTextUI = GameObject.FindGameObjectWithTag("ScoreTextTag");
 
         //rb.velocity = (GetComponentInParent<WeaponBehaviour>().GetComponentInParent<Transform>().position-transform.position).normalized *speed;
     }
@@ -46,18 +46,21 @@ public class Projectile : MonoBehaviour
         {
             obstacle.takeDamage(currentDamage);
             GetComponentInParent<WeaponBehaviour>().GetComponent<PlayerController>().Score += currentDamage;
+            Instantiate(impactEffect, transform.position, transform.rotation);
         }
 
         else if (hitInfo.TryGetComponent<SpaceEnemyScript>(out spaceEnemy))
         {
             spaceEnemy.takeDamage(currentDamage);
             GetComponentInParent<WeaponBehaviour>().GetComponent<PlayerController>().Score += currentDamage;
+            Instantiate(impactEffect, transform.position, transform.rotation);
         }
 
         else if (hitInfo.TryGetComponent<EnemyScript>(out enemy))
         {
             enemy.takeDamage(currentDamage);
             GetComponentInParent<WeaponBehaviour>().GetComponent<PlayerController>().Score += currentDamage;
+            Instantiate(impactEffect, transform.position, transform.rotation);
         }
 
 
@@ -65,7 +68,6 @@ public class Projectile : MonoBehaviour
         if (hitInfo.name != "Player" && hitInfo.tag != this.tag)
         {
             Destroy(gameObject);
-            Instantiate(impactEffect, transform.position, transform.rotation);
         }
     }
 

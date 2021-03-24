@@ -31,7 +31,7 @@ public class CameraController : MonoBehaviour
         }
 
         cameraBoundsCollider[3].size = new Vector2(cameraBoundsCollider[0].offset.x * 2, 0.01f);
-        //cameraBoundsCollider[2].size = new Vector2(cameraBoundsCollider[0].offset.x * 2, 0.01f);
+        cameraBoundsCollider[2].size = new Vector2(cameraBoundsCollider[0].offset.x * 2, 0.01f);
         cameraBoundsCollider[1].size = new Vector2(0.01f, cameraBoundsCollider[2].offset.y * 2);
         cameraBoundsCollider[0].size = new Vector2(0.01f, cameraBoundsCollider[2].offset.y * 2);
     }

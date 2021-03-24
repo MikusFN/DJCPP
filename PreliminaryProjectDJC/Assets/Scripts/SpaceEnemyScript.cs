@@ -12,6 +12,7 @@ public class SpaceEnemyScript : MonoBehaviour
     public bool canShoot;
     public bool canMove = true;
     public GameObject deathEffect;
+    public GameObject Thruster;
 
 
     //public Transform attack;
@@ -50,7 +51,8 @@ public class SpaceEnemyScript : MonoBehaviour
             scoreTextUI.GetComponent<ScoreScript>().Score += 20;
             //animation of damage
             Instantiate(deathEffect, transform.position, Quaternion.identity);
-
+            Thruster.SetActive(false);
+            //Thruster.GetComponentsInChildren<SpriteRenderer>()
             //destroy(gameobject);
         }
         else
@@ -70,9 +72,10 @@ public class SpaceEnemyScript : MonoBehaviour
     {
     
         PlayerController player;
+        GameObstacle go;
         if(hitInfo.TryGetComponent<PlayerController>(out player))
         {
             player.TakeDamage(55);
-        }
+        }        
     }
 }

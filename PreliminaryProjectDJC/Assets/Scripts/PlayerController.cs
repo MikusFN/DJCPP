@@ -29,6 +29,7 @@ public class PlayerController : MonoBehaviour
     //public UnityEvent OnLandEvent;
 
     public GameObject shield;
+    public GameObject thruster;
     public float velocityRB;
     public int maxLife = 500;
     public float maxShieldTime = 10.0f;
@@ -51,7 +52,7 @@ public class PlayerController : MonoBehaviour
     {
         lifeUI.text = life.ToString();
         health.value = life;
-        scoreTextUI = GameObject.FindGameObjectWithTag ("ScoreTextTag");
+        scoreTextUI = GameObject.FindGameObjectWithTag("ScoreTextTag");
 
         shield.GetComponent<SpriteRenderer>().color =
             new Color(shield.GetComponent<SpriteRenderer>().color.r, shield.GetComponent<SpriteRenderer>().color.g, shield.GetComponent<SpriteRenderer>().color.b, 0.5f);
@@ -86,6 +87,9 @@ public class PlayerController : MonoBehaviour
         //m_Rigidbody2D.AddForceAtPosition(transform.right.normalized * torqueValue*0.03f, 
         //    m_Rigidbody2D.position - new Vector2(m_Rigidbody2D.position.x, -GetComponent<SpriteRenderer>().bounds.size.y));
 
+        //float tPosY = thruster.transform.position.y;
+        //float tPosYAf = thruster.transform.position.y-0.3f;
+
         if (axis)
         {
             targetVelocity = transform.right.normalized;
@@ -95,6 +99,7 @@ public class PlayerController : MonoBehaviour
         {
             targetVelocity = transform.up.normalized;
             targetVelocity *= move * 5f;
+            //thruster.transform.position = new Vector3(thruster.transform.position.x, Mathf.Lerp(tPosY, tPosYAf, move), thruster.transform.position.z);
         }
 
         // Move the character by finding the target velocity
@@ -128,8 +133,8 @@ public class PlayerController : MonoBehaviour
                     = new Color(GetComponent<SpriteRenderer>().color.r, GetComponent<SpriteRenderer>().color.g,
                     GetComponent<SpriteRenderer>().color.b, GetComponent<SpriteRenderer>().color.a * 0.1f);
                 //Debug.Log("Taken Damage");
-				lifeUI.text = life.ToString();
-            health.value = life;
+                lifeUI.text = life.ToString();
+                health.value = life;
             }
             else
             {
@@ -139,9 +144,9 @@ public class PlayerController : MonoBehaviour
                     = new Color(GetComponent<SpriteRenderer>().color.r, GetComponent<SpriteRenderer>().color.g,
                     GetComponent<SpriteRenderer>().color.b, GetComponent<SpriteRenderer>().color.a * 0.1f);
                 Debug.Log("You Died");
-				lifeUI.text = life.ToString();
-            health.value = life;
-            gameManager.GetComponent<GameManager>().SetGameManagerState(GameManager.GameManagerState.GameOver);
+                lifeUI.text = life.ToString();
+                health.value = life;
+                gameManager.GetComponent<GameManager>().SetGameManagerState(GameManager.GameManagerState.GameOver);
             }
     }
 
@@ -183,8 +188,9 @@ public class PlayerController : MonoBehaviour
     {
         shieldTime = maxShieldTime;
     }
-	
-	public void ResetPlayer() {
+
+    public void ResetPlayer()
+    {
         this.life = 100;
         isAlive = true;
         lifeUI.text = life.ToString();
