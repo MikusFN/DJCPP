@@ -64,7 +64,7 @@ public class EnemyScript : MonoBehaviour {
         }
         }
     }
-
+    //see why they go lleft and dont com eback and make them follow the player
     void WhereAreYou() {
         if(rigidBody.position.x >= 1) {
             moveLeft = true;
@@ -83,12 +83,11 @@ public class EnemyScript : MonoBehaviour {
             GetComponent<CapsuleCollider2D>().enabled = false;
             GetComponent<SpriteRenderer>().enabled = false;
             scoreTextUI.GetComponent<ScoreScript>().Score += 10;
-            canShoot = false;
 
             //animation of damage
             Instantiate(deathEffect, transform.position, Quaternion.identity);
 
-            Destroy(gameObject);
+            //Destroy(gameObject);
         }
         else
         {

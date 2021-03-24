@@ -53,7 +53,7 @@ public class SpaceEnemyScript : MonoBehaviour
             //animation of damage
             Instantiate(deathEffect, transform.position, Quaternion.identity);
             Thruster.SetActive(false);
-            Destroy(gameObject);
+            //Destroy(gameObject);
 
         }
         else

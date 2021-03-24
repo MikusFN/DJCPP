@@ -46,7 +46,7 @@ public class ParallaxEffect : MonoBehaviour
         float temp = MainCamera.transform.position.y * (1 - effectStrenght);
         float dist = MainCamera.transform.position.y * effectStrenght;
 
-        transform.position = new Vector3(startPosX, startPosY + dist, transform.position.z);
+        transform.position = new Vector3(transform.position.x, startPosY + dist, transform.position.z);
 
         if (MainCamera.TryGetComponent<CameraController>(out camCont))
         {

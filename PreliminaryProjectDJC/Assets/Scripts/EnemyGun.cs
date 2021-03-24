@@ -23,9 +23,9 @@ public class EnemyGun : MonoBehaviour
     void Update()
     {
         //add cool down timer 
-        SpaceEnemyScript aux = GetComponentInParent<SpaceEnemyScript>();
+        //SpaceEnemyScript aux = GetComponentInParent<SpaceEnemyScript>();
         if (MainCamera.IsInsideScreen(ses.GetComponent<SpriteRenderer>().bounds) 
-            && aux.Life > 0)
+            && ses.Life > 0)
         {
             if (coolDownTime > coolDownThreshold)
             {
