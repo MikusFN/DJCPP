@@ -12,7 +12,8 @@ public class SpaceEnemyScript : MonoBehaviour
     public bool canShoot;
     public bool canMove = true;
     public GameObject deathEffect;
-    public GameObject Thruster;
+    public GameObject thruster;
+    public GameObject enemyGun;
 
 
     //public Transform attack;
@@ -52,7 +53,8 @@ public class SpaceEnemyScript : MonoBehaviour
 
             //animation of damage
             Instantiate(deathEffect, transform.position, Quaternion.identity);
-            Thruster.SetActive(false);
+            thruster.SetActive(false);
+            enemyGun.SetActive(false);
             //Destroy(gameObject);
 
         }

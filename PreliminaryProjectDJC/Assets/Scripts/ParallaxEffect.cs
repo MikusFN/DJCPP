@@ -74,7 +74,8 @@ public class ParallaxEffect : MonoBehaviour
                             if (TryGetComponent<SpaceEnemyScript>(out ses))
                             {
                                 GetComponent<SpaceEnemyScript>().Life = GetComponent<SpaceEnemyScript>().InitialLife;
-                                GetComponent<SpaceEnemyScript>().Thruster.SetActive(true);
+                                GetComponent<SpaceEnemyScript>().thruster.SetActive(true);
+                                GetComponent<SpaceEnemyScript>().enemyGun.SetActive(true);
                             }
 
                             GetComponent<SpriteRenderer>().enabled = true;

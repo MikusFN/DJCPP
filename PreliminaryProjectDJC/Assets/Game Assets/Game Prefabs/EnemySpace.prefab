@@ -223,6 +223,8 @@ MonoBehaviour:
   canMove: 1
   deathEffect: {fileID: 1755349173569476, guid: 3c45864be6a059a4a82a25e285298338,
     type: 3}
+  thruster: {fileID: 8395097280049168650}
+  enemyGun: {fileID: 3245274177794264429}
   is_enemyBullet: 0
 --- !u!114 &-2213287164463317636
 MonoBehaviour:
@@ -324,6 +326,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b56e6d94d193fb44a96c9eb293249c0c, type: 3}
+--- !u!1 &8395097280049168650 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 29994752263735937, guid: b56e6d94d193fb44a96c9eb293249c0c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8425091884134927243}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6125506222118438072 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2443725179138019123, guid: b56e6d94d193fb44a96c9eb293249c0c,
