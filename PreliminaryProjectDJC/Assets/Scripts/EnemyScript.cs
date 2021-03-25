@@ -44,7 +44,6 @@ public class EnemyScript : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        WhereAreYou();
         Move();
     }
 
@@ -60,33 +59,6 @@ public class EnemyScript : MonoBehaviour {
 
             transform.Translate(Time.deltaTime * speed * direction.x, 0, 0);
 
-        }
-        /*
-
-        if(canMove) {
-            if(moveLeft) {
-
-                transform.Translate(-Time.deltaTime * speed, 0,0);
-            }
-            else if(moveRight) {
-                transform.Translate(Time.deltaTime * speed, 0,0);
-            }
-
-        else {
-            transform.Translate(Time.deltaTime * speed * Random.Range(-1,1), 0,0);
-        }
-
-        }
-        */
-    }
-    //see why they go lleft and dont com eback and make them follow the player
-    void WhereAreYou() {
-        if(rigidBody.position.x >= 1) {
-            moveLeft = true;
-        }
-
-        else if(rigidBody.position.x <= -1) {
-            moveRight = true;
         }
     }
 

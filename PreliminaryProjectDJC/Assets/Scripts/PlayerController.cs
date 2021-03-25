@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
     public Text lifeUI;
     public Slider health;
 
-    GameObject scoreTextUI;
+    public GameObject scoreTextUI;
 
     AudioSource audioDamage;
 
@@ -33,6 +33,9 @@ public class PlayerController : MonoBehaviour
     public float velocityRB;
     public int maxLife = 500;
     public float maxShieldTime = 10.0f;
+
+    public GameObject pickableIcon;
+    public GameObject pickableText;
 
     public bool IsAlive { get => isAlive; set => isAlive = value; }
     public bool IsShielding { get => isShielding; set => isShielding = value; }
@@ -52,7 +55,6 @@ public class PlayerController : MonoBehaviour
     {
         lifeUI.text = life.ToString();
         health.value = life;
-        scoreTextUI = GameObject.FindGameObjectWithTag("ScoreTextTag");
 
         shield.GetComponent<SpriteRenderer>().color =
             new Color(shield.GetComponent<SpriteRenderer>().color.r, shield.GetComponent<SpriteRenderer>().color.g, shield.GetComponent<SpriteRenderer>().color.b, 0.5f);
@@ -74,6 +76,8 @@ public class PlayerController : MonoBehaviour
             this.transform.rotation = new Quaternion(0, 0, 0, 1);
         }
         //Debug.Log("Score " + score);
+
+        lifeUI.text = life.ToString();
     }
 
     public void Move(float move, bool axis, float torqueValue)
@@ -149,6 +153,10 @@ public class PlayerController : MonoBehaviour
                 Debug.Log("You Died");
                 lifeUI.text = life.ToString();
                 health.value = life;
+
+                pickableIcon.GetComponent<PickableIcon>().emptyIcon();
+                pickableText.GetComponent<Text>().text = "";
+
                 gameManager.GetComponent<GameManager>().SetGameManagerState(GameManager.GameManagerState.GameOver);
             }
     }
@@ -193,10 +201,13 @@ public class PlayerController : MonoBehaviour
 
     public void ResetPlayer()
     {
-        this.life = 100;
+        this.life = 500;
         isAlive = true;
         lifeUI.text = life.ToString();
         health.value = life;
+        score = 0;
+        scoreTextUI.GetComponent<ScoreScript>().Score = score;
+
     }
 
 }

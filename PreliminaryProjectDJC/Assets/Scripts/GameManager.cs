@@ -69,13 +69,6 @@ public class GameManager : MonoBehaviour
                 timeBox.SetActive(false);
                 settings.SetActive(false);
 
-                if (!backMainMenu)
-                {
-                    scoreTextUI.GetComponent<ScoreScript>().Score = 0;
-                }
-
-                backMainMenu = false;
-
                 break;
 
             case GameManagerState.Settings:
@@ -96,13 +89,13 @@ public class GameManager : MonoBehaviour
 
                 menuInit.SetActive(false);
                 background.SetActive(true);
-                player.SetActive(true);
                 gameplayUI.SetActive(true);
                 settingsUI.SetActive(false);
                 gameOverUI.SetActive(false);
                 scoreBox.SetActive(true);
                 timeBox.SetActive(true);
                 settings.SetActive(false);
+                player.SetActive(true);
 
 
 
@@ -134,6 +127,8 @@ public class GameManager : MonoBehaviour
                 timeBox.SetActive(true);
                 settings.SetActive(false);
 
+                
+
                 timeCounter.GetComponent<TimeCounter>().StopTimeCounter();
                 timeCounter.GetComponent<TimeCounter>().startTime = 0f;
                 timeCounter.GetComponent<TimeCounter>().myTime = 0f;
@@ -154,6 +149,7 @@ public class GameManager : MonoBehaviour
         timeCounter.GetComponent<TimeCounter>().StartTimeCounter();
         GMState = GameManagerState.Gameplay;
         UpdateGameManagerState();
+        player.GetComponent<PlayerController>().ResetPlayer();
     }
 
     public void ResumeGamePlay()
@@ -179,14 +175,6 @@ public class GameManager : MonoBehaviour
 
     public void ExitGamePlay()
     {
-        GMState = GameManagerState.Opening;
-        UpdateGameManagerState();
-    }
-
-
-    public void BackMainMenu()
-    {
-        backMainMenu = true;
         GMState = GameManagerState.Opening;
         UpdateGameManagerState();
     }
