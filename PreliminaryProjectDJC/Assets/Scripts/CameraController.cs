@@ -13,6 +13,8 @@ public class CameraController : MonoBehaviour
     private float velocity;
     private float velocityMin = 0.03f;
 
+    public float Velocity { get => velocity; set => velocity = value * 0.005f; }
+
 
     // Start is called before the first frame update
     void Awake()
@@ -67,31 +69,31 @@ public class CameraController : MonoBehaviour
         //{
         //    velocity = pc.velocityRB * 1.2f;
         //}
-        transform.position = new Vector3((transform.position.x), transform.position.y + velocity, transform.position.z);
+        transform.position = new Vector3((transform.position.x), transform.position.y + Velocity, transform.position.z);
     }
 
     private void VelocityControl()
     {
         if (inColision)
         {
-            if (velocity < velovityMax)
+            if (Velocity < velovityMax)
             {
-                velocity += velocityRate * Time.deltaTime;
+                Velocity += velocityRate * Time.deltaTime;
             }
         }
         else
         {
-            if (velocity > velocityMin)
+            if (Velocity > velocityMin)
             {
-                velocity -= velocityRate * Time.deltaTime;
+                Velocity -= velocityRate * Time.deltaTime;
             }
         }
 
-        if (velocity > velocityMin && velocity < velovityMax)
-            velocity += Input.GetAxis("Vertical") * Time.deltaTime;
-        else if (velocity < velocityMin)
+        if (Velocity > velocityMin && Velocity < velovityMax)
+            Velocity += Input.GetAxis("Vertical") * Time.deltaTime;
+        else if (Velocity < velocityMin)
         {
-            velocity = velocityMin;
+            Velocity = velocityMin;
         }
 
     }
