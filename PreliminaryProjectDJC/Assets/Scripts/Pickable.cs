@@ -30,6 +30,5 @@ public class Pickable : MonoBehaviour
             GetComponent<CapsuleCollider2D>().isTrigger = true;
             GetComponent<SpriteRenderer>().enabled = false;
         }
-        //Maybe destroy pickables when player fires
     }
 }

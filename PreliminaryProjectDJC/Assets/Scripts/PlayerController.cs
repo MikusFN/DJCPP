@@ -69,7 +69,10 @@ public class PlayerController : MonoBehaviour
                     = new Color(GetComponent<SpriteRenderer>().color.r, GetComponent<SpriteRenderer>().color.g,
                     GetComponent<SpriteRenderer>().color.b, (GetComponent<SpriteRenderer>().color.a + Time.deltaTime));
             }
-
+        if(this.transform.rotation.eulerAngles!=Vector3.zero)
+        {
+            this.transform.rotation = new Quaternion(0, 0, 0, 1);
+        }
         //Debug.Log("Score " + score);
     }
 
@@ -163,7 +166,6 @@ public class PlayerController : MonoBehaviour
                 {
                     shieldTime = maxShieldTime;
                 }
-                Debug.Log("Shield " + shieldTime);
                 break;
             case PPUpType.life:
                 if (life < maxLife)

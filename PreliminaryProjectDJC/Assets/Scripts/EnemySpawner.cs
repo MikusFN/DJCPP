@@ -2,46 +2,57 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemySpawner : MonoBehaviour {
+public class EnemySpawner : MonoBehaviour
+{
 
     public GameObject[] EnemiesPrefab;
     public GameObject mainCamera;
-    public int numEnemies = 2;
 
+    private int numEnemies;
+    private int startNumEnemies;
     private List<GameObject> enemies;
 
+    public int NumEnemies { get => numEnemies; set => numEnemies = value; }
 
-    public float timer = 2f;
+    private void Awake()
+    {
+        NumEnemies = 2;
 
+        enemies = new List<GameObject>();
+
+        for (int i = 0; i < NumEnemies; i++)
+        {
+            GameObject go = Instantiate(EnemiesPrefab[i % EnemiesPrefab.Length], this.transform);
+            go.transform.position = FindNewPosition();
+            enemies.Add(go);
+        }
+    }
 
     // Start is called before the first frame update
     void Start()
     {
-        Invoke("Spawn", timer);
+        startNumEnemies = NumEnemies;
     }
 
-
-    void Spawn() {
-
-        enemies = new List<GameObject>();
-
-        for (int i = 0; i < numEnemies; i++)
+    private void Update()
+    {
+        if (NumEnemies > startNumEnemies)
         {
-            GameObject go = Instantiate(EnemiesPrefab[Random.Range(0, numEnemies)], this.transform);
-            go.transform.position = FindNewPosition();
-            enemies.Add(go);
+            for (int i = 0; i < (NumEnemies - startNumEnemies); i++)
+            {
+                GameObject go = Instantiate(EnemiesPrefab[i % EnemiesPrefab.Length], this.transform);
+                go.transform.position = FindNewPosition();
+                enemies.Add(go);
+            }
         }
-
-        Invoke("Spawn", timer);
+        startNumEnemies = numEnemies;
     }
-
 
     private Vector3 FindNewPosition()
     {
         Plane[] planes = GeometryUtility.CalculateFrustumPlanes(mainCamera.GetComponent<Camera>());
-        //startPosY += planes[3].distance;
         Vector3 newPos = new Vector3((Random.Range(-planes[0].distance, planes[0].distance)),
-                transform.position.y + (Random.Range(planes[3].distance, planes[3].distance*2)));
+                transform.position.y + (Random.Range(planes[3].distance, planes[3].distance)));
         return newPos;
     }
 }

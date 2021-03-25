@@ -129,6 +129,22 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1969252846215296287}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &70339747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 70339746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 226e7757b285848498691889744ff64e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 519420028}
+  obstacleManager: {fileID: 1969252846215296290}
+  pickUpManager: {fileID: 1969252846215296289}
+  enemySpawner: {fileID: 1969252846215296288}
 --- !u!114 &120151338 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6512857366521261851, guid: 346cddb5983ee554f82f7ed25c525c60,
@@ -1724,6 +1740,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3, type: 3}
+--- !u!1 &1969252846215296288 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5384785882944478906, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1969252846215296287}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1969252846215296289 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7863373990289539054, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1969252846215296287}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1969252846215296290 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7341091297628414802, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1969252846215296287}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2161870618674281005
 PrefabInstance:
   m_ObjectHideFlags: 0
