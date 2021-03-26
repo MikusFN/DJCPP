@@ -5,12 +5,12 @@ using UnityEngine;
 public class GameObstacle : MonoBehaviour
 {
     public int Life { get { return life; } set { life = value; } }
-    public int Damage { get { return damage; } }
     public int mySize = 0;
     public bool hasLifeSpan = false;
     public GameObject deathEffect;
 
     public int InitialLife { get => initialLife; }
+    public int Damage { get => damage; set => damage = value; }
 
     private int life = 10;
     private int initialLife = 10;
@@ -96,17 +96,17 @@ public class GameObstacle : MonoBehaviour
         EnemyScript es;
         if (collision.TryGetComponent<PlayerController>(out player))
         {
-            player.TakeDamage(damage);
+            player.TakeDamage(Damage);
         }
         else if (collision.TryGetComponent<SpaceEnemyScript>(out ses))
         {
             if (this.hasLifeSpan)
-                ses.takeDamage(damage);
+                ses.takeDamage(Damage);
         }
         else if (collision.TryGetComponent<EnemyScript>(out es))
         {
             if (this.hasLifeSpan)
-                es.takeDamage(damage);
+                es.takeDamage(Damage);
         }
     }
 

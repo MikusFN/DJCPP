@@ -7,6 +7,7 @@ public class SpaceEnemyScript : MonoBehaviour
     Rigidbody2D rigidBody;
     private int life;
     private int initialLife = 20;
+    private int damage = 55;
 
 
     public bool canShoot;
@@ -25,6 +26,7 @@ public class SpaceEnemyScript : MonoBehaviour
 
     public int Life { get => life; set => life = value; }
     public int InitialLife { get => initialLife; set => initialLife = value; }
+    public int Damage { get => damage; set => damage = value; }
 
     void Awake() {
         rigidBody = GetComponent<Rigidbody2D>();
@@ -78,7 +80,7 @@ public class SpaceEnemyScript : MonoBehaviour
 
         if(hitInfo.TryGetComponent<PlayerController>(out player))
         {
-            player.TakeDamage(55);
+            player.TakeDamage(Damage);
         }        
     }
 }

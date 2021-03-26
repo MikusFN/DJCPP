@@ -44,6 +44,8 @@ public class ObstaclesManager : MonoBehaviour
             {
                 GameObject go = Instantiate(spriteObstaclesPrefab[i % spriteObstaclesPrefab.Length], this.transform);
                 go.transform.position = FindNewPosition();
+                go.GetComponent<GameObstacle>().Damage += (NumObstacles - startObstacles);
+                go.GetComponent<GameObstacle>().Life += (NumObstacles - startObstacles);
                 obstacles.Add(go);
             }
         }

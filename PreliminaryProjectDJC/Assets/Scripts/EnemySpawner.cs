@@ -42,6 +42,18 @@ public class EnemySpawner : MonoBehaviour
             {
                 GameObject go = Instantiate(EnemiesPrefab[i % EnemiesPrefab.Length], this.transform);
                 go.transform.position = FindNewPosition();
+                SpaceEnemyScript ese;
+                EnemyScript es;
+                if (go.TryGetComponent<SpaceEnemyScript>(out ese))
+                {
+                    ese.Life += ((NumEnemies - startNumEnemies));
+                    ese.Damage+= ((NumEnemies - startNumEnemies));
+                }
+                else if(go.TryGetComponent<EnemyScript>(out es))
+                {
+                    es.Life += ((NumEnemies - startNumEnemies));
+                    es.Damage += ((NumEnemies - startNumEnemies));
+                }
                 enemies.Add(go);
             }
         }

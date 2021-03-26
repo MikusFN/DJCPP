@@ -500,6 +500,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1969252846283504059}
   - component: {fileID: 1969252846283504060}
+  - component: {fileID: 3438769943978378466}
   m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
@@ -549,6 +550,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b2faa1f3a5520646a52aa1bafacfa24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3438769943978378466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1969252846283504061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 226e7757b285848498691889744ff64e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 0}
+  obstacleManager: {fileID: 7341091297628414802}
+  pickUpManager: {fileID: 7863373990289539054}
+  enemySpawner: {fileID: 5384785882944478906}
 --- !u!1 &1969252846309234033
 GameObject:
   m_ObjectHideFlags: 0
@@ -1580,8 +1597,6 @@ MonoBehaviour:
   - {fileID: 3371311055171120652}
   - {fileID: 0}
   mainCamera: {fileID: 0}
-  numEnemies: 2
-  timer: 2
 --- !u!1 &7341091297628414802
 GameObject:
   m_ObjectHideFlags: 0
@@ -1630,7 +1645,6 @@ MonoBehaviour:
   - {fileID: 9150905981225826695, guid: 6181df89637a5434db88bfeae04b320f, type: 3}
   - {fileID: 4339949864500878925, guid: 5e9f21c7f56c0574387322483da0dac9, type: 3}
   - {fileID: 5823220672998773605, guid: 46055e24e6c7f3940b0ec403f1c846fe, type: 3}
-  numObstacles: 4
   mainCamera: {fileID: 0}
 --- !u!1 &7863373990289539054
 GameObject:

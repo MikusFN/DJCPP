@@ -65,6 +65,11 @@ public class WeaponBehaviour : MonoBehaviour
     {
         if (canFire)
         {
+            PlayerController pc;
+            if(TryGetComponent<PlayerController>(out pc))
+            {
+                pc.TakeDamage(shotsFire);
+            }
 
             GameObject go = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation, this.transform);
             go.GetComponent<Rigidbody2D>().velocity = (go.transform.position - transform.position).normalized * go.GetComponent<Projectile>().speed;
