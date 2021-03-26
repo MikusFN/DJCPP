@@ -500,6 +500,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &715537094 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5384785882944478906, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1969252846215296287}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &748992312 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6512857365908604169, guid: 346cddb5983ee554f82f7ed25c525c60,
@@ -529,6 +535,12 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6512857366075758305, guid: 346cddb5983ee554f82f7ed25c525c60,
     type: 3}
   m_PrefabInstance: {fileID: 6512857366506009137}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &996488008 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7863373990289539054, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1969252846215296287}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1003188564 stripped
 GameObject:
@@ -856,6 +868,12 @@ MonoBehaviour:
 --- !u!1 &2128669994 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1802708974244721146, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1969252846215296287}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2142364997 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7341091297628414802, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
     type: 3}
   m_PrefabInstance: {fileID: 1969252846215296287}
   m_PrefabAsset: {fileID: 0}
@@ -1559,9 +1577,29 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3438769943978378466, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
         type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3438769943978378466, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
+        type: 3}
       propertyPath: mainCamera
       value: 
       objectReference: {fileID: 519420028}
+    - target: {fileID: 3438769943978378466, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
+        type: 3}
+      propertyPath: enemySpawner
+      value: 
+      objectReference: {fileID: 715537094}
+    - target: {fileID: 3438769943978378466, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
+        type: 3}
+      propertyPath: pickUpManager
+      value: 
+      objectReference: {fileID: 996488008}
+    - target: {fileID: 3438769943978378466, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
+        type: 3}
+      propertyPath: obstacleManager
+      value: 
+      objectReference: {fileID: 2142364997}
     - target: {fileID: 3628787593592293949, guid: 00ca569dc4b7a3e4d9e7e8b2f46e41d3,
         type: 3}
       propertyPath: m_LocalPosition.z

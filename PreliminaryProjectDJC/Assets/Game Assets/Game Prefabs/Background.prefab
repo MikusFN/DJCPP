@@ -563,9 +563,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 0}
-  obstacleManager: {fileID: 7341091297628414802}
-  pickUpManager: {fileID: 7863373990289539054}
-  enemySpawner: {fileID: 5384785882944478906}
+  obstacleManager: {fileID: 0}
+  pickUpManager: {fileID: 0}
+  enemySpawner: {fileID: 0}
 --- !u!1 &1969252846309234033
 GameObject:
   m_ObjectHideFlags: 0

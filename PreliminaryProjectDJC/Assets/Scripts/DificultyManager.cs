@@ -15,9 +15,9 @@ enum Dificulty
 public class DificultyManager : MonoBehaviour
 {
     public GameObject mainCamera;
-    public GameObject obstacleManager;
-    public GameObject pickUpManager;
-    public GameObject enemySpawner;
+    private ObstaclesManager obstacleManager;
+    private PickablesManager pickUpManager;
+    private EnemySpawner enemySpawner;
 
     private float currentTime;
     private int currentMin;
@@ -30,13 +30,16 @@ public class DificultyManager : MonoBehaviour
         currentTime = 0.0f;
         currentMin = 0;
         currentSetting = Dificulty.VeryEasy;
+        obstacleManager = GetComponentInChildren<ObstaclesManager>();
+        pickUpManager = GetComponentInChildren<PickablesManager>();
+        enemySpawner = GetComponentInChildren<EnemySpawner>();
     }
 
     // Update is called once per frame
     void Update()
     {
         currentTime += Time.fixedDeltaTime;
-        currentMin = (int)(currentTime / 600);
+        currentMin = (int)(currentTime / 60);
         SetDificulty();
         lastMin = currentMin;
     }
@@ -59,8 +62,8 @@ public class DificultyManager : MonoBehaviour
     private void ChangeManagers(Dificulty current)
     {
         mainCamera.GetComponent<CameraController>().Velocity += (int)current;
-        obstacleManager.GetComponent<ObstaclesManager>().NumObstacles += (int)current;
-        pickUpManager.GetComponent<PickablesManager>().NumPick += (int)current;
-        enemySpawner.GetComponent<EnemySpawner>().NumEnemies += (int)current;
+        obstacleManager.NumObstacles += (int)current;
+        pickUpManager.NumPick += (int)current;
+        enemySpawner.NumEnemies += (int)current;
     }
 }
